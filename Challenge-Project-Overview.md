@@ -1,7 +1,7 @@
 # FaithfulMed: A Multi-Agent System for Faithful, Patient-Friendly Medical Explanations
 
 **Company / Org:** Google
-**Challenge Advisor:** Sarita Anand Joshi, sarita.ritu@gmail.com
+**Challenge Advisor:** Ram Seshadri
 **Program:** Break Through Tech AI Studio — Fall 2026
 
 ---
