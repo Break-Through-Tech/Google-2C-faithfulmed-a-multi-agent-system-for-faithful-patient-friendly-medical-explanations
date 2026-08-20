@@ -1,6 +1,6 @@
 # FaithfulMed: A Multi-Agent System for Faithful, Patient-Friendly Medical Explanations
 
-**Company / Org:** Google
+**Company / Org:** Google  
 **Challenge Advisor:** Ram Seshadri   
 **Program:** Break Through Tech AI Studio — Fall 2026
 
