@@ -5,6 +5,7 @@ litellm               # lets ADK call Gemma / external open models for the leade
 
 # ── RAG / retrieval ────────────────────────────────────────────────────
 chromadb
+beautifulsoup4
 # sentence-transformers   # optional offline-embeddings fallback
 # faiss-cpu               # optional offline vector index
 
