@@ -16,8 +16,9 @@ from retrieval.schema import (
 from retrieval.text_utils import (
     child_text,
     child_texts,
-    extract_summary_blocks,
+    element_text,
     local_name,
+    parse_summary_html,
 )
 
 
@@ -153,8 +154,6 @@ def parse_medlineplus_health_topics(
                 summary_element = child
                 break
 
-        from retrieval.text_utils import (element_text, parse_summary_html,)
-        
         raw_summary_html = element_text(summary_element)
         parsed_sections = parse_summary_html(raw_summary_html)
 
@@ -169,11 +168,6 @@ def parse_medlineplus_health_topics(
             for section_name, blocks
             in parsed_sections
         ]
-
-        # A topic without human-readable summary text has nothing
-        # useful to embed into the current RAG corpus.
-        if not summary_blocks:
-            continue
 
         synonyms = child_texts(
             topic,
@@ -200,10 +194,8 @@ def parse_medlineplus_health_topics(
 
             title=title,
 
-            # Important:
-            # MedlinePlus does NOT provide explicit Symptoms /
-            # Treatment / Diagnosis headings inside full-summary.
-            # So don't invent them.
+            # Preserve headings present in the source summary. Topics
+            # without headings remain under "full_summary".
             sections=sections,
 
             source="MedlinePlus",

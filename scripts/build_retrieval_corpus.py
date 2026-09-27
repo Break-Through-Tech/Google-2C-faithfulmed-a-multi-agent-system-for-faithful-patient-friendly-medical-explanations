@@ -4,6 +4,7 @@ import argparse
 from collections import Counter
 import json
 from pathlib import Path
+import re
 
 from retrieval.chunking import (
     DEFAULT_CHUNKING_CONFIG,
@@ -62,6 +63,11 @@ GLOSSARY_SOURCES = [
 ]
 
 
+_HTML_TAG_RE = re.compile(
+    r"<\s*/?\s*[A-Za-z][^>]*>"
+)
+
+
 def write_jsonl(
     chunks: list[RetrievalChunk],
     output_path: Path,
@@ -92,31 +98,84 @@ def write_jsonl(
 def validate_chunks(
     chunks: list[RetrievalChunk],
 ) -> None:
+    """Fail the build if a chunk violates a corpus invariant."""
 
-    ids = [
-        chunk.id
-        for chunk in chunks
+    errors: list[str] = []
+    id_counts = Counter(chunk.id for chunk in chunks)
+
+    duplicate_ids = [
+        chunk_id
+        for chunk_id, count in id_counts.items()
+        if count > 1
     ]
 
-    duplicate_count = (
-        len(ids) - len(set(ids))
-    )
-
-    if duplicate_count:
-        raise ValueError(
-            f"Found {duplicate_count} duplicate chunk IDs."
+    if duplicate_ids:
+        errors.append(
+            f"{len(duplicate_ids)} duplicate chunk IDs"
         )
 
     empty_text = [
-        chunk.id
-        for chunk in chunks
+        chunk.id for chunk in chunks
         if not chunk.text.strip()
     ]
 
     if empty_text:
-        raise ValueError(
-            f"Found {len(empty_text)} empty chunks."
+        errors.append(f"{len(empty_text)} empty chunks")
+
+    dirty_glossary = [
+        chunk.id
+        for chunk in chunks
+        if (
+            chunk.source_type == "glossary_definition"
+            and (
+                chunk.title.lstrip().startswith(">")
+                or chunk.text.lstrip().startswith(">")
+            )
         )
+    ]
+
+    if dirty_glossary:
+        errors.append(
+            f"{len(dirty_glossary)} glossary chunks start with '>'"
+        )
+
+    chunks_with_html = [
+        chunk.id
+        for chunk in chunks
+        if _HTML_TAG_RE.search(chunk.text)
+    ]
+
+    if chunks_with_html:
+        errors.append(
+            f"{len(chunks_with_html)} chunks contain raw HTML tags"
+        )
+
+    empty_sections = [
+        chunk.id
+        for chunk in chunks
+        if not chunk.section.strip()
+    ]
+
+    if empty_sections:
+        errors.append(
+            f"{len(empty_sections)} chunks have an empty section"
+        )
+
+    oversized_chunks = [
+        chunk.id
+        for chunk in chunks
+        if len(chunk.text) > DEFAULT_CHUNKING_CONFIG.max_chars
+    ]
+
+    if oversized_chunks:
+        errors.append(
+            f"{len(oversized_chunks)} chunks exceed "
+            f"{DEFAULT_CHUNKING_CONFIG.max_chars} characters"
+        )
+
+    if errors:
+        details = "; ".join(errors)
+        raise ValueError(f"Corpus validation failed: {details}.")
 
 
 def main() -> None:
