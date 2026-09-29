@@ -1,0 +1,20 @@
+{"query": "bilateral lower-extremity edema", "relevant_titles": ["Edema"], "notes": "clinical phrasing"}
+{"query": "my ankles and feet are swollen at the end of the day", "relevant_titles": ["Edema"], "notes": "lay phrasing"}
+{"query": "essential hypertension", "relevant_titles": ["High Blood Pressure"], "notes": "clinical synonym"}
+{"query": "what does it mean if my blood pressure reading is 150 over 95", "relevant_titles": ["High Blood Pressure"], "notes": "lay phrasing"}
+{"query": "type 2 diabetes mellitus with elevated HbA1c", "relevant_titles": ["Diabetes Type 2"], "notes": "clinical phrasing"}
+{"query": "congestive heart failure with reduced ejection fraction", "relevant_titles": ["Heart Failure"], "notes": "clinical phrasing"}
+{"query": "shortness of breath and wheezing triggered by exercise", "relevant_titles": ["Asthma"], "notes": "lay symptom description"}
+{"query": "low hemoglobin and feeling tired all the time", "relevant_titles": ["Anemia", "Iron Deficiency Anemia"], "notes": "lay + lab value"}
+{"query": "irregularly irregular heart rhythm", "relevant_titles": ["Atrial Fibrillation"], "notes": "clinical phrasing"}
+{"query": "blood clot in the deep veins of the leg", "relevant_titles": ["Deep Vein Thrombosis"], "notes": "lay phrasing"}
+{"query": "burning when I pee and needing to go often", "relevant_titles": ["Urinary Tract Infections"], "notes": "lay symptom description"}
+{"query": "reduced eGFR and stage 3 CKD", "relevant_titles": ["Chronic Kidney Disease"], "notes": "abbreviations"}
+{"query": "thin, brittle bones and a high risk of fractures", "relevant_titles": ["Osteoporosis"], "notes": "lay phrasing"}
+{"query": "acute gouty arthritis of the big toe", "relevant_titles": ["Gout"], "notes": "clinical phrasing"}
+{"query": "stopping breathing during sleep and loud snoring", "relevant_titles": ["Sleep Apnea"], "notes": "lay symptom description"}
+{"query": "heartburn and acid coming back up into my throat", "relevant_titles": ["GERD", "Heartburn"], "notes": "lay symptom description"}
+{"query": "underactive thyroid gland", "relevant_titles": ["Hypothyroidism"], "notes": "lay synonym"}
+{"query": "painful blistering rash on one side of the body after chickenpox", "relevant_titles": ["Shingles"], "notes": "lay symptom description"}
+{"query": "high LDL cholesterol", "relevant_titles": ["Cholesterol", "LDL: The \"Bad\" Cholesterol"], "notes": "lab term"}
+{"query": "what is vitamin D and why do I need it", "relevant_titles": ["Vitamin D"], "notes": "glossary or health topic"}

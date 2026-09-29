@@ -31,13 +31,29 @@
 
 ## 👩🏽‍💻 **Setup and Installation**
 
-**Provide step-by-step instructions so someone else can run your code and reproduce your results. Depending on your setup, include:**
+```bash
+git clone <repo-url> && cd <repo-folder>
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
 
-* How to clone the repository
-* How to install dependencies
-* How to set up the environment
-* How to access the dataset(s)
-* How to run the notebook or scripts
+Create a `.env` in the repo root (git-ignored — never commit it):
+
+```
+GEMINI_API_KEY=...
+CHROMA_API_KEY=...
+CHROMA_TENANT=...
+CHROMA_DATABASE=...
+```
+
+Datasets are downloaded locally, not committed — see [data/README.md](data/README.md).
+
+**Retrieval (RAG):** building the MedlinePlus corpus and Chroma Cloud index, calling
+`retrieve()`, and running the retrieval evaluation are documented in
+[retrieval/README.md](retrieval/README.md).
+
+**Tests:** `python -m unittest discover -s tests -t .`
 
 ---
 

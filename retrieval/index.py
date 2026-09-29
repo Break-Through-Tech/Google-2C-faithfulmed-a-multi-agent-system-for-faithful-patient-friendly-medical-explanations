@@ -41,6 +41,15 @@ class _Collection(Protocol):
         include: list[str],
     ) -> dict[str, Any]: ...
 
+    def query(
+        self,
+        *,
+        query_embeddings: list[list[float]],
+        n_results: int,
+        where: dict[str, Any] | None,
+        include: list[str],
+    ) -> dict[str, Any]: ...
+
 
 class _ChromaClient(Protocol):
     def get_or_create_collection(
@@ -175,18 +184,10 @@ class ChromaCloudIndex:
         if len(ids) != len(set(ids)):
             raise ValueError("A Chroma upsert batch contains duplicate IDs.")
 
-        vectors: list[list[float]] = []
-
-        for index, embedding in enumerate(embeddings):
-            vector = list(embedding)
-
-            if len(vector) != self.embedding_config.dimensions:
-                raise ValueError(
-                    f"Embedding {index} has {len(vector)} dimensions; "
-                    f"expected {self.embedding_config.dimensions}."
-                )
-
-            vectors.append(vector)
+        vectors = [
+            self._validated_vector(embedding, index)
+            for index, embedding in enumerate(embeddings)
+        ]
 
         self._collection.upsert(
             ids=ids,
@@ -197,8 +198,60 @@ class ChromaCloudIndex:
 
         return len(chunks)
 
+    def query(
+        self,
+        embedding: Sequence[float],
+        *,
+        k: int,
+        where: dict[str, Any] | None = None,
+    ) -> list[dict[str, Any]]:
+        """Return the k nearest records, closest first."""
+
+        if k <= 0:
+            raise ValueError("k must be positive.")
+
+        vector = self._validated_vector(embedding, 0)
+
+        result = self._collection.query(
+            query_embeddings=[vector],
+            n_results=k,
+            where=where,
+            include=["documents", "metadatas", "distances"],
+        )
+
+        # Chroma returns one nested list per query embedding.
+        ids = result["ids"][0]
+        documents = result["documents"][0]
+        metadatas = result["metadatas"][0]
+        distances = result["distances"][0]
+
+        return [
+            {
+                "id": ids[position],
+                "document": documents[position],
+                "metadata": metadatas[position] or {},
+                "distance": distances[position],
+            }
+            for position in range(len(ids))
+        ]
+
     def count(self) -> int:
         return self._collection.count()
+
+    def _validated_vector(
+        self,
+        embedding: Sequence[float],
+        index: int,
+    ) -> list[float]:
+        vector = list(embedding)
+
+        if len(vector) != self.embedding_config.dimensions:
+            raise ValueError(
+                f"Embedding {index} has {len(vector)} dimensions; "
+                f"expected {self.embedding_config.dimensions}."
+            )
+
+        return vector
 
     def existing_ids(self, ids: Sequence[str]) -> set[str]:
         """Return the requested IDs that are already stored in Chroma."""

@@ -29,6 +29,8 @@ Large corpora are git-ignored — download them locally into this folder.
   **FHIR is deeply nested — write a flattener before feeding to the LLM. Never pass raw FHIR.**
 - **MedlinePlus glossary** — lay-language definitions; the RAG knowledge base for the Simplifier.
   https://medlineplus.gov/.
+  Raw XML goes in `data/raw/medlineplus/` (glossary files + Health Topics XML) — see
+  [retrieval/README.md](../retrieval/README.md) for the exact layout and build commands.
 
 ## Optional benchmarks (clinical-accuracy dimension only)
 - **MedQA** — USMLE-style multiple-choice. https://github.com/jind11/MedQA.
