@@ -23,10 +23,12 @@
 
 **Example:**
 
-- Developed a machine learning model using `[model type/technique]` to address `[challenge project task]`.
-- Achieved `[key metric or result]`, demonstrating `[value or impact]` for `[host company]`.
-- Generated actionable insights to inform business decisions at `[host company or stakeholders]`.
-- Implemented `[specific methodology]` to address industry constraints or expectations.
+- **Exploratory data analysis:** Profiling MedAESQA, MTSamples, PLABA, MedQuAD, and a Synthea sample to understand document length, jargon density, source reading level, and data quality issues before any modeling.
+- **RAG knowledge base:** Building a vector retrieval index with Gemini embeddings and ChromaDB over the MedlinePlus lay-language glossary and trusted lay-health guidelines, which will ground the Simplifier agent's definitions.
+- **Evaluation harness first:** Defining the task spec, success rubric, and a shared harness (Flesch-Kincaid, SMOG, medical-jargon density, output length, refusal rate) so every system is measured the same way from day one.
+- **Single-Gemini baseline:** Building a one-call Gemini baseline on ~50 hand-curated examples to serve as the comparison point the multi-agent pipeline must beat.
+- **Agent ownership assigned:** Each fellow owns one component end-to-end: Extractor (Nahom), Simplifier (Yuxin), Verifier (Saanvi), Refiner (Angelina), Readability (Monica), and Sequential orchestration (Saika).
+- **Tracking:** All tasks are logged as GitHub Issues, tied to the September milestone, and tracked on the team's GitHub Project board.
 
 ---
 
@@ -34,7 +36,11 @@
 
 **Provide step-by-step instructions so someone else can run your code and reproduce your results. Depending on your setup, include:**
 
-* How to clone the repository
+* To clone the repository, run
+```
+git clone https://github.com/Break-Through-Tech/Google-2C-faithfulmed-a-multi-agent-system-for-faithful-patient-friendly-medical-explanations.git
+```
+
 * How to install dependencies
 * How to set up the environment
 * How to access the dataset(s)
