@@ -26,8 +26,6 @@
 - **RAG knowledge base:** Building a vector retrieval index with Gemini embeddings and ChromaDB over the MedlinePlus lay-language glossary and trusted lay-health guidelines, which will ground the Simplifier agent's definitions.
 - **Evaluation harness first:** Defining the task spec, success rubric, and a shared harness (Flesch-Kincaid, SMOG, medical-jargon density, output length, refusal rate) so every system is measured the same way from day one.
 - **Single-Gemini baseline:** Building a one-call Gemini baseline on ~50 hand-curated examples to serve as the comparison point the multi-agent pipeline must beat.
-- **Agent ownership assigned:** Each fellow owns one component end-to-end: Extractor (Nahom), Simplifier (Yuxin), Verifier (Saanvi), Refiner (Angelina), Readability (Monica), and Sequential orchestration (Saika).
-- **Tracking:** All tasks are logged as GitHub Issues, tied to the September milestone, and tracked on the team's GitHub Project board.
 
 ---
 
