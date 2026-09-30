@@ -4,7 +4,7 @@ google-adk            # Agent Development Kit — multi-agent orchestration
 litellm               # lets ADK call Gemma / external open models for the leaderboard
 
 # ── RAG / retrieval ────────────────────────────────────────────────────
-chromadb
+qdrant-client         # vector store (Qdrant Cloud or local Docker)
 beautifulsoup4
 python-dotenv
 # sentence-transformers   # optional offline-embeddings fallback

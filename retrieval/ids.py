@@ -1,5 +1,6 @@
 import hashlib
 import re
+import uuid
 
 
 def slugify(value: str) -> str:
@@ -27,3 +28,12 @@ def health_topic_parent_id(topic_id: str) -> str:
 
 def retrieval_chunk_id(parent_id: str, chunk_index: int) -> str:
     return f"{parent_id}:chunk:{chunk_index:03d}"
+
+# Fixed namespace so every machine maps a chunk ID to the same Qdrant point.
+_POINT_ID_NAMESPACE = uuid.UUID("5b0f7d4e-3c1a-4d8e-9f2b-6a7c8d9e0f1a")
+
+
+def point_id(chunk_id: str) -> str:
+    """Qdrant point IDs must be UUIDs or integers; derive a stable UUID."""
+
+    return str(uuid.uuid5(_POINT_ID_NAMESPACE, chunk_id))

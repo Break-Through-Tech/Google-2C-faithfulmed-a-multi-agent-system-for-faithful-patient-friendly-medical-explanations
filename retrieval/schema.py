@@ -69,7 +69,7 @@ class RetrievalChunk:
     """
     Final retrieval unit.
 
-    One RetrievalChunk corresponds to one vector in ChromaDB.
+    One RetrievalChunk corresponds to one point in the Qdrant collection.
     """
 
     id: str
@@ -110,14 +110,14 @@ class RetrievalChunk:
         """Used when writing retrieval_chunks.jsonl."""
         return asdict(self)
 
-    def to_chroma_metadata(self) -> dict[str, Any]:
+    def to_payload(self) -> dict[str, Any]:
         """
-        Convert provenance fields into Chroma-safe metadata.
+        Convert provenance fields into the Qdrant point payload.
 
         Empty arrays and None values are deliberately omitted.
         """
 
-        metadata: dict[str, Any] = {
+        payload: dict[str, Any] = {
             "parent_id": self.parent_id,
             "title": self.title,
             "source": self.source,
@@ -141,7 +141,7 @@ class RetrievalChunk:
 
         for key, value in optional_scalars.items():
             if value is not None and value != "":
-                metadata[key] = value
+                payload[key] = value
 
         optional_arrays = {
             "synonyms": self.synonyms,
@@ -153,6 +153,6 @@ class RetrievalChunk:
 
         for key, values in optional_arrays.items():
             if values:
-                metadata[key] = values
+                payload[key] = values
 
-        return metadata
+        return payload

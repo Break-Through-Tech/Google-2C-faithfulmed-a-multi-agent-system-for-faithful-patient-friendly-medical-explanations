@@ -15,7 +15,7 @@ from retrieval.embeddings import (
 from retrieval.index import (
     DEFAULT_COLLECTION_NAME,
     DEFAULT_ENV_PATH,
-    ChromaCloudIndex,
+    QdrantIndex,
 )
 from retrieval.schema import RetrievalChunk
 
@@ -125,7 +125,7 @@ def batched(
 def build_index(
     chunks: Sequence[RetrievalChunk],
     *,
-    index: ChromaCloudIndex,
+    index: QdrantIndex,
     embedding_client: GeminiEmbeddingClient,
     batch_size: int = DEFAULT_BATCH_SIZE,
     skip_existing: bool = True,
@@ -160,7 +160,7 @@ def build_index(
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Build the shared FaithfulMed Chroma Cloud index."
+        description="Build the shared FaithfulMed Qdrant index."
     )
     parser.add_argument(
         "--corpus",
@@ -194,7 +194,7 @@ def main() -> None:
         "--rebuild-existing",
         action="store_true",
         help=(
-            "Re-embed and upsert records already present in Chroma. "
+            "Re-embed and upsert records already present in Qdrant. "
             "By default, existing IDs are skipped so interrupted builds resume."
         ),
     )
@@ -207,7 +207,7 @@ def main() -> None:
     print(f"Loading corpus: {args.corpus}")
     chunks = load_chunks(args.corpus)
 
-    index = ChromaCloudIndex(
+    index = QdrantIndex(
         collection_name=args.collection,
         embedding_config=embedding_config,
         env_path=args.env_file,
@@ -222,7 +222,7 @@ def main() -> None:
     print(f"Model: {embedding_config.model}")
     print(f"Dimensions: {embedding_config.dimensions}")
     print(f"Collection: {args.collection}")
-    print("Chroma backend: cloud")
+    print("Vector store: Qdrant")
     print()
 
     final_count = build_index(

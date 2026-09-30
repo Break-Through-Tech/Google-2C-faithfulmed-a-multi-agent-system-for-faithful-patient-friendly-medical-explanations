@@ -7,7 +7,7 @@ from typing import Any, Protocol
 from dotenv import load_dotenv
 
 from retrieval.embeddings import GeminiEmbeddingClient
-from retrieval.index import DEFAULT_ENV_PATH, ChromaCloudIndex
+from retrieval.index import DEFAULT_ENV_PATH, QdrantIndex
 
 
 DEFAULT_K = 5
@@ -30,7 +30,7 @@ class RetrievalResult:
     section: str
     chunk_index: int
 
-    # Cosine distance from Chroma; similarity = 1 - distance.
+    # Cosine similarity from Qdrant (higher is closer); distance = 1 - similarity.
     distance: float
     similarity: float
 
@@ -39,10 +39,10 @@ class RetrievalResult:
 
     @classmethod
     def from_hit(cls, hit: dict[str, Any]) -> RetrievalResult:
-        """Build a result from one ChromaCloudIndex.query() record."""
+        """Build a result from one QdrantIndex.query() record."""
 
         metadata = hit["metadata"]
-        distance = float(hit["distance"])
+        similarity = float(hit["score"])
 
         return cls(
             id=hit["id"],
@@ -54,8 +54,8 @@ class RetrievalResult:
             url=metadata.get("url", ""),
             section=metadata.get("section", ""),
             chunk_index=int(metadata.get("chunk_index", 0)),
-            distance=distance,
-            similarity=1.0 - distance,
+            distance=1.0 - similarity,
+            similarity=similarity,
         )
 
 
@@ -64,11 +64,11 @@ class _QueryEmbedder(Protocol):
 
 
 class Retriever:
-    """Embed a query with Gemini and search the shared Chroma collection."""
+    """Embed a query with Gemini and search the shared Qdrant collection."""
 
     def __init__(
         self,
-        index: ChromaCloudIndex,
+        index: QdrantIndex,
         embedding_client: _QueryEmbedder,
     ) -> None:
         self.index = index
@@ -109,7 +109,7 @@ def get_default_retriever() -> Retriever:
     # must be loaded before the embedding client is created.
     load_dotenv(dotenv_path=DEFAULT_ENV_PATH)
 
-    index = ChromaCloudIndex()
+    index = QdrantIndex()
 
     return Retriever(
         index=index,

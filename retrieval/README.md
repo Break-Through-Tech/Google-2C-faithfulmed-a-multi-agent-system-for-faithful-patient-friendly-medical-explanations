@@ -4,7 +4,7 @@ The retrieval layer gives the agents grounded, citable lay-language text. The
 pipeline has three steps:
 
 ```
-raw MedlinePlus XML ──► data/processed/retrieval_chunks.jsonl ──► Chroma Cloud collection ──► retrieve()
+raw MedlinePlus XML ──► data/processed/retrieval_chunks.jsonl ──► Qdrant collection ──► retrieve()
    (you download)        scripts/build_retrieval_corpus.py        scripts/build_retrieval_index.py
 ```
 
@@ -47,32 +47,46 @@ duplicate IDs, empty chunks, leftover HTML or oversized chunks), and writes
 (`retrieval/schema.py`). The build is deterministic, so chunk IDs stay the
 same across rebuilds.
 
-## 3. Build the Chroma Cloud index
+## 3. Build the Qdrant index
 
 Your `.env` needs:
 
 ```
 GEMINI_API_KEY=...      # https://aistudio.google.com/apikey
-CHROMA_API_KEY=...
-CHROMA_TENANT=...
-CHROMA_DATABASE=...
+QDRANT_URL=...          # cluster URL from cloud.qdrant.io, e.g. https://xxxx.cloud.qdrant.io:6333
+QDRANT_API_KEY=...      # database API key for that cluster
 ```
+
+For a local Qdrant instead, run `docker run -p 6333:6333 qdrant/qdrant`, set
+`QDRANT_URL=http://localhost:6333` and leave `QDRANT_API_KEY` empty.
+
+**Don't create the collection in the Qdrant web UI.** The code creates it
+the first time it connects, with the settings the pipeline expects:
+
+- one unnamed dense vector with 768 dimensions and cosine distance
+- the embedding model recorded in the collection metadata
+- keyword payload indexes on `source_type` and `source`
+
+A collection made in the UI, for example with named, hybrid or 3072-dimension
+vectors or with multitenancy, will be rejected.
 
 ```bash
 python -m scripts.build_retrieval_index
 ```
 
 - The script embeds each chunk with `gemini-embedding-2` (768 dimensions) and
-  upserts it into the shared collection `faithfulmed_lay_health_gemini2_768_v1`,
-  which uses cosine distance.
+  upserts it into the shared collection `faithfulmed_lay_health_gemini2_768_v1`.
+  Each point's payload holds the chunk text and all provenance fields.
+  Point IDs are UUIDs derived from the chunk IDs.
 - The build **resumes**: IDs already in the collection are skipped, so an
   interrupted or rate-limited run can simply be restarted. Pass
   `--rebuild-existing` to re-embed everything, for example after you change
   the embedding text format.
 - The collection is shared, so one person builds it and everyone else only
-  queries it. If you change the model or dimensions, use a new
-  `--collection` name. The index refuses to open a collection whose model,
-  dimensions or distance metric don't match.
+  queries it. Teammates who only query can use a **read-only** API key. If
+  you change the model or dimensions, use a new `--collection` name. The
+  index refuses to open a collection whose model, dimensions or distance
+  metric don't match.
 
 ## 4. Query with `retrieve()`
 
@@ -97,14 +111,14 @@ Each `RetrievalResult` has:
 | `url` | canonical page to cite |
 | `section` | section inside the document (`full_summary`, `Symptoms`, `definition`, …) |
 | `id`, `parent_id`, `chunk_index` | stable chunk and document identifiers |
-| `distance` / `similarity` | cosine distance, and `1 - distance` (higher is closer) |
+| `similarity` / `distance` | cosine similarity from Qdrant (higher is closer), and `1 - similarity` |
 
 - Results are ordered most similar first. `r.to_dict()` gives a JSON-ready dict.
 - To search only one source type, pass it:
   `retrieve("vitamin D", k=3, source_type="glossary_definition")`.
 - The first call reads `.env` and connects; later calls reuse the same
-  client. In tests, construct `Retriever(index, embedding_client)` with
-  fakes instead (see `tests/test_retriever.py`).
+  client. In tests, construct `Retriever(index, embedding_client)` with an
+  in-memory Qdrant index and a fake embedder (see `tests/test_retriever.py`).
 
 ## 5. Evaluate retrieval
 
@@ -135,8 +149,9 @@ python -m scripts.evaluate_retrieval \
 python -m unittest discover -s tests -t .
 ```
 
-All tests run offline because the Gemini and Chroma clients are replaced with
-fakes.
+All tests run offline. The Gemini client is replaced with a fake, and
+Qdrant runs in memory (`QdrantClient(":memory:")`), so the tests exercise
+real Qdrant behaviour without a server.
 
 ## Never commit
 
@@ -145,7 +160,7 @@ fakes.
 | API keys | `.env` | secrets. Already git-ignored |
 | Raw datasets | `data/raw/` | large and re-downloadable. Some have licenses that forbid redistribution |
 | Processed corpus | `data/processed/retrieval_chunks.jsonl` | generated and reproducible from step 2 |
-| Chroma DB / vector indexes | `chroma/`, `chroma_db/`, `.chroma/`, `*.faiss` | generated. The real index lives in Chroma Cloud |
+| Local vector stores | `qdrant_storage/`, `chroma/`, `chroma_db/`, `.chroma/`, `*.faiss` | generated. The shared index lives in Qdrant Cloud |
 | Generated embeddings | `embeddings/`, `*.npy`, `*.npz` | generated and large |
 
 Everything under `data/` is ignored except `data/README.md`, the MedAESQA

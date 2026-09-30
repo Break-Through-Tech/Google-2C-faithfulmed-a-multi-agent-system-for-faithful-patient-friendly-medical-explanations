@@ -29,6 +29,7 @@ data/*
 chroma/
 chroma_db/
 .chroma/
+qdrant_storage/
 
 # Generated embeddings
 embeddings/
