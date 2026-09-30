@@ -1,5 +1,6 @@
 # AI Studio Challenge: FaithfulMed: Translation of Medical Documents
 
+> FaithfulMed is a multi-agent AI system that turns complex clinical documents, like discharge summaries and medical reports, into patient-friendly explanations that are both easy to read and faithful to the source.
 ---
 
 ### 👥 **Team Members**
