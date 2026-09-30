@@ -1,4 +1,4 @@
-# AI Studio Challenge Project Title
+# AI Studio Challenge: FaithfulMed: Translation of Medical Documents
 
 > 💡 **Note for the team:** This is just a template. Update the above title with your AI Studio Challenge Project name. Remove all guidance notes and example text in this template and populate this README with your own content. You can work on this README throughout AI Studio, and get feedback from your AI Studio Coach and Challenge Advisor before finalizing it.  
 
@@ -8,13 +8,14 @@
 
 **Example:**
 
-| Name             | GitHub Handle | Contribution                                                             |
-|------------------|---------------|--------------------------------------------------------------------------|
-| Taylor Nguyen    | @taylornguyen | Data exploration, visualization, overall project coordination            |
-| Jordan Ramirez   | @jramirez     | Data collection, exploratory data analysis (EDA), dataset documentation  |
-| Amina Hassan     | @aminahassan  | Data preprocessing, feature engineering, data validation                 |
-| Priya Mehta      | @pmehta       | Model selection, hyperparameter tuning, model training and optimization  |
-| Chris Park       | @chrispark    | Model evaluation, performance analysis, results interpretation           |
+| Name            | GitHub Handle | Contribution                                                            |
+|-----------------|---------------|-------------------------------------------------------------------------|
+| Angelina Cheng  | @ang-cheng    | Vector retrieval index over MedlinePlus glossary & the refiner agent    |
+| Monica Barbosa  | @officialmon1 | Single Gemini-baseline & the readability agent                          |
+| Nahom Terrefe   | @nahom70      | Vector retrieval index over MedlinePlus glossary & the extractor agent  |
+| Saanvi Goyal    | @SaanviGoyal  | Exploratory data analysis & the verifier agent                          |
+| Saika Chowdhury | @SaC34        | Success rubric, shared evaluation harness, & the sequential agent       |
+| Yuxin Zeng      | @yzeng0521    | Single Gemini-baseline & the simplifier agent                           |
 
 ---
 
