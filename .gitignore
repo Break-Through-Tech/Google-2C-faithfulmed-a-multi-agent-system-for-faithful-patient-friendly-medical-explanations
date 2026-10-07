@@ -25,3 +25,5 @@ data/*
 *.pt
 *.faiss
 chroma/
+
+.env
