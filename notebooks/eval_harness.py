@@ -39,7 +39,7 @@ def umls_lookup(term: str) -> bool:
     """Return True if UMLS recognizes the term as a medical concept."""
 
     if not UMLS_API_KEY:
-        raise RuntimeError("UMLS_API_KEY is not set.")
+        return False
 
     url = "https://uts-ws.nlm.nih.gov/rest/search/current"
 
@@ -74,6 +74,14 @@ def generate_phrases(words: list[str], max_length: int = 3) -> list[str]:
 
     return phrases
 
+def calculate_fallback_jargon_density(text: str) -> float:
+    """Fallback jargon density using textstat's difficult-word count."""
+
+    words = max(textstat.lexicon_count(text, removepunct=True), 1)
+
+    difficult_words = textstat.difficult_words(text)
+
+    return difficult_words / words
 
 def calculate_umls_jargon_density(text: str) -> float:
     """Estimate medical-term density using UMLS."""
@@ -121,10 +129,15 @@ def readability_scores(text: str) -> dict:
 
     words = max(textstat.lexicon_count(text, removepunct=True), 1)
 
+    if UMLS_API_KEY:
+        medical_density = calculate_umls_jargon_density(text)
+    else:
+        medical_density = calculate_fallback_jargon_density(text)
+
     return {
         "flesch_kincaid_grade": textstat.flesch_kincaid_grade(text),
         "smog_index": textstat.smog_index(text),
-        "medical_term_density": calculate_umls_jargon_density(text),
+        "medical_term_density": medical_density,
         "word_count": words,
     }
 
