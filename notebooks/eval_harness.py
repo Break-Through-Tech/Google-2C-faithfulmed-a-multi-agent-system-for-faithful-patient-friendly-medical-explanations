@@ -13,27 +13,118 @@ Provides:
 This is model-agnostic — it scores text, whatever produced it. Extend, don't treat as final.
 Each agent owner plugs their agent's outputs into this harness.
 """
+
 from __future__ import annotations
+from functools import lru_cache
 import json
 from pathlib import Path
 
 import textstat
 from sklearn.metrics import cohen_kappa_score, accuracy_score
 
+import os
+import re
+
+import requests
+from dotenv import load_dotenv
+from sklearn.metrics import cohen_kappa_score, accuracy_score
+
+load_dotenv()
+UMLS_API_KEY = os.getenv("UMLS_API_KEY")
+
 DATA = Path(__file__).resolve().parent.parent / "data" / "medaesqa_v1.json"
 
+@lru_cache(maxsize=5000)
+def umls_lookup(term: str) -> bool:
+    """Return True if UMLS recognizes the term as a medical concept."""
+
+    if not UMLS_API_KEY:
+        raise RuntimeError("UMLS_API_KEY is not set.")
+
+    url = "https://uts-ws.nlm.nih.gov/rest/search/current"
+
+    params = {
+        "string": term,
+        "apiKey": UMLS_API_KEY,
+        "returnIdType": "concept",
+        "pageSize": 1,
+    }
+
+    try:
+        response = requests.get(url, params=params, timeout=10)
+        response.raise_for_status()
+
+        data = response.json()
+
+        return len(data.get("result", {}).get("results", [])) > 0
+
+    except requests.RequestException as e:
+        print(f"UMLS lookup failed for '{term}': {e}")
+        return False
+
+
+def generate_phrases(words: list[str], max_length: int = 3) -> list[str]:
+    """Generate 1-, 2-, and 3-word phrases."""
+    
+    phrases = []
+
+    for length in range(1, max_length + 1):
+        for i in range(len(words) - length + 1):
+            phrases.append(" ".join(words[i:i + length]))
+
+    return phrases
+
+
+def calculate_umls_jargon_density(text: str) -> float:
+    """Estimate medical-term density using UMLS."""
+
+    words = re.findall(r"\b[a-zA-Z]+\b", text.lower())
+
+    if not words:
+        return 0.0
+
+    medical_word_count = 0
+    i = 0
+
+    while i < len(words):
+        matched = False
+
+        # Try 3-word phrases first
+        if i + 3 <= len(words):
+            phrase = " ".join(words[i:i + 3])
+
+            if umls_lookup(phrase):
+                medical_word_count += 3
+                i += 3
+                matched = True
+
+        # If no 3-word match, try 2-word phrase
+        if not matched and i + 2 <= len(words):
+            phrase = " ".join(words[i:i + 2])
+
+            if umls_lookup(phrase):
+                medical_word_count += 2
+                i += 2
+                matched = True
+
+        # If no phrase match, try 1 word
+        if not matched:
+            if umls_lookup(words[i]):
+                medical_word_count += 1
+
+            i += 1
+
+    return medical_word_count / len(words)
 
 def readability_scores(text: str) -> dict:
-    """Core readability metrics. Jargon density ~ fraction of 'difficult' (non-familiar) words.
+    """Calculate readability and medical-term metrics."""
 
-    difficult_words() uses the Dale-Chall familiar-word list as a proxy for jargon; swap in a
-    UMLS/medical-term lookup later for a clinically grounded jargon score.
-    """
     words = max(textstat.lexicon_count(text, removepunct=True), 1)
+
     return {
         "flesch_kincaid_grade": textstat.flesch_kincaid_grade(text),
         "smog_index": textstat.smog_index(text),
-        "jargon_density": textstat.difficult_words(text) / words,
+        "medical_term_density": calculate_umls_jargon_density(text),
         "word_count": words,
     }
 
@@ -80,3 +171,4 @@ if __name__ == "__main__":
         print(f"Loaded MedAESQA: {len(data)} questions.")
     except FileNotFoundError as e:
         print(e)
+
