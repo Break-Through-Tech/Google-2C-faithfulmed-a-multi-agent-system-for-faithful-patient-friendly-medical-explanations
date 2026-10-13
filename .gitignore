@@ -16,6 +16,7 @@ env/
 # Data — download locally per data/README.md
 # (keep the folder, its docs, and the small MedAESQA methods reference)
 data/*
+!data/medaesqa_v1.json
 !data/.gitkeep
 !data/README.md
 !data/MedAESQA_methods_M1-M30.xlsx
@@ -25,3 +26,7 @@ data/*
 *.pt
 *.faiss
 chroma/
+
+.env
+.env.example
+UMLS_API_KEY=your_umls_api_key_here
