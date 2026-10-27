@@ -1,0 +1,257 @@
+{
+  "lock": {
+    "code_hash": "46268292426c6627",
+    "prompt_version": "extractor-v2",
+    "matcher_version": "lexical-v2",
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "seed": 42,
+    "test_question_ids": [
+      "116",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "134",
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155"
+    ]
+  },
+  "result": {
+    "source_id": "137",
+    "atoms": [
+      {
+        "claim": "A low glycemic index diet is similar to ketogenic.",
+        "type": "treatment",
+        "predicate": "is",
+        "subject": "a low glycemic index diet",
+        "object": "similar to ketogenic",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "a low glycemic index diet, which is similar to ketogenic",
+        "importance": "supporting",
+        "id": "A1"
+      },
+      {
+        "claim": "Metabolic syndrome may lead to type 2 diabetes.",
+        "type": "condition",
+        "predicate": "lead",
+        "subject": "metabolic syndrome",
+        "object": "type 2 diabetes",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "metabolic syndrome (which may lead to type 2 diabetes)",
+        "importance": "critical",
+        "id": "A2"
+      },
+      {
+        "claim": "A low glycemic index diet and metformin lowered Hemoglobin A1c in adults with metabolic syndrome.",
+        "type": "treatment",
+        "predicate": "lower",
+        "subject": "a low glycemic index diet",
+        "object": "Hemoglobin A1c",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "both were equally effective in significantly lowering Hemoglobin A1c (HbA1c)",
+        "importance": "critical",
+        "id": "A3"
+      },
+      {
+        "claim": "Metformin and a low glycemic index diet lowered Hemoglobin A1c in adults with metabolic syndrome.",
+        "type": "medication",
+        "predicate": "lower",
+        "subject": "metformin",
+        "object": "Hemoglobin A1c",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "both were equally effective in significantly lowering Hemoglobin A1c (HbA1c)",
+        "importance": "critical",
+        "id": "A4"
+      },
+      {
+        "claim": "Ketogenic diet alone improved HbA1c for diabetic adults.",
+        "type": "treatment",
+        "predicate": "improve",
+        "subject": "ketogenic diet alone",
+        "object": "HbA1c",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "ketogenic diet alone or in combination with metformin improved HbA1c",
+        "importance": "critical",
+        "id": "A5"
+      },
+      {
+        "claim": "Ketogenic diet in combination with metformin improved HbA1c for diabetic adults.",
+        "type": "treatment",
+        "predicate": "improve",
+        "subject": "ketogenic diet in combination with metformin",
+        "object": "HbA1c",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "ketogenic diet alone or in combination with metformin improved HbA1c",
+        "importance": "critical",
+        "id": "A6"
+      },
+      {
+        "claim": "Some diabetic patients were able to stop taking metformin.",
+        "type": "medication",
+        "predicate": "stop",
+        "subject": "some of these patients",
+        "object": "metformin",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Some of these patients were able to stop taking metformin",
+        "importance": "critical",
+        "id": "A7"
+      },
+      {
+        "claim": "Studies recommend combining diet to keep HbA1c low.",
+        "type": "instruction",
+        "predicate": "combine",
+        "subject": "studies",
+        "object": "diet",
+        "hedge": "recommended",
+        "hedge_text": "recommend",
+        "evidence": "To keep HbA1c low, studies recommend combining diet and medications",
+        "importance": "critical",
+        "id": "A8"
+      },
+      {
+        "claim": "Studies recommend combining medications to keep HbA1c low.",
+        "type": "instruction",
+        "predicate": "combine",
+        "subject": "studies",
+        "object": "medications",
+        "hedge": "recommended",
+        "hedge_text": "recommend",
+        "evidence": "To keep HbA1c low, studies recommend combining diet and medications",
+        "importance": "critical",
+        "id": "A9"
+      },
+      {
+        "claim": "The long-term effects of ketogenic diet are not known.",
+        "type": "treatment",
+        "predicate": "are",
+        "subject": "the long-term effects of ketogenic diet",
+        "object": "not known",
+        "hedge": "negated",
+        "hedge_text": "not",
+        "evidence": "the long-term effects of ketogenic diet are not known",
+        "importance": "critical",
+        "id": "A10"
+      },
+      {
+        "claim": "Doctors suggest the patient on the ketogenic diet should be monitored.",
+        "type": "instruction",
+        "predicate": "monitor",
+        "subject": "doctors",
+        "object": "the patient on the diet",
+        "hedge": "recommended",
+        "hedge_text": "should",
+        "evidence": "suggest the patient on the diet should be monitored",
+        "importance": "critical",
+        "id": "A11"
+      }
+    ],
+    "evidence_failures": [],
+    "hedge_flags": [],
+    "provenance": {
+      "model": "gemini-3.5-flash-lite",
+      "model_version": "gemini-3.5-flash-lite",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "extractor-v2",
+      "timestamp": "2026-10-27T20:26:56.902998+00:00"
+    }
+  },
+  "scores": {
+    "nugget_recall": 0.8888888888888888,
+    "atom_precision_lower_bound": 0.7272727272727273,
+    "hedge_accuracy": 0.75,
+    "evidence_fail_rate": 0.0,
+    "hedge_flag_rate": 0.0,
+    "n_atoms": 11,
+    "n_nuggets": 9,
+    "n_matched": 8,
+    "matcher_version": "lexical-v2"
+  },
+  "matches": [
+    {
+      "atom": "A11",
+      "nugget": "[should] Is (patient on the ketogenic diet [C0259972], monitored)",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A6",
+      "nugget": "Effect (ketogenic diet [C0259972] in combination with metformin [C0025598], improved HbA1c [C1261236])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A5",
+      "nugget": "Effect (ketogenic diet [C0259972], improved HbA1c [C1261236])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A2",
+      "nugget": "[may] Cause (metabolic syndrome [C0524620], type 2 diabetes [C0011860])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A1",
+      "nugget": "Similar (low glycemic index diet [C0475638], ketogenic diet [C0259972])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A9",
+      "nugget": "Maintain (HbA1c low [C1318607], combining diet [C0012159] and medications [C0013227])",
+      "similarity": 0.833
+    },
+    {
+      "atom": "A7",
+      "nugget": "[may] Stop (diabetic adults [C0421260], taking metformin [C0025598])",
+      "similarity": 0.75
+    },
+    {
+      "atom": "A4",
+      "nugget": "Effect (low glycemic index diet [C0475638], lowering hemoglobin A1c [C1261236]) EQUAL Effect (metformin [C0025598], lowering hemoglobin A1c [C1261236])",
+      "similarity": 0.722
+    }
+  ],
+  "unmatched_nuggets": [
+    "Is (long-term effects of ketogenic diet [C0259972], unknown)"
+  ],
+  "unmatched_atoms": [
+    "A3",
+    "A8",
+    "A10"
+  ]
+}

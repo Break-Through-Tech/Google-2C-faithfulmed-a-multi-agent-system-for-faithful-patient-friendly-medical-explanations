@@ -1,0 +1,399 @@
+{
+  "lock": {
+    "code_hash": "46268292426c6627",
+    "prompt_version": "extractor-v2",
+    "matcher_version": "lexical-v2",
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "seed": 42,
+    "test_question_ids": [
+      "116",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "134",
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155"
+    ]
+  },
+  "result": {
+    "source_id": "132",
+    "atoms": [
+      {
+        "claim": "Many conditions are linked to low Vitamin D.",
+        "type": "condition",
+        "predicate": "link",
+        "subject": "conditions",
+        "object": "low Vitamin D",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Many conditions are linked to low Vitamin D",
+        "importance": "critical",
+        "id": "A1"
+      },
+      {
+        "claim": "Many conditions are linked to Vitamin D deficiency.",
+        "type": "condition",
+        "predicate": "link",
+        "subject": "conditions",
+        "object": "Vitamin D deficiency",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Many conditions are linked to low Vitamin D or Vitamin D deficiency",
+        "importance": "critical",
+        "id": "A2"
+      },
+      {
+        "claim": "Some problems are known to be caused by Vitamin D deficiency.",
+        "type": "condition",
+        "predicate": "cause",
+        "subject": "Vitamin D deficiency",
+        "object": "some problems",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "some problems are known to be caused by Vitamin D deficiency",
+        "importance": "critical",
+        "id": "A3"
+      },
+      {
+        "claim": "Vitamin D deficiency can lead to bone softening in children.",
+        "type": "condition",
+        "predicate": "lead",
+        "subject": "Vitamin D deficiency",
+        "object": "bone softening in children",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "Vitamin D deficiency can lead to bone softening and rickets in children",
+        "importance": "critical",
+        "id": "A4"
+      },
+      {
+        "claim": "Vitamin D deficiency can lead to rickets in children.",
+        "type": "condition",
+        "predicate": "lead",
+        "subject": "Vitamin D deficiency",
+        "object": "rickets in children",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "Vitamin D deficiency can lead to bone softening and rickets in children",
+        "importance": "critical",
+        "id": "A5"
+      },
+      {
+        "claim": "Vitamin D deficiency can lead to bone softening in adults.",
+        "type": "condition",
+        "predicate": "lead",
+        "subject": "Vitamin D deficiency",
+        "object": "bone softening in adults",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "Vitamin D deficiency can lead to bone softening, brittleness and fractures in adults",
+        "importance": "critical",
+        "id": "A6"
+      },
+      {
+        "claim": "Vitamin D deficiency can lead to brittleness in adults.",
+        "type": "condition",
+        "predicate": "lead",
+        "subject": "Vitamin D deficiency",
+        "object": "brittleness in adults",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "Vitamin D deficiency can lead to bone softening, brittleness and fractures in adults",
+        "importance": "critical",
+        "id": "A7"
+      },
+      {
+        "claim": "Vitamin D deficiency can lead to fractures in adults.",
+        "type": "condition",
+        "predicate": "lead",
+        "subject": "Vitamin D deficiency",
+        "object": "fractures in adults",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "Vitamin D deficiency can lead to bone softening, brittleness and fractures in adults",
+        "importance": "critical",
+        "id": "A8"
+      },
+      {
+        "claim": "Vitamin D deficiency is linked to increased risk of common cancers.",
+        "type": "risk_factor",
+        "predicate": "link",
+        "subject": "Vitamin D deficiency",
+        "object": "increased risk of common cancers",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Vitamin D deficiency is linked to increased risk of common cancers",
+        "importance": "critical",
+        "id": "A9"
+      },
+      {
+        "claim": "Vitamin D deficiency is linked to increased risk of autoimmune diseases.",
+        "type": "risk_factor",
+        "predicate": "link",
+        "subject": "Vitamin D deficiency",
+        "object": "increased risk of autoimmune diseases",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Vitamin D deficiency is linked to increased risk of ... autoimmune diseases",
+        "importance": "critical",
+        "id": "A10"
+      },
+      {
+        "claim": "Vitamin D deficiency is linked to increased risk of hypertension.",
+        "type": "risk_factor",
+        "predicate": "link",
+        "subject": "Vitamin D deficiency",
+        "object": "increased risk of hypertension",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Vitamin D deficiency is linked to increased risk of ... hypertension (high blood pressure)",
+        "importance": "critical",
+        "id": "A11"
+      },
+      {
+        "claim": "Vitamin D deficiency is linked to increased risk of high blood pressure.",
+        "type": "risk_factor",
+        "predicate": "link",
+        "subject": "Vitamin D deficiency",
+        "object": "increased risk of high blood pressure",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Vitamin D deficiency is linked to increased risk of ... high blood pressure",
+        "importance": "critical",
+        "id": "A12"
+      },
+      {
+        "claim": "Vitamin D deficiency is linked to increased risk of infections.",
+        "type": "risk_factor",
+        "predicate": "link",
+        "subject": "Vitamin D deficiency",
+        "object": "increased risk of infections",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Vitamin D deficiency is linked to increased risk of ... infections",
+        "importance": "critical",
+        "id": "A13"
+      },
+      {
+        "claim": "Vitamin D deficiency is linked to increased risk of depression.",
+        "type": "risk_factor",
+        "predicate": "link",
+        "subject": "Vitamin D deficiency",
+        "object": "increased risk of depression",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Vitamin D deficiency is linked to increased risk of ... depression",
+        "importance": "critical",
+        "id": "A14"
+      },
+      {
+        "claim": "Vitamin D deficiency is linked to increased risk of mental problems.",
+        "type": "risk_factor",
+        "predicate": "link",
+        "subject": "Vitamin D deficiency",
+        "object": "increased risk of mental problems",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Vitamin D deficiency is linked to increased risk of ... mental problems",
+        "importance": "critical",
+        "id": "A15"
+      },
+      {
+        "claim": "Vitamin D deficiency is linked to increased risk of type 2 diabetes.",
+        "type": "risk_factor",
+        "predicate": "link",
+        "subject": "Vitamin D deficiency",
+        "object": "increased risk of type 2 diabetes",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Vitamin D deficiency is linked to increased risk of ... type 2 diabetes",
+        "importance": "critical",
+        "id": "A16"
+      },
+      {
+        "claim": "Vitamin D deficiency is linked to increased risk of heart disease.",
+        "type": "risk_factor",
+        "predicate": "link",
+        "subject": "Vitamin D deficiency",
+        "object": "increased risk of heart disease",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Vitamin D deficiency is linked to increased risk of ... heart disease",
+        "importance": "critical",
+        "id": "A17"
+      },
+      {
+        "claim": "Vitamin D deficiency is linked to increased risk of metabolic syndrome.",
+        "type": "risk_factor",
+        "predicate": "link",
+        "subject": "Vitamin D deficiency",
+        "object": "increased risk of metabolic syndrome",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Vitamin D deficiency is linked to increased risk of ... metabolic syndrome",
+        "importance": "critical",
+        "id": "A18"
+      },
+      {
+        "claim": "Vitamin D deficiency is linked to increased risk of nervous system problems.",
+        "type": "risk_factor",
+        "predicate": "link",
+        "subject": "Vitamin D deficiency",
+        "object": "increased risk of nervous system problems",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Vitamin D deficiency is linked to increased risk of ... nervous system problems",
+        "importance": "critical",
+        "id": "A19"
+      }
+    ],
+    "evidence_failures": [
+      "A6",
+      "A7",
+      "A8"
+    ],
+    "hedge_flags": [],
+    "provenance": {
+      "model": "gemini-3.5-flash-lite",
+      "model_version": "gemini-3.5-flash-lite",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "extractor-v2",
+      "timestamp": "2026-10-27T20:26:18.700826+00:00"
+    }
+  },
+  "scores": {
+    "nugget_recall": 1.0,
+    "atom_precision_lower_bound": 0.8947368421052632,
+    "hedge_accuracy": 1.0,
+    "evidence_fail_rate": 0.15789473684210525,
+    "hedge_flag_rate": 0.0,
+    "n_atoms": 19,
+    "n_nuggets": 17,
+    "n_matched": 17,
+    "matcher_version": "lexical-v2"
+  },
+  "matches": [
+    {
+      "atom": "A19",
+      "nugget": "increased risk (vitamin D deficiency [C0042870], nervous system problems [C0221571])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A18",
+      "nugget": "increased risk (vitamin D deficiency [C0042870], metabolic syndrome [C0524620])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A17",
+      "nugget": "increased risk (vitamin D deficiency [C0042870], heart disease [C0018799])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A16",
+      "nugget": "increased risk (vitamin D deficiency [C0042870], type 2 diabetes [C0011860])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A15",
+      "nugget": "increased risk (vitamin D deficiency [C0042870], mental problems [C0848067])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A14",
+      "nugget": "increased risk (vitamin D deficiency [C0042870], depression [C0011570])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A13",
+      "nugget": "increased risk (vitamin D deficiency [C0042870], infections [C0009450])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A10",
+      "nugget": "increased risk (vitamin D deficiency [C0042870], autoimmune diseases [C0004364])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A9",
+      "nugget": "increased risk (vitamin D deficiency [C0042870], common cancers [C0006826])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A6",
+      "nugget": "[may] Cause (vitamin D deficiency [C0042870], bone softening [C0029442] in adults)",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A5",
+      "nugget": "[may] Cause (vitamin D deficiency [C0042870], rickets in children [C3273089])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A4",
+      "nugget": "[may] Cause (vitamin D deficiency [C0042870], bone softening [C0029442])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A3",
+      "nugget": "Cause (vitamin D deficiency [C0042870], some problems)",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A2",
+      "nugget": "Associated (many conditions, vitamin D deficiency [C0042870])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A1",
+      "nugget": "Associated (many conditions, low vitamin D [C4285871])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A12",
+      "nugget": "increased risk (vitamin D deficiency [C0042870], hypertension (high blood pressure) [C0020538])",
+      "similarity": 0.875
+    },
+    {
+      "atom": "A8",
+      "nugget": "[may] Cause (vitamin D deficiency [C0042870], brittleness [C0238788] and fractures [C0016658] in adults)",
+      "similarity": 0.833
+    }
+  ],
+  "unmatched_nuggets": [],
+  "unmatched_atoms": [
+    "A7",
+    "A11"
+  ]
+}

@@ -1,0 +1,365 @@
+{
+  "lock": {
+    "code_hash": "46268292426c6627",
+    "prompt_version": "extractor-v2",
+    "matcher_version": "lexical-v2",
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "seed": 42,
+    "test_question_ids": [
+      "116",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "134",
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155"
+    ]
+  },
+  "result": {
+    "source_id": "131",
+    "atoms": [
+      {
+        "claim": "Formoterol improves breathing in patients with asthma.",
+        "type": "medication",
+        "predicate": "improve",
+        "subject": "formoterol",
+        "object": "breathing in patients with asthma",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Formoterol improves breathing in patients with asthma",
+        "importance": "critical",
+        "id": "A1"
+      },
+      {
+        "claim": "Formoterol improves breathing in patients with other lung problems.",
+        "type": "medication",
+        "predicate": "improve",
+        "subject": "formoterol",
+        "object": "breathing in patients with other lung problems",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Formoterol improves breathing in patients with asthma and other lung problems",
+        "importance": "critical",
+        "id": "A2"
+      },
+      {
+        "claim": "Formoterol is safe for most patients.",
+        "type": "medication",
+        "predicate": "is",
+        "subject": "formoterol",
+        "object": "safe for most patients",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "It is safe for most patients",
+        "importance": "critical",
+        "id": "A3"
+      },
+      {
+        "claim": "Tremors are frequent side effects of formoterol.",
+        "type": "symptom",
+        "predicate": "are",
+        "subject": "tremors",
+        "object": "frequent side effects of formoterol",
+        "hedge": "frequency",
+        "hedge_text": "frequent",
+        "evidence": "The most frequent side effects are tremors",
+        "importance": "supporting",
+        "id": "A4"
+      },
+      {
+        "claim": "Palpitations are frequent side effects of formoterol.",
+        "type": "symptom",
+        "predicate": "are",
+        "subject": "palpitations",
+        "object": "frequent side effects of formoterol",
+        "hedge": "frequency",
+        "hedge_text": "frequent",
+        "evidence": "The most frequent side effects are tremors (shaking, twitching) and palpitations (throbbing)",
+        "importance": "supporting",
+        "id": "A5"
+      },
+      {
+        "claim": "Tremors happen more frequently when formoterol is taken orally.",
+        "type": "symptom",
+        "predicate": "happen",
+        "subject": "tremors",
+        "object": "more frequently when formoterol is taken orally",
+        "hedge": "frequency",
+        "hedge_text": "more frequently",
+        "evidence": "which happen more frequently when formoterol is taken orally",
+        "importance": "supporting",
+        "id": "A6"
+      },
+      {
+        "claim": "Palpitations happen more frequently when formoterol is taken orally.",
+        "type": "symptom",
+        "predicate": "happen",
+        "subject": "palpitations",
+        "object": "more frequently when formoterol is taken orally",
+        "hedge": "frequency",
+        "hedge_text": "more frequently",
+        "evidence": "which happen more frequently when formoterol is taken orally",
+        "importance": "supporting",
+        "id": "A7"
+      },
+      {
+        "claim": "Formoterol may cause supraventricular tachycardia.",
+        "type": "condition",
+        "predicate": "cause",
+        "subject": "formoterol",
+        "object": "supraventricular tachycardia",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "Formoterol may cause supraventricular tachycardia",
+        "importance": "critical",
+        "id": "A8"
+      },
+      {
+        "claim": "Worsening of asthma was a frequent side effect in children with asthma.",
+        "type": "symptom",
+        "predicate": "was",
+        "subject": "worsening of asthma",
+        "object": "frequent side effect in children with asthma",
+        "hedge": "frequency",
+        "hedge_text": "frequent",
+        "evidence": "In children with asthma, the most frequent side effects were worsening of asthma",
+        "importance": "supporting",
+        "id": "A9"
+      },
+      {
+        "claim": "Lung infection was a frequent side effect in children with asthma.",
+        "type": "symptom",
+        "predicate": "was",
+        "subject": "lung infection",
+        "object": "frequent side effect in children with asthma",
+        "hedge": "frequency",
+        "hedge_text": "frequent",
+        "evidence": "In children with asthma, the most frequent side effects were worsening of asthma, lung infection",
+        "importance": "supporting",
+        "id": "A10"
+      },
+      {
+        "claim": "Cough was a frequent side effect in children with asthma.",
+        "type": "symptom",
+        "predicate": "was",
+        "subject": "cough",
+        "object": "frequent side effect in children with asthma",
+        "hedge": "frequency",
+        "hedge_text": "frequent",
+        "evidence": "In children with asthma, the most frequent side effects were worsening of asthma, lung infection, cough",
+        "importance": "supporting",
+        "id": "A11"
+      },
+      {
+        "claim": "Fever was a frequent side effect in children with asthma.",
+        "type": "symptom",
+        "predicate": "was",
+        "subject": "fever",
+        "object": "frequent side effect in children with asthma",
+        "hedge": "frequency",
+        "hedge_text": "frequent",
+        "evidence": "In children with asthma, the most frequent side effects were worsening of asthma, lung infection, cough, fever",
+        "importance": "supporting",
+        "id": "A12"
+      },
+      {
+        "claim": "Headache was a frequent side effect in children with asthma.",
+        "type": "symptom",
+        "predicate": "was",
+        "subject": "headache",
+        "object": "frequent side effect in children with asthma",
+        "hedge": "frequency",
+        "hedge_text": "frequent",
+        "evidence": "In children with asthma, the most frequent side effects were worsening of asthma, lung infection, cough, fever and headache",
+        "importance": "supporting",
+        "id": "A13"
+      },
+      {
+        "claim": "Tremors included side effects in cancer patients.",
+        "type": "symptom",
+        "predicate": "included",
+        "subject": "side effects in cancer patients",
+        "object": "tremors",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "In cancer patients, the few side effects included tremors",
+        "importance": "supporting",
+        "id": "A14"
+      },
+      {
+        "claim": "Swelling included side effects in cancer patients.",
+        "type": "symptom",
+        "predicate": "included",
+        "subject": "side effects in cancer patients",
+        "object": "swelling",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "In cancer patients, the few side effects included tremors, swelling",
+        "importance": "supporting",
+        "id": "A15"
+      },
+      {
+        "claim": "Increased heart rate included side effects in cancer patients.",
+        "type": "symptom",
+        "predicate": "included",
+        "subject": "side effects in cancer patients",
+        "object": "increased heart rate",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "In cancer patients, the few side effects included tremors, swelling, increased heart rate",
+        "importance": "supporting",
+        "id": "A16"
+      },
+      {
+        "claim": "Indigestion included side effects in cancer patients.",
+        "type": "symptom",
+        "predicate": "included",
+        "subject": "side effects in cancer patients",
+        "object": "indigestion",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "In cancer patients, the few side effects included tremors, swelling, increased heart rate, and indigestion",
+        "importance": "supporting",
+        "id": "A17"
+      }
+    ],
+    "evidence_failures": [],
+    "hedge_flags": [],
+    "provenance": {
+      "model": "gemini-3.5-flash-lite",
+      "model_version": "gemini-3.5-flash-lite",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "extractor-v2",
+      "timestamp": "2026-10-27T20:26:10.163617+00:00"
+    }
+  },
+  "scores": {
+    "nugget_recall": 1.0,
+    "atom_precision_lower_bound": 0.9411764705882353,
+    "hedge_accuracy": 0.875,
+    "evidence_fail_rate": 0.0,
+    "hedge_flag_rate": 0.0,
+    "n_atoms": 17,
+    "n_nuggets": 16,
+    "n_matched": 16,
+    "matcher_version": "lexical-v2"
+  },
+  "matches": [
+    {
+      "atom": "A17",
+      "nugget": "Adverse effect (indigestion [C0013395], in cancer patients [C1516213])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A16",
+      "nugget": "Adverse effect (increased heart rate [C0039231], in cancer patients [C1516213])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A15",
+      "nugget": "Adverse effect (swelling [C0038999], in cancer patients [C1516213])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A14",
+      "nugget": "Adverse effect (tremors [C0040822], in cancer patients [C1516213])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A13",
+      "nugget": "[frequently] Adverse effect (headache [C0018681], in children [C0008059] with asthma [C3816164])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A12",
+      "nugget": "[frequently] Adverse effect (fever [C0015967], in children [C0008059] with asthma [C3816164])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A11",
+      "nugget": "[frequently] Adverse effect (cough [C0010200], in children [C0008059] with asthma [C3816164])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A10",
+      "nugget": "[frequently] Adverse effect (lung infection [C0876973], in children [C0008059] with asthma [C3816164])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A9",
+      "nugget": "[frequently] Adverse effect (worsening of asthma [C0349790], in children [C0008059] with asthma [C3816164])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A7",
+      "nugget": "Frequency increased (palpitations [C0030252], formoterol is taken orally [C2827690])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A6",
+      "nugget": "Frequency increased (Tremors [C0040822], formoterol is taken orally [C2827690])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A3",
+      "nugget": "Safe (formoterol [C0060657], for most patients)",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A2",
+      "nugget": "Improve (formoterol [C0060657], breathing [C0035203] in patients with asthma [C3816164] and other lung problems [C0740941])",
+      "similarity": 0.917
+    },
+    {
+      "atom": "A8",
+      "nugget": "[may] Cause (formoterol [C0060657], supraventricular tachycardia (SVT) [C0039240])",
+      "similarity": 0.833
+    },
+    {
+      "atom": "A5",
+      "nugget": "[frequently] Is (palpitations [C0030252], adverse effect [C0879626])",
+      "similarity": 0.75
+    },
+    {
+      "atom": "A4",
+      "nugget": "[frequently] Is (tremors [C0040822], adverse effect [C0879626])",
+      "similarity": 0.75
+    }
+  ],
+  "unmatched_nuggets": [],
+  "unmatched_atoms": [
+    "A1"
+  ]
+}

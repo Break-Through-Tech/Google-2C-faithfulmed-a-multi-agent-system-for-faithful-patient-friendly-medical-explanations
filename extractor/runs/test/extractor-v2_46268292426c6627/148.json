@@ -1,0 +1,246 @@
+{
+  "lock": {
+    "code_hash": "46268292426c6627",
+    "prompt_version": "extractor-v2",
+    "matcher_version": "lexical-v2",
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "seed": 42,
+    "test_question_ids": [
+      "116",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "134",
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155"
+    ]
+  },
+  "result": {
+    "source_id": "148",
+    "atoms": [
+      {
+        "claim": "Easy bruising may have simple causes.",
+        "type": "symptom",
+        "predicate": "have",
+        "subject": "easy bruising",
+        "object": "simple causes",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "Easy bruising may have simple causes",
+        "importance": "critical",
+        "id": "A1"
+      },
+      {
+        "claim": "Bruising may be caused by problems with blood clotting.",
+        "type": "condition",
+        "predicate": "cause",
+        "subject": "problems with blood clotting",
+        "object": "bruising",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "Bruising may be caused by problems with blood clotting",
+        "importance": "critical",
+        "id": "A2"
+      },
+      {
+        "claim": "Bruising may be caused by liver problems.",
+        "type": "condition",
+        "predicate": "cause",
+        "subject": "liver problems",
+        "object": "bruising",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "Bruising may be caused by liver problems",
+        "importance": "critical",
+        "id": "A3"
+      },
+      {
+        "claim": "Bruising may be caused by inherited bleeding disorders.",
+        "type": "condition",
+        "predicate": "cause",
+        "subject": "inherited bleeding disorders",
+        "object": "bruising",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "Bruising may be caused by inherited bleeding disorders",
+        "importance": "critical",
+        "id": "A4"
+      },
+      {
+        "claim": "Inherited bleeding disorders include von Willebrand's disease.",
+        "type": "condition",
+        "predicate": "include",
+        "subject": "inherited bleeding disorders",
+        "object": "von Willebrand's disease",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "inherited bleeding disorders, such as von Willebrand's disease",
+        "importance": "supporting",
+        "id": "A5"
+      },
+      {
+        "claim": "Bruising may be caused by deep tissue injury.",
+        "type": "condition",
+        "predicate": "cause",
+        "subject": "deep tissue injury",
+        "object": "bruising",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "Bruising may be caused by deep tissue injury",
+        "importance": "critical",
+        "id": "A6"
+      },
+      {
+        "claim": "Bruising may be caused by collagen disorders.",
+        "type": "condition",
+        "predicate": "cause",
+        "subject": "collagen disorders",
+        "object": "bruising",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "Bruising may be caused by collagen disorders",
+        "importance": "critical",
+        "id": "A7"
+      },
+      {
+        "claim": "Collagen disorders include the Ehlers-Danlos syndrome.",
+        "type": "condition",
+        "predicate": "include",
+        "subject": "collagen disorders",
+        "object": "Ehlers-Danlos syndrome",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "collagen disorders, such as the Ehlers-Danlos syndrome",
+        "importance": "supporting",
+        "id": "A8"
+      },
+      {
+        "claim": "Skin becomes prone to bruising as people are getting older.",
+        "type": "symptom",
+        "predicate": "become",
+        "subject": "skin",
+        "object": "prone to bruising as people are getting older",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Skin becomes prone to bruising as people are getting older",
+        "importance": "supporting",
+        "id": "A9"
+      },
+      {
+        "claim": "Young women with psychiatric problems may have painful bruising syndrome.",
+        "type": "condition",
+        "predicate": "have",
+        "subject": "young women with psychiatric problems",
+        "object": "painful bruising syndrome",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "Young women with psychiatric problems may have painful bruising syndrome",
+        "importance": "critical",
+        "id": "A10"
+      }
+    ],
+    "evidence_failures": [
+      "A3",
+      "A4",
+      "A6",
+      "A7"
+    ],
+    "hedge_flags": [],
+    "provenance": {
+      "model": "gemini-3.5-flash-lite",
+      "model_version": "gemini-3.5-flash-lite",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "extractor-v2",
+      "timestamp": "2026-10-27T20:28:50.946420+00:00"
+    }
+  },
+  "scores": {
+    "nugget_recall": 0.7777777777777778,
+    "atom_precision_lower_bound": 0.7,
+    "hedge_accuracy": 0.8571428571428571,
+    "evidence_fail_rate": 0.4,
+    "hedge_flag_rate": 0.0,
+    "n_atoms": 10,
+    "n_nuggets": 9,
+    "n_matched": 7,
+    "matcher_version": "lexical-v2"
+  },
+  "matches": [
+    {
+      "atom": "A10",
+      "nugget": "[may] Occur (painful bruising syndrome [C0301928], young women with psychiatric problems [C1306597])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A9",
+      "nugget": "[may] Occur (bruising [C0423798], in older people [C3826770])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A6",
+      "nugget": "[may] Cause (deep tissue injury [C5780245], bruising [C0423798])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A4",
+      "nugget": "[may] Cause (inherited bleeding disorders [C0852077], bruising [C0423798])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A3",
+      "nugget": "[may] Cause (liver problems [C0577060], bruising [C0423798])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A2",
+      "nugget": "[may] Cause (problems with blood clotting [C0005779], bruising [C0423798])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A1",
+      "nugget": "[may] Have (easy bruising [C0423798], simple causes [C0205183])",
+      "similarity": 1.0
+    }
+  ],
+  "unmatched_nuggets": [
+    "[may] Cause (von Willebrand's disease [C0042974], bruising [C0423798])",
+    "[may] Cause (Ehlers-Danlos syndrome [C0013720], bruising [C0423798])"
+  ],
+  "unmatched_atoms": [
+    "A5",
+    "A7",
+    "A8"
+  ]
+}

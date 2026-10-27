@@ -1,0 +1,264 @@
+{
+  "lock": {
+    "code_hash": "46268292426c6627",
+    "prompt_version": "extractor-v2",
+    "matcher_version": "lexical-v2",
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "seed": 42,
+    "test_question_ids": [
+      "116",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "134",
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155"
+    ]
+  },
+  "result": {
+    "source_id": "136",
+    "atoms": [
+      {
+        "claim": "Elbow pain may be caused by inflammation.",
+        "type": "condition",
+        "predicate": "cause",
+        "subject": "inflammation",
+        "object": "elbow pain",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "Elbow pain may be caused by inflammation and injuries",
+        "importance": "critical",
+        "id": "A1"
+      },
+      {
+        "claim": "Elbow pain may be caused by injuries.",
+        "type": "condition",
+        "predicate": "cause",
+        "subject": "injuries",
+        "object": "elbow pain",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "Elbow pain may be caused by inflammation and injuries",
+        "importance": "critical",
+        "id": "A2"
+      },
+      {
+        "claim": "Standard treatments include rest.",
+        "type": "treatment",
+        "predicate": "include",
+        "subject": "standard treatments",
+        "object": "rest",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Standard treatments include rest, painkillers, non-steroidal anti-inflammatory medications (NSAIDs), physical therapy, and steroids",
+        "importance": "critical",
+        "id": "A3"
+      },
+      {
+        "claim": "Standard treatments include painkillers.",
+        "type": "medication",
+        "predicate": "include",
+        "subject": "standard treatments",
+        "object": "painkillers",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Standard treatments include rest, painkillers, non-steroidal anti-inflammatory medications (NSAIDs), physical therapy, and steroids",
+        "importance": "critical",
+        "id": "A4"
+      },
+      {
+        "claim": "Standard treatments include non-steroidal anti-inflammatory medications (NSAIDs).",
+        "type": "medication",
+        "predicate": "include",
+        "subject": "standard treatments",
+        "object": "non-steroidal anti-inflammatory medications (NSAIDs)",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Standard treatments include rest, painkillers, non-steroidal anti-inflammatory medications (NSAIDs), physical therapy, and steroids",
+        "importance": "critical",
+        "id": "A5"
+      },
+      {
+        "claim": "Standard treatments include physical therapy.",
+        "type": "treatment",
+        "predicate": "include",
+        "subject": "standard treatments",
+        "object": "physical therapy",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Standard treatments include rest, painkillers, non-steroidal anti-inflammatory medications (NSAIDs), physical therapy, and steroids",
+        "importance": "critical",
+        "id": "A6"
+      },
+      {
+        "claim": "Standard treatments include steroids.",
+        "type": "medication",
+        "predicate": "include",
+        "subject": "standard treatments",
+        "object": "steroids",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Standard treatments include rest, painkillers, non-steroidal anti-inflammatory medications (NSAIDs), physical therapy, and steroids",
+        "importance": "critical",
+        "id": "A7"
+      },
+      {
+        "claim": "Your doctor may suggest surgery.",
+        "type": "procedure",
+        "predicate": "suggest",
+        "subject": "doctor",
+        "object": "surgery",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "your doctor may suggest surgery",
+        "importance": "critical",
+        "id": "A8"
+      },
+      {
+        "claim": "Acupuncture is an alternative treatment that shows promise.",
+        "type": "treatment",
+        "predicate": "is",
+        "subject": "acupuncture",
+        "object": "alternative treatment that shows promise",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Alternative treatments that show promise include acupuncture, High-Intensity Laser Therapy, botulinum toxin and bone marrow injections",
+        "importance": "supporting",
+        "id": "A9"
+      },
+      {
+        "claim": "High-Intensity Laser Therapy is an alternative treatment that shows promise.",
+        "type": "treatment",
+        "predicate": "is",
+        "subject": "High-Intensity Laser Therapy",
+        "object": "alternative treatment that shows promise",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Alternative treatments that show promise include acupuncture, High-Intensity Laser Therapy, botulinum toxin and bone marrow injections",
+        "importance": "supporting",
+        "id": "A10"
+      },
+      {
+        "claim": "Botulinum toxin is an alternative treatment that shows promise.",
+        "type": "medication",
+        "predicate": "is",
+        "subject": "botulinum toxin",
+        "object": "alternative treatment that shows promise",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Alternative treatments that show promise include acupuncture, High-Intensity Laser Therapy, botulinum toxin and bone marrow injections",
+        "importance": "supporting",
+        "id": "A11"
+      },
+      {
+        "claim": "Bone marrow injections are an alternative treatment that shows promise.",
+        "type": "treatment",
+        "predicate": "is",
+        "subject": "bone marrow injections",
+        "object": "alternative treatment that shows promise",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Alternative treatments that show promise include acupuncture, High-Intensity Laser Therapy, botulinum toxin and bone marrow injections",
+        "importance": "supporting",
+        "id": "A12"
+      }
+    ],
+    "evidence_failures": [],
+    "hedge_flags": [],
+    "provenance": {
+      "model": "gemini-3.5-flash-lite",
+      "model_version": "gemini-3.5-flash-lite",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "extractor-v2",
+      "timestamp": "2026-10-27T20:26:49.072249+00:00"
+    }
+  },
+  "scores": {
+    "nugget_recall": 0.4166666666666667,
+    "atom_precision_lower_bound": 0.4166666666666667,
+    "hedge_accuracy": 1.0,
+    "evidence_fail_rate": 0.0,
+    "hedge_flag_rate": 0.0,
+    "n_atoms": 12,
+    "n_nuggets": 12,
+    "n_matched": 5,
+    "matcher_version": "lexical-v2"
+  },
+  "matches": [
+    {
+      "atom": "A12",
+      "nugget": "Include (alternative treatments [C4716423], bone marrow injections [C0005961])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A11",
+      "nugget": "Include (alternative treatments [C4716423], botulinum toxin [C0700702])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A10",
+      "nugget": "Include (alternative treatments [C4716423], High-Intensity Laser Therapy [C1955835])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A9",
+      "nugget": "Include (alternative treatments [C4716423], acupuncture [C0394664])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A1",
+      "nugget": "[may] Cause (inflammation [C0021368], elbow pain [C0239266])",
+      "similarity": 1.0
+    }
+  ],
+  "unmatched_nuggets": [
+    "[may] Cause (injury [C3263723], elbow pain [C0239266])",
+    "Treat (painkillers [C0002771], elbow pain [C0239266])",
+    "Treat (rest [C0035253], elbow pain [C0239266])",
+    "Treat (non-steroidal anti-inflammatory medications (NSAIDs) [C0003211], elbow pain [C0239266])",
+    "Treat (physical therapy [C0949766], elbow pain [C0239266])",
+    "Treat (steroids [C0038317], elbow pain [C0239266])",
+    "IF NOT Treat (standard treatments [C0459914], pain [C0239266]) THEN [may] Suggested (surgery [C0543467], elbow pain [C0239266])"
+  ],
+  "unmatched_atoms": [
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8"
+  ]
+}

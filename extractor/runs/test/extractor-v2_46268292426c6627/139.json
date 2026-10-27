@@ -1,0 +1,249 @@
+{
+  "lock": {
+    "code_hash": "46268292426c6627",
+    "prompt_version": "extractor-v2",
+    "matcher_version": "lexical-v2",
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "seed": 42,
+    "test_question_ids": [
+      "116",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "134",
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155"
+    ]
+  },
+  "result": {
+    "source_id": "139",
+    "atoms": [
+      {
+        "claim": "Anorexia affects all body systems.",
+        "type": "condition",
+        "predicate": "affect",
+        "subject": "anorexia",
+        "object": "all body systems",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Anorexia affects all body systems",
+        "importance": "critical",
+        "id": "A1"
+      },
+      {
+        "claim": "Anorexia affects the heart.",
+        "type": "condition",
+        "predicate": "affect",
+        "subject": "anorexia",
+        "object": "the heart",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "particularly the heart",
+        "importance": "critical",
+        "id": "A2"
+      },
+      {
+        "claim": "Anorexia affects bones.",
+        "type": "condition",
+        "predicate": "affect",
+        "subject": "anorexia",
+        "object": "bones",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "bones",
+        "importance": "critical",
+        "id": "A3"
+      },
+      {
+        "claim": "Anorexia affects the digestive system.",
+        "type": "condition",
+        "predicate": "affect",
+        "subject": "anorexia",
+        "object": "the digestive system",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "digestive system",
+        "importance": "critical",
+        "id": "A4"
+      },
+      {
+        "claim": "Anorexia affects ability to have children.",
+        "type": "condition",
+        "predicate": "affect",
+        "subject": "anorexia",
+        "object": "ability to have children",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "ability to have children",
+        "importance": "critical",
+        "id": "A5"
+      },
+      {
+        "claim": "Anorexia may lead to death.",
+        "type": "condition",
+        "predicate": "lead",
+        "subject": "anorexia",
+        "object": "death",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "It may even lead to death",
+        "importance": "critical",
+        "id": "A6"
+      },
+      {
+        "claim": "People with anorexia often have anxiety.",
+        "type": "condition",
+        "predicate": "have",
+        "subject": "people with anorexia",
+        "object": "anxiety",
+        "hedge": "frequency",
+        "hedge_text": "often",
+        "evidence": "People with anorexia often have anxiety",
+        "importance": "critical",
+        "id": "A7"
+      },
+      {
+        "claim": "People with anorexia often have depression.",
+        "type": "condition",
+        "predicate": "have",
+        "subject": "people with anorexia",
+        "object": "depression",
+        "hedge": "frequency",
+        "hedge_text": "often",
+        "evidence": "People with anorexia often have... depression",
+        "importance": "critical",
+        "id": "A8"
+      },
+      {
+        "claim": "People with anorexia often have reduced sleep quality.",
+        "type": "condition",
+        "predicate": "have",
+        "subject": "people with anorexia",
+        "object": "reduced sleep quality",
+        "hedge": "frequency",
+        "hedge_text": "often",
+        "evidence": "People with anorexia often have... reduced sleep quality",
+        "importance": "critical",
+        "id": "A9"
+      },
+      {
+        "claim": "People with anorexia often have reduced quality of life.",
+        "type": "condition",
+        "predicate": "have",
+        "subject": "people with anorexia",
+        "object": "reduced quality of life",
+        "hedge": "frequency",
+        "hedge_text": "often",
+        "evidence": "People with anorexia often have... reduced quality of life",
+        "importance": "critical",
+        "id": "A10"
+      }
+    ],
+    "evidence_failures": [],
+    "hedge_flags": [],
+    "provenance": {
+      "model": "gemini-3.5-flash-lite",
+      "model_version": "gemini-3.5-flash-lite",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "extractor-v2",
+      "timestamp": "2026-10-27T20:27:11.583768+00:00"
+    }
+  },
+  "scores": {
+    "nugget_recall": 1.0,
+    "atom_precision_lower_bound": 1.0,
+    "hedge_accuracy": 0.8,
+    "evidence_fail_rate": 0.0,
+    "hedge_flag_rate": 0.0,
+    "n_atoms": 10,
+    "n_nuggets": 10,
+    "n_matched": 10,
+    "matcher_version": "lexical-v2"
+  },
+  "matches": [
+    {
+      "atom": "A10",
+      "nugget": "Associated (anorexia [C0003123], reduced quality of life [C4049260])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A9",
+      "nugget": "Associated (anorexia [C0003123], reduced sleep quality [C1262141])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A8",
+      "nugget": "[frequently] Associated (anorexia [C0003123], depression [C0011570])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A7",
+      "nugget": "[frequently] Associated (anorexia [C0003123], anxiety [C0003467])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A6",
+      "nugget": "[may] Cause (anorexia [C0003123], death [C1306577])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A5",
+      "nugget": "Affects (anorexia [C0003123], ability to have children [C0015895])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A4",
+      "nugget": "Affects (anorexia [C0003123], digestive system [C0012240])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A3",
+      "nugget": "Affects (anorexia [C0003123], bones [C0037253])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A2",
+      "nugget": "Affects (anorexia [C0003123], heart [C0007226])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A1",
+      "nugget": "Affects (anorexia [C0003123], all body systems [C0444584])",
+      "similarity": 1.0
+    }
+  ],
+  "unmatched_nuggets": [],
+  "unmatched_atoms": []
+}

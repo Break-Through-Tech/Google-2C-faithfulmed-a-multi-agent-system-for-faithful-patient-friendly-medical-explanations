@@ -1,0 +1,253 @@
+{
+  "lock": {
+    "code_hash": "46268292426c6627",
+    "prompt_version": "extractor-v2",
+    "matcher_version": "lexical-v2",
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "seed": 42,
+    "test_question_ids": [
+      "116",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "134",
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155"
+    ]
+  },
+  "result": {
+    "source_id": "147",
+    "atoms": [
+      {
+        "claim": "Drugs that reduce the effects of atherosclerosis include statins.",
+        "type": "medication",
+        "predicate": "include",
+        "subject": "drugs that reduce the effects of atherosclerosis",
+        "object": "statins",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Drugs that reduce the effects of atherosclerosis include statins",
+        "importance": "critical",
+        "id": "A1"
+      },
+      {
+        "claim": "Statins reduce levels of fat in the blood.",
+        "type": "medication",
+        "predicate": "reduce",
+        "subject": "statins",
+        "object": "levels of fat in the blood",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "statins, which reduce levels of fat in the blood",
+        "importance": "critical",
+        "id": "A2"
+      },
+      {
+        "claim": "Agents targeting inflammatory pathways show promise.",
+        "type": "medication",
+        "predicate": "show",
+        "subject": "agents targeting inflammatory pathways",
+        "object": "promise",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Agents targeting inflammatory pathways show promise",
+        "importance": "supporting",
+        "id": "A3"
+      },
+      {
+        "claim": "Added to statins, low-dose colchicine lowers rates of myocardial infarction.",
+        "type": "medication",
+        "predicate": "lower",
+        "subject": "low-dose colchicine",
+        "object": "rates of myocardial infarction",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "added to statins, low-dose colchicine lowers rates of myocardial infarction, stroke, and cardiovascular death",
+        "importance": "critical",
+        "id": "A4"
+      },
+      {
+        "claim": "Added to statins, low-dose colchicine lowers rates of stroke.",
+        "type": "medication",
+        "predicate": "lower",
+        "subject": "low-dose colchicine",
+        "object": "rates of stroke",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "added to statins, low-dose colchicine lowers rates of myocardial infarction, stroke, and cardiovascular death",
+        "importance": "critical",
+        "id": "A5"
+      },
+      {
+        "claim": "Added to statins, low-dose colchicine lowers rates of cardiovascular death.",
+        "type": "medication",
+        "predicate": "lower",
+        "subject": "low-dose colchicine",
+        "object": "rates of cardiovascular death",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "added to statins, low-dose colchicine lowers rates of myocardial infarction, stroke, and cardiovascular death",
+        "importance": "critical",
+        "id": "A6"
+      },
+      {
+        "claim": "Women should change their lifestyle in addition to statins to improve many common age-related heart and metabolism problems.",
+        "type": "instruction",
+        "predicate": "improve",
+        "subject": "women",
+        "object": "many common age-related heart and metabolism problems",
+        "hedge": "recommended",
+        "hedge_text": "recommended",
+        "evidence": "It is recommended that in an addition to statins, women change their lifestyle to improve many common age-related heart and metabolism problems",
+        "importance": "critical",
+        "id": "A7"
+      },
+      {
+        "claim": "Focused ultrasound is showing promise.",
+        "type": "treatment",
+        "predicate": "show",
+        "subject": "focused ultrasound",
+        "object": "promise",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Focused ultrasound is also showing promise",
+        "importance": "supporting",
+        "id": "A8"
+      },
+      {
+        "claim": "Specific light stabilizes plaques.",
+        "type": "treatment",
+        "predicate": "stabilize",
+        "subject": "specific light",
+        "object": "plaques",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "specific light that stabilizes plaques and reduces inflammation",
+        "importance": "supporting",
+        "id": "A9"
+      },
+      {
+        "claim": "Specific light reduces inflammation.",
+        "type": "treatment",
+        "predicate": "reduce",
+        "subject": "specific light",
+        "object": "inflammation",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "specific light that stabilizes plaques and reduces inflammation",
+        "importance": "supporting",
+        "id": "A10"
+      },
+      {
+        "claim": "Surgery is needed.",
+        "type": "procedure",
+        "predicate": "is",
+        "subject": "surgery",
+        "object": "needed",
+        "hedge": "frequency",
+        "hedge_text": "sometimes",
+        "evidence": "Surgery is sometimes needed",
+        "importance": "critical",
+        "id": "A11"
+      }
+    ],
+    "evidence_failures": [],
+    "hedge_flags": [],
+    "provenance": {
+      "model": "gemini-3.5-flash-lite",
+      "model_version": "gemini-3.5-flash-lite",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "extractor-v2",
+      "timestamp": "2026-10-27T20:28:43.023050+00:00"
+    }
+  },
+  "scores": {
+    "nugget_recall": 0.5454545454545454,
+    "atom_precision_lower_bound": 0.5454545454545454,
+    "hedge_accuracy": 0.8333333333333334,
+    "evidence_fail_rate": 0.0,
+    "hedge_flag_rate": 0.0,
+    "n_atoms": 11,
+    "n_nuggets": 11,
+    "n_matched": 6,
+    "matcher_version": "lexical-v2"
+  },
+  "matches": [
+    {
+      "atom": "A7",
+      "nugget": "Improve (lifestyle changes [C0870811], many common age-related metabolism problems [C0848271])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A6",
+      "nugget": "Reduce (low-dose colchicine [C0009262] added to statins [C0360714], rates of cardiovascular death [C0376297])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A5",
+      "nugget": "Reduce (low-dose colchicine [C0009262] added to statins [C0360714], rates of stroke [C0038454])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A4",
+      "nugget": "Reduce (low-dose colchicine [C0009262] added to statins [C0360714], rates of myocardial infarction [C0027051])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A2",
+      "nugget": "Reduce (statins [C0360714], levels of fat in the blood [C0020473])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A1",
+      "nugget": "Reduce (statins [C0360714], effects of atherosclerosis [C0004153])",
+      "similarity": 1.0
+    }
+  ],
+  "unmatched_nuggets": [
+    "[may] Treat (agents targeting inflammatory pathways [C1512758], atherosclerosis [C0004153])",
+    "Improve (lifestyle changes [C0870811], many common age-related heart problems [C0795691])",
+    "[may] Treat (focused ultrasound [C1517281], atherosclerosis [C0004153])",
+    "[may] Treat (specific light that stabilizes plaques and reduces inflammation [C0031740], atherosclerosis [C0004153])",
+    "[sometimes] Need (patient, surgery [C0543467])"
+  ],
+  "unmatched_atoms": [
+    "A3",
+    "A8",
+    "A9",
+    "A10",
+    "A11"
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "lock": {
+    "code_hash": "46268292426c6627",
+    "prompt_version": "extractor-v2",
+    "matcher_version": "lexical-v2",
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "seed": 42,
+    "test_question_ids": [
+      "116",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "134",
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155"
+    ]
+  },
+  "result": {
+    "source_id": "142",
+    "atoms": [
+      {
+        "claim": "Many drugs increase blood pressure by themselves.",
+        "type": "medication",
+        "predicate": "increase",
+        "subject": "many drugs",
+        "object": "blood pressure",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Many drugs increase blood pressure by themselves",
+        "importance": "critical",
+        "id": "A1"
+      },
+      {
+        "claim": "Many drugs increase blood pressure through interaction with other drugs.",
+        "type": "medication",
+        "predicate": "increase",
+        "subject": "many drugs",
+        "object": "blood pressure",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Many drugs increase blood pressure by themselves or through interaction with other drugs",
+        "importance": "critical",
+        "id": "A2"
+      },
+      {
+        "claim": "The nonsteroidal anti-inflammatory drugs (NSAIDs) commonly affect blood pressure.",
+        "type": "medication",
+        "predicate": "affect",
+        "subject": "nonsteroidal anti-inflammatory drugs (NSAIDs)",
+        "object": "blood pressure",
+        "hedge": "frequency",
+        "hedge_text": "common",
+        "evidence": "The most common drugs that affect blood pressure are the nonsteroidal anti-inflammatory drugs (NSAIDs)",
+        "importance": "critical",
+        "id": "A3"
+      },
+      {
+        "claim": "Steroids commonly affect blood pressure.",
+        "type": "medication",
+        "predicate": "affect",
+        "subject": "steroids",
+        "object": "blood pressure",
+        "hedge": "frequency",
+        "hedge_text": "common",
+        "evidence": "The most common drugs that affect blood pressure are the nonsteroidal anti-inflammatory drugs (NSAIDs) and steroids",
+        "importance": "critical",
+        "id": "A4"
+      },
+      {
+        "claim": "Inhibitors of angiogenesis (cancer-fighting drugs) commonly affect blood pressure.",
+        "type": "medication",
+        "predicate": "affect",
+        "subject": "inhibitors of angiogenesis (cancer-fighting drugs)",
+        "object": "blood pressure",
+        "hedge": "frequency",
+        "hedge_text": "common",
+        "evidence": "inhibitors of angiogenesis (cancer-fighting drugs)",
+        "importance": "critical",
+        "id": "A5"
+      },
+      {
+        "claim": "Some drugs that raise HDL commonly affect blood pressure.",
+        "type": "medication",
+        "predicate": "affect",
+        "subject": "some drugs that raise HDL",
+        "object": "blood pressure",
+        "hedge": "frequency",
+        "hedge_text": "common",
+        "evidence": "some drugs that raise HDL",
+        "importance": "critical",
+        "id": "A6"
+      },
+      {
+        "claim": "Drugs for treating depression include other drugs that raise blood pressure.",
+        "type": "medication",
+        "predicate": "raise",
+        "subject": "drugs for treating depression",
+        "object": "blood pressure",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Other drugs that raise blood pressure include drugs for treating depression",
+        "importance": "critical",
+        "id": "A7"
+      },
+      {
+        "claim": "Drugs for treating attention deficit hyperactivity disorder include other drugs that raise blood pressure.",
+        "type": "medication",
+        "predicate": "raise",
+        "subject": "drugs for treating attention deficit hyperactivity disorder",
+        "object": "blood pressure",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "attention deficit hyperactivity disorder",
+        "importance": "critical",
+        "id": "A8"
+      },
+      {
+        "claim": "It is not clear if obesity treatments orlistat significantly affect blood pressure.",
+        "type": "medication",
+        "predicate": "affect",
+        "subject": "obesity treatments orlistat",
+        "object": "blood pressure",
+        "hedge": "negated",
+        "hedge_text": "not",
+        "evidence": "It is not clear if obesity treatments orlistat and sibutramine significantly affect blood pressure",
+        "importance": "critical",
+        "id": "A9"
+      },
+      {
+        "claim": "It is not clear if obesity treatments sibutramine significantly affect blood pressure.",
+        "type": "medication",
+        "predicate": "affect",
+        "subject": "obesity treatments sibutramine",
+        "object": "blood pressure",
+        "hedge": "negated",
+        "hedge_text": "not",
+        "evidence": "It is not clear if obesity treatments orlistat and sibutramine significantly affect blood pressure",
+        "importance": "critical",
+        "id": "A10"
+      },
+      {
+        "claim": "Anti-HIV lopinavir/ritonavir treatment are linked to high blood pressure.",
+        "type": "medication",
+        "predicate": "link",
+        "subject": "anti-HIV lopinavir/ritonavir treatment",
+        "object": "high blood pressure",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "anti-HIV lopinavir/ritonavir treatment",
+        "importance": "critical",
+        "id": "A11"
+      },
+      {
+        "claim": "Nirmatrelvir/ritonavir (Paxlovid) prescribed for COVID-19 are linked to high blood pressure.",
+        "type": "medication",
+        "predicate": "link",
+        "subject": "Nirmatrelvir/ritonavir (Paxlovid) prescribed for COVID-19",
+        "object": "high blood pressure",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Nirmatrelvir/ritonavir (Paxlovid) prescribed for COVID-19 are linked to high blood pressure",
+        "importance": "critical",
+        "id": "A12"
+      }
+    ],
+    "evidence_failures": [],
+    "hedge_flags": [],
+    "provenance": {
+      "model": "gemini-3.5-flash-lite",
+      "model_version": "gemini-3.5-flash-lite",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "extractor-v2",
+      "timestamp": "2026-10-27T20:27:37.543696+00:00"
+    }
+  },
+  "scores": {
+    "nugget_recall": 0.9230769230769231,
+    "atom_precision_lower_bound": 1.0,
+    "hedge_accuracy": 0.8333333333333334,
+    "evidence_fail_rate": 0.0,
+    "hedge_flag_rate": 0.0,
+    "n_atoms": 12,
+    "n_nuggets": 13,
+    "n_matched": 12,
+    "matcher_version": "lexical-v2"
+  },
+  "matches": [
+    {
+      "atom": "A11",
+      "nugget": "Associated (anti-HIV lopinavir/ritonavir [C0939237] treatment, high blood pressure [C1868937])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A10",
+      "nugget": "Affect (obesity treatments sibutramine [C0074493], blood pressure [C0005823])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A9",
+      "nugget": "Affect (obesity treatments orlistat [C0076275], blood pressure [C0005823])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A8",
+      "nugget": "Raise (drugs for treating attention deficit hyperactivity disorder [C5935472], blood pressure [C0005823])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A7",
+      "nugget": "Raise (drugs for treating depression [C0003289], blood pressure [C0005823])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A6",
+      "nugget": "[most common] Affect (some drugs [C0013227] that raise HDL [C2938903], blood pressure [C0005823])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A5",
+      "nugget": "[most common] Affect (inhibitors of angiogenesis [C0596087], blood pressure [C0005823])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A4",
+      "nugget": "[most common] Affect (steroids [C0038317], blood pressure [C0005823])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A3",
+      "nugget": "[most common] Affect (nonsteroidal anti-inflammatory drugs (NSAIDs) [C0003211], blood pressure [C0005823])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A2",
+      "nugget": "Increase (many drugs through interaction with other drugs [C0687133], blood pressure [C0005823])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A1",
+      "nugget": "Increase (many drugs [C0013227], blood pressure [C0005823])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A12",
+      "nugget": "Associated (Nirmatrelvir/ritonavir [C5564905] (Paxlovid [C5565871]) treatment, high blood pressure [C1868937])",
+      "similarity": 0.875
+    }
+  ],
+  "unmatched_nuggets": [
+    "Is (inhibitors of angiogenesis [C0596087], cancer-fighting drugs [C0003392])"
+  ],
+  "unmatched_atoms": []
+}

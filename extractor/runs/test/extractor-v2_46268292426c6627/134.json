@@ -1,0 +1,625 @@
+{
+  "lock": {
+    "code_hash": "46268292426c6627",
+    "prompt_version": "extractor-v2",
+    "matcher_version": "lexical-v2",
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "seed": 42,
+    "test_question_ids": [
+      "116",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "134",
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155"
+    ]
+  },
+  "result": {
+    "source_id": "134",
+    "atoms": [
+      {
+        "claim": "Symptoms of irritable bowel syndrome (IBS) are long-standing abdominal pain.",
+        "type": "symptom",
+        "predicate": "are",
+        "subject": "symptoms of irritable bowel syndrome (IBS)",
+        "object": "long-standing abdominal pain",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Symptoms of irritable bowel syndrome (IBS) are long-standing abdominal pain",
+        "importance": "critical",
+        "id": "A1"
+      },
+      {
+        "claim": "Symptoms of irritable bowel syndrome (IBS) are changes in bowel habits.",
+        "type": "symptom",
+        "predicate": "are",
+        "subject": "symptoms of irritable bowel syndrome (IBS)",
+        "object": "changes in bowel habits",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Symptoms of irritable bowel syndrome (IBS) are long-standing abdominal pain and changes in bowel habits",
+        "importance": "critical",
+        "id": "A2"
+      },
+      {
+        "claim": "Changes in bowel habits have no clear causes.",
+        "type": "other",
+        "predicate": "have",
+        "subject": "changes in bowel habits",
+        "object": "no clear causes",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "changes in bowel habits that have no clear causes",
+        "importance": "supporting",
+        "id": "A3"
+      },
+      {
+        "claim": "Changes in bowel habits include diarrhea (IBS-D).",
+        "type": "symptom",
+        "predicate": "include",
+        "subject": "changes in bowel habits",
+        "object": "diarrhea (IBS-D)",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Changes in bowel habits include diarrhea (IBS-D)",
+        "importance": "supporting",
+        "id": "A4"
+      },
+      {
+        "claim": "Changes in bowel habits include constipation (IBS-D).",
+        "type": "symptom",
+        "predicate": "include",
+        "subject": "changes in bowel habits",
+        "object": "constipation (IBS-D)",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Changes in bowel habits include constipation (IBS-D)",
+        "importance": "supporting",
+        "id": "A5"
+      },
+      {
+        "claim": "Changes in bowel habits include mixed stool pattern (IBS-M).",
+        "type": "symptom",
+        "predicate": "include",
+        "subject": "changes in bowel habits",
+        "object": "mixed stool pattern (IBS-M)",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Changes in bowel habits include diarrhea (IBS-D), constipation (IBS-D), mixed stool pattern (IBS-M",
+        "importance": "supporting",
+        "id": "A6"
+      },
+      {
+        "claim": "Mixed stool pattern (IBS-M) includes constipation.",
+        "type": "symptom",
+        "predicate": "includes",
+        "subject": "mixed stool pattern (IBS-M)",
+        "object": "constipation",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "mixed stool pattern (IBS-M, which includes constipation and diarrhea)",
+        "importance": "supporting",
+        "id": "A7"
+      },
+      {
+        "claim": "Mixed stool pattern (IBS-M) includes diarrhea.",
+        "type": "symptom",
+        "predicate": "includes",
+        "subject": "mixed stool pattern (IBS-M)",
+        "object": "diarrhea",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "mixed stool pattern (IBS-M, which includes constipation and diarrhea)",
+        "importance": "supporting",
+        "id": "A8"
+      },
+      {
+        "claim": "Changes in bowel habits include unclassified IBS.",
+        "type": "condition",
+        "predicate": "include",
+        "subject": "changes in bowel habits",
+        "object": "unclassified IBS",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "and unclassified IBS",
+        "importance": "supporting",
+        "id": "A9"
+      },
+      {
+        "claim": "Depending on the type of IBS, symptoms are managed by different drugs.",
+        "type": "treatment",
+        "predicate": "manage",
+        "subject": "different drugs",
+        "object": "symptoms",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Depending on the type of IBS, symptoms are managed by different drugs",
+        "importance": "critical",
+        "id": "A10"
+      },
+      {
+        "claim": "Depending on the type of IBS, symptoms are managed by other methods, such as brain-gut behavioral therapies (BGBTs).",
+        "type": "treatment",
+        "predicate": "manage",
+        "subject": "brain-gut behavioral therapies (BGBTs)",
+        "object": "symptoms",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Depending on the type of IBS, symptoms are managed by different drugs and other methods, such as brain-gut behavioral therapies (BGBTs)",
+        "importance": "critical",
+        "id": "A11"
+      },
+      {
+        "claim": "Lifestyle and dietary changes are the first treatment for all patients.",
+        "type": "treatment",
+        "predicate": "are",
+        "subject": "lifestyle and dietary changes",
+        "object": "the first treatment for all patients",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Lifestyle and dietary changes, such as probiotics, a low fermentable oligosaccharides, disacchardies, monosaccharides, polyols (FODMAP) diet, or gluten-free diet, are the first treatment for all patients",
+        "importance": "critical",
+        "id": "A12"
+      },
+      {
+        "claim": "Lifestyle and dietary changes include probiotics.",
+        "type": "treatment",
+        "predicate": "include",
+        "subject": "lifestyle and dietary changes",
+        "object": "probiotics",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Lifestyle and dietary changes, such as probiotics",
+        "importance": "supporting",
+        "id": "A13"
+      },
+      {
+        "claim": "Lifestyle and dietary changes include a low fermentable oligosaccharides, disacchardies, monosaccharides, polyols (FODMAP) diet.",
+        "type": "treatment",
+        "predicate": "include",
+        "subject": "lifestyle and dietary changes",
+        "object": "low fermentable oligosaccharides, disacchardies, monosaccharides, polyols (FODMAP) diet",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "a low fermentable oligosaccharides, disacchardies, monosaccharides, polyols (FODMAP) diet",
+        "importance": "supporting",
+        "id": "A14"
+      },
+      {
+        "claim": "Lifestyle and dietary changes include a gluten-free diet.",
+        "type": "treatment",
+        "predicate": "include",
+        "subject": "lifestyle and dietary changes",
+        "object": "gluten-free diet",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "gluten-free diet",
+        "importance": "supporting",
+        "id": "A15"
+      },
+      {
+        "claim": "Laxatives are used to treat IBS-C.",
+        "type": "medication",
+        "predicate": "treat",
+        "subject": "laxatives",
+        "object": "IBS-C",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Laxatives are used to treat IBS-C",
+        "importance": "critical",
+        "id": "A16"
+      },
+      {
+        "claim": "Laxatives include linaclotide.",
+        "type": "medication",
+        "predicate": "include",
+        "subject": "laxatives",
+        "object": "linaclotide",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "laxatives, e.g., linaclotide",
+        "importance": "supporting",
+        "id": "A17"
+      },
+      {
+        "claim": "Laxatives include lubiprostone.",
+        "type": "medication",
+        "predicate": "include",
+        "subject": "laxatives",
+        "object": "lubiprostone",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "lubiprostone",
+        "importance": "supporting",
+        "id": "A18"
+      },
+      {
+        "claim": "Laxatives include plecanatide.",
+        "type": "medication",
+        "predicate": "include",
+        "subject": "laxatives",
+        "object": "plecanatide",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "plecanatide",
+        "importance": "supporting",
+        "id": "A19"
+      },
+      {
+        "claim": "Lubiprostone may be recommended when other laxatives do not work.",
+        "type": "medication",
+        "predicate": "recommend",
+        "subject": "lubiprostone",
+        "object": "treatment when other laxatives do not work",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "lubiprostone and linaclotide may be recommended when other laxatives do not work",
+        "importance": "critical",
+        "id": "A20"
+      },
+      {
+        "claim": "Linaclotide may be recommended when other laxatives do not work.",
+        "type": "medication",
+        "predicate": "recommend",
+        "subject": "linaclotide",
+        "object": "treatment when other laxatives do not work",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "lubiprostone and linaclotide may be recommended when other laxatives do not work",
+        "importance": "critical",
+        "id": "A21"
+      },
+      {
+        "claim": "Other laxatives do not work in certain situations.",
+        "type": "medication",
+        "predicate": "work",
+        "subject": "other laxatives",
+        "object": "situations",
+        "hedge": "negated",
+        "hedge_text": "do not",
+        "evidence": "when other laxatives do not work",
+        "importance": "supporting",
+        "id": "A22"
+      },
+      {
+        "claim": "Rifaximin may be recommended for IBS-D.",
+        "type": "medication",
+        "predicate": "recommend",
+        "subject": "rifaximin",
+        "object": "IBS-D",
+        "hedge": "recommended",
+        "hedge_text": "recommended",
+        "evidence": "For IBS-D, rifaximin eluxadoline, alosetron, loperamide, alosetron and ramosetron may be recommended",
+        "importance": "critical",
+        "id": "A23"
+      },
+      {
+        "claim": "Eluxadoline may be recommended for IBS-D.",
+        "type": "medication",
+        "predicate": "recommend",
+        "subject": "eluxadoline",
+        "object": "IBS-D",
+        "hedge": "recommended",
+        "hedge_text": "recommended",
+        "evidence": "For IBS-D, rifaximin eluxadoline, alosetron, loperamide, alosetron and ramosetron may be recommended",
+        "importance": "critical",
+        "id": "A24"
+      },
+      {
+        "claim": "Alosetron may be recommended for IBS-D.",
+        "type": "medication",
+        "predicate": "recommend",
+        "subject": "alosetron",
+        "object": "IBS-D",
+        "hedge": "recommended",
+        "hedge_text": "recommended",
+        "evidence": "For IBS-D, rifaximin eluxadoline, alosetron, loperamide, alosetron and ramosetron may be recommended",
+        "importance": "critical",
+        "id": "A25"
+      },
+      {
+        "claim": "Loperamide may be recommended for IBS-D.",
+        "type": "medication",
+        "predicate": "recommend",
+        "subject": "loperamide",
+        "object": "IBS-D",
+        "hedge": "recommended",
+        "hedge_text": "recommended",
+        "evidence": "For IBS-D, rifaximin eluxadoline, alosetron, loperamide, alosetron and ramosetron may be recommended",
+        "importance": "critical",
+        "id": "A26"
+      },
+      {
+        "claim": "Ramosetron may be recommended for IBS-D.",
+        "type": "medication",
+        "predicate": "recommend",
+        "subject": "ramosetron",
+        "object": "IBS-D",
+        "hedge": "recommended",
+        "hedge_text": "recommended",
+        "evidence": "For IBS-D, rifaximin eluxadoline, alosetron, loperamide, alosetron and ramosetron may be recommended",
+        "importance": "critical",
+        "id": "A27"
+      },
+      {
+        "claim": "Additional treatments may include faecal microbial transplant for IBS-D and IBS-M.",
+        "type": "treatment",
+        "predicate": "include",
+        "subject": "additional treatments",
+        "object": "faecal microbial transplant for IBS-D and IBS-M",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "For IBS-D and IBS-M additional treatments may include faecal microbial transplant",
+        "importance": "critical",
+        "id": "A28"
+      },
+      {
+        "claim": "Alternative treatments may include psychotherapy for IBS-D and IBS-M.",
+        "type": "treatment",
+        "predicate": "include",
+        "subject": "alternative treatments",
+        "object": "psychotherapy for IBS-D and IBS-M",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "or alternative treatments, including psychotherapy, hypnotherapy, acupuncture or herbs",
+        "importance": "critical",
+        "id": "A29"
+      },
+      {
+        "claim": "Alternative treatments may include hypnotherapy for IBS-D and IBS-M.",
+        "type": "treatment",
+        "predicate": "include",
+        "subject": "alternative treatments",
+        "object": "hypnotherapy for IBS-D and IBS-M",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "or alternative treatments, including psychotherapy, hypnotherapy, acupuncture or herbs",
+        "importance": "critical",
+        "id": "A30"
+      },
+      {
+        "claim": "Alternative treatments may include acupuncture for IBS-D and IBS-M.",
+        "type": "treatment",
+        "predicate": "include",
+        "subject": "alternative treatments",
+        "object": "acupuncture for IBS-D and IBS-M",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "or alternative treatments, including psychotherapy, hypnotherapy, acupuncture or herbs",
+        "importance": "critical",
+        "id": "A31"
+      },
+      {
+        "claim": "Alternative treatments may include herbs for IBS-D and IBS-M.",
+        "type": "treatment",
+        "predicate": "include",
+        "subject": "alternative treatments",
+        "object": "herbs for IBS-D and IBS-M",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "or alternative treatments, including psychotherapy, hypnotherapy, acupuncture or herbs",
+        "importance": "critical",
+        "id": "A32"
+      },
+      {
+        "claim": "The effectiveness of these alternative treatments is not clear.",
+        "type": "other",
+        "predicate": "is",
+        "subject": "the effectiveness of these alternative treatments",
+        "object": "not clear",
+        "hedge": "negated",
+        "hedge_text": "not",
+        "evidence": "The effectiveness of these ternative treatments is not clear.",
+        "importance": "supporting",
+        "id": "A33"
+      }
+    ],
+    "evidence_failures": [
+      "A5",
+      "A17"
+    ],
+    "hedge_flags": [],
+    "provenance": {
+      "model": "gemini-3.5-flash-lite",
+      "model_version": "gemini-3.5-flash-lite",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "extractor-v2",
+      "timestamp": "2026-10-27T20:26:32.896405+00:00"
+    }
+  },
+  "scores": {
+    "nugget_recall": 0.8709677419354839,
+    "atom_precision_lower_bound": 0.8181818181818182,
+    "hedge_accuracy": 0.7307692307692307,
+    "evidence_fail_rate": 0.06060606060606061,
+    "hedge_flag_rate": 0.0,
+    "n_atoms": 33,
+    "n_nuggets": 31,
+    "n_matched": 27,
+    "matcher_version": "lexical-v2"
+  },
+  "matches": [
+    {
+      "atom": "A32",
+      "nugget": "[may] Treat (herbs [C0025125], IBS-D [C0348898] and IBS-M [C4268640])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A31",
+      "nugget": "[may] Treat (acupuncture [C0394664], IBS-D [C0348898] and IBS-M [C4268640])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A30",
+      "nugget": "[may] Treat (hypnotherapy [C0020587], IBS-D [C0348898] and IBS-M [C4268640])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A29",
+      "nugget": "[may] Treat (psychotherapy [C0033968], IBS-D [C0348898] and IBS-M [C4268640])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A28",
+      "nugget": "[may] Treat (faecal microbial transplant [C2242628], IBS-D [C0348898] and IBS-M [C4268640])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A26",
+      "nugget": "[may] Recommend (loperamide [C0023992], IBS-D [C0348898])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A25",
+      "nugget": "[may] Recommend (alosetron [C0291772], IBS-D [C0348898])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A24",
+      "nugget": "[may] Recommend (eluxadoline [C3712232], IBS-D [C0348898])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A23",
+      "nugget": "[may] Recommend (rifaximin [C0073374], IBS-D [C0348898])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A21",
+      "nugget": "Is (laxatives [C0282090], linaclotide [C2000261])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A20",
+      "nugget": "Is (laxatives [C0282090], lubiprostone [C1684405])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A19",
+      "nugget": "Is (laxatives [C0282090], plecanatide [C3711911])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A16",
+      "nugget": "Treat (laxatives, IBS-C [C4268639])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A15",
+      "nugget": "Include (gluten-free diet [C0344351], lifestyle [C0870811] and dietary changes [C3671772])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A13",
+      "nugget": "Include (probiotics [C0525033], lifestyle [C0870811] and dietary changes [C3671772])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A11",
+      "nugget": "Treat (brain-gut behavioral therapies (BGBTs), symptoms of IBS [C0022104])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A10",
+      "nugget": "Treat (drugs [C0013227], symptoms of IBS [C0022104])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A9",
+      "nugget": "Include (changes in bowel habits [C0278008], unclassified IBS [C0022104])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A8",
+      "nugget": "Include (mixed stool pattern (IBS-M) [C4268640], diarrhea [C0011991])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A7",
+      "nugget": "Include (mixed stool pattern (IBS-M) [C4268640], constipation [C0009806])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A6",
+      "nugget": "Include (changes in bowel habits [C0278008], mixed stool pattern (IBS-M) [C4268640])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A4",
+      "nugget": "Include (changes in bowel habits [C0278008], diarrhea (IBS-D) [C0348898])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A2",
+      "nugget": "Symptom (changes in bowel habits [C0278008], irritable bowel syndrome (IBS) [C0022104])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A1",
+      "nugget": "Symptom (long-standing abdominal pain [C0232491], irritable bowel syndrome (IBS) [C0022104])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A5",
+      "nugget": "Include (changes in bowel habits [C0278008], constipation (IBS-C) [C4268639])",
+      "similarity": 0.833
+    },
+    {
+      "atom": "A27",
+      "nugget": "[may] Recommend (alosetron [C0291772] and ramosetron [C0526950], IBS-D [C0348898])",
+      "similarity": 0.75
+    },
+    {
+      "atom": "A12",
+      "nugget": "(primary) Treat (lifestyle [C0870811] and dietary changes [C3671772], all IBS [C0022104] patients)",
+      "similarity": 0.571
+    }
+  ],
+  "unmatched_nuggets": [
+    "Cause (unknown, symptoms of irritable bowel syndrome (IBS) [C0022104])",
+    "Include (low fermentable oligosaccharides, disaccharides, monosaccharides, polyols (FODMAP) diet [C5768808], lifestyle [C0870811] and dietary changes [C3671772])",
+    "IF Ineffective (other laxatives [C0282090], IBS-C [C4268639]) THEN Recommend (linaclotide [C2000261], IBS-C [C4268639])",
+    "IF Ineffective (other laxatives [C0282090], IBS-C [C4268639]) THEN Recommend (lubiprostone lubiprostone, IBS-C [C4268639])"
+  ],
+  "unmatched_atoms": [
+    "A3",
+    "A14",
+    "A17",
+    "A18",
+    "A22",
+    "A33"
+  ]
+}
