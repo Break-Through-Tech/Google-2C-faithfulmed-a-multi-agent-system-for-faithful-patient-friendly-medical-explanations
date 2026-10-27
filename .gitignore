@@ -28,6 +28,9 @@ data/*
 *.pt
 *.faiss
 chroma/
+
+# Generated evaluation artifacts (keep local; regenerate as needed)
+reports/
 chroma_db/
 .chroma/
 qdrant_storage/
