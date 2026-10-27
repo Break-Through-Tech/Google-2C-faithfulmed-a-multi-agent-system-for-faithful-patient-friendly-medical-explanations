@@ -15,9 +15,18 @@ Docs: https://google.github.io/adk-docs
 Note: ADK's exact class/kwarg names evolve — check the docs for your installed version. The intent
 (SequentialAgent for the DAG, LoopAgent with a hard iteration cap for the refine step) is the point.
 """
+from pathlib import Path
+import sys
+
+# Allow both ``python notebooks/adk_pipeline.py`` and module-style execution from the repo root.
+if __package__ in (None, ""):
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
 from google.adk.agents import LlmAgent, SequentialAgent, LoopAgent
 
-MODEL = "gemini-2.0-flash"  # start on the free tier; swap per-agent for the leaderboard
+from refiner import RefinerConfig, create_pipeline_refiner_agent
+
+MODEL = "gemini-3.5-flash-lite"  # stable free-tier-friendly fallback; swap for the leaderboard
 
 # 1) Extractor — pull clinical "atoms" (facts + types) from the source document.
 extractor = LlmAgent(
@@ -53,16 +62,10 @@ verifier = LlmAgent(
     output_key="verdict",
 )
 
-# 4) Refiner — fix only what the Verifier flagged. No free rewriting.
-refiner = LlmAgent(
-    name="Refiner",
-    model=MODEL,
-    instruction=(
-        "Given {draft} and {verdict}, produce a corrected draft that removes unsupported claims and "
-        "restores omissions, changing nothing else. If {verdict.faithful} is true, return {draft} unchanged."
-    ),
-    output_key="draft",  # overwrites the draft so the loop re-verifies the corrected version
-)
+# 4) Refiner — typed standalone implementation adapted to pipeline state.
+# The Runner/session that starts this pipeline must seed state["source_text"] with the original
+# document. The adapter reads source_text + draft + verdict and overwrites draft with plain text.
+refiner = create_pipeline_refiner_agent(RefinerConfig(model=MODEL))
 
 # Bounded refine loop: Verifier -> Refiner, at most twice. This is the ONLY loop in the system.
 refine_loop = LoopAgent(
