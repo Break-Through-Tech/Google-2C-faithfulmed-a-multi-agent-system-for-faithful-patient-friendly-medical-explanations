@@ -1,20 +1,20 @@
-# AI Studio Challenge Project Title
+# AI Studio Challenge: FaithfulMed: Translation of Medical Documents
 
-> 💡 **Note for the team:** This is just a template. Update the above title with your AI Studio Challenge Project name. Remove all guidance notes and example text in this template and populate this README with your own content. You can work on this README throughout AI Studio, and get feedback from your AI Studio Coach and Challenge Advisor before finalizing it.  
-
+> FaithfulMed is a multi-agent AI system that turns complex clinical documents, like discharge summaries and medical reports, into patient-friendly explanations that are both easy to read and faithful to the source.
 ---
 
 ### 👥 **Team Members**
 
 **Example:**
 
-| Name             | GitHub Handle | Contribution                                                             |
-|------------------|---------------|--------------------------------------------------------------------------|
-| Taylor Nguyen    | @taylornguyen | Data exploration, visualization, overall project coordination            |
-| Jordan Ramirez   | @jramirez     | Data collection, exploratory data analysis (EDA), dataset documentation  |
-| Amina Hassan     | @aminahassan  | Data preprocessing, feature engineering, data validation                 |
-| Priya Mehta      | @pmehta       | Model selection, hyperparameter tuning, model training and optimization  |
-| Chris Park       | @chrispark    | Model evaluation, performance analysis, results interpretation           |
+| Name            | GitHub Handle | Contribution                                                            |
+|-----------------|---------------|-------------------------------------------------------------------------|
+| Angelina Cheng  | @ang-cheng    | Vector retrieval index over MedlinePlus glossary & the refiner agent    |
+| Monica Barbosa  | @officialmon1 | Single Gemini-baseline & the readability agent                          |
+| Nahom Terrefe   | @nahom70      | Vector retrieval index over MedlinePlus glossary & the extractor agent  |
+| Saanvi Goyal    | @SaanviGoyal  | Exploratory data analysis & the verifier agent                          |
+| Saika Chowdhury | @SaC34        | Success rubric, shared evaluation harness, & the sequential agent       |
+| Yuxin Zeng      | @yzeng0521    | Single Gemini-baseline & the simplifier agent                           |
 
 ---
 
@@ -22,18 +22,42 @@
 
 **Example:**
 
-- Developed a machine learning model using `[model type/technique]` to address `[challenge project task]`.
-- Achieved `[key metric or result]`, demonstrating `[value or impact]` for `[host company]`.
-- Generated actionable insights to inform business decisions at `[host company or stakeholders]`.
-- Implemented `[specific methodology]` to address industry constraints or expectations.
+- **Exploratory data analysis:** Profiling MedAESQA, MTSamples, PLABA, MedQuAD, and a Synthea sample to understand document length, jargon density, source reading level, and data quality issues before any modeling.
+- **RAG knowledge base:** Building a vector retrieval index with Gemini embeddings and ChromaDB over the MedlinePlus lay-language glossary and trusted lay-health guidelines, which will ground the Simplifier agent's definitions.
+- **Evaluation harness first:** Defining the task spec, success rubric, and a shared harness (Flesch-Kincaid, SMOG, medical-jargon density, output length, refusal rate) so every system is measured the same way from day one.
+- **Single-Gemini baseline:** Building a one-call Gemini baseline on ~50 hand-curated examples to serve as the comparison point the multi-agent pipeline must beat.
 
 ---
 
 ## 👩🏽‍💻 **Setup and Installation**
 
-**Provide step-by-step instructions so someone else can run your code and reproduce your results. Depending on your setup, include:**
+```bash
+git clone <repo-url> && cd <repo-folder>
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
 
-* How to clone the repository
+Create a `.env` in the repo root (git-ignored — never commit it):
+
+```
+GEMINI_API_KEY=...
+QDRANT_URL=...
+QDRANT_API_KEY=...
+```
+
+Datasets are downloaded locally, not committed — see [data/README.md](data/README.md).
+
+**Retrieval (RAG):** building the MedlinePlus corpus and Qdrant index, calling
+`retrieve()`, and running the retrieval evaluation are documented in
+[retrieval/README.md](retrieval/README.md).
+
+**Tests:** `python -m unittest discover -s tests -t .`
+* To clone the repository, run
+```
+git clone https://github.com/Break-Through-Tech/Google-2C-faithfulmed-a-multi-agent-system-for-faithful-patient-friendly-medical-explanations.git
+```
+
 * How to install dependencies
 * How to set up the environment
 * How to access the dataset(s)

@@ -5,7 +5,9 @@ pydantic>=2           # typed Refiner input/output and fixture contracts
 litellm               # lets ADK call Gemma / external open models for the leaderboard
 
 # ── RAG / retrieval ────────────────────────────────────────────────────
-chromadb
+qdrant-client         # vector store (Qdrant Cloud or local Docker)
+beautifulsoup4
+python-dotenv
 # sentence-transformers   # optional offline-embeddings fallback
 # faiss-cpu               # optional offline vector index
 
