@@ -16,6 +16,7 @@ Note: ADK's exact class/kwarg names evolve — check the docs for your installed
 (SequentialAgent for the DAG, LoopAgent with a hard iteration cap for the refine step) is the point.
 """
 from google.adk.agents import LlmAgent, SequentialAgent, LoopAgent
+from readability_agent import readability_agent
 
 MODEL = "gemini-2.0-flash"  # start on the free tier; swap per-agent for the leaderboard
 
@@ -71,21 +72,11 @@ refine_loop = LoopAgent(
     max_iterations=2,
 )
 
-# 5) Readability — final pass to hit the target grade level and tone.
-readability = LlmAgent(
-    name="Readability",
-    model=MODEL,
-    instruction=(
-        "Polish the final draft to a Flesch-Kincaid grade level of 8 or below while preserving every "
-        "fact. Do not introduce new clinical content."
-    ),
-    output_key="final",
-)
 
 # The deterministic DAG: Extractor -> Simplifier -> (Verifier <-> Refiner, bounded) -> Readability.
 faithfulmed = SequentialAgent(
     name="FaithfulMed",
-    sub_agents=[extractor, simplifier, refine_loop, readability],
+    sub_agents=[extractor, simplifier, refine_loop, readability_agent],
 )
 
 if __name__ == "__main__":
