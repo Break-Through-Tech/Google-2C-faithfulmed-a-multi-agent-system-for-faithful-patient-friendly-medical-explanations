@@ -1,13 +1,16 @@
 """ 
 FaithfulMed - Readability Agent
 
-Evaluates and imrpoves the readability of medical explanations
+Evaluates and improves the readability of medical explanations
 while attempting to preserve their clincial meaning.
 """
 import os
+import asyncio
 from pathlib import Path
 from dotenv import load_dotenv
 from google import genai
+from google.genai import types
+from google.adk.models.llm_response import LlmResponse
 from google.adk.agents import LlmAgent
 from google.adk.agents.callback_context import CallbackContext
 
@@ -62,39 +65,6 @@ Medical terminology:
 
 Return only the rewritten explanation, without any additional commentary or formatting.
 """
-
-
-def record_readability(callback_context: CallbackContext):
-    """Evaluate the Readability Agent's final output."""
-
-    final_text = callback_context.state.get("final")
-
-    if not isinstance(final_text, str) or not final_text.strip():
-        print("No final text available for readability scoring.")
-        return None
-
-    scores = evaluate_readability(final_text)
-
-    callback_context.state["readability_scores"] = scores
-    callback_context.state["readability_passed"] = scores["meets_target"]
-
-    print("\nADK READABILITY EVALUATION:")
-    print(scores)
-
-    return None
-
-#ADK agent for integration with the team pipeline
-readability_agent = LlmAgent(
-    name="Readability",
-    model=MODEL,
-    instruction=(
-        READABILITY_INSTRUCTIONS
-        + "\nRewrite the following corrected draft:\n{draft}\n"
-        + "\nUse these extracted clinical facts as reference:\n{atoms}"
-    ),
-    output_key="final",
-    after_agent_callback=record_readability,
-)
 
 def evaluate_readability(text: str) -> dict:
     """Calculate readability scores and whether the target is met."""
@@ -204,3 +174,48 @@ def process_readability(text: str, client, model: str = MODEL) -> dict:
         "meets_target": best_scores["meets_target"],
         "requires_faithfulness_check": best_text != text,
     }
+
+async def run_readability_adk(callback_context: CallbackContext, llm_request) -> LlmResponse:
+    """Run the tested readability logic inside ADK."""
+
+    draft = callback_context.state.get("draft")
+
+    if not isinstance(draft, str) or not draft.strip():
+        raise ValueError("Readability Agent requires a nonempty draft.")
+
+    # Run our existing function without blocking ADK's event loop.
+    def process():
+        client = genai.Client()
+        try:
+            return process_readability(draft, client)
+        finally:
+            client.close()
+
+    result = await asyncio.to_thread(process)
+
+    # Save evaluation results for the pipeline.
+    callback_context.state["readability_scores"] = result["final_scores"]
+    callback_context.state["readability_passed"] = result["meets_target"]
+    callback_context.state["readability_rewrites"] = result["rewrite_attempts"]
+    callback_context.state["requires_faithfulness_check"] = (
+        result["requires_faithfulness_check"]
+    )
+
+    # Return the result in the format ADK expects.
+    return LlmResponse(
+        content=types.Content(
+            role="model",
+            parts=[types.Part(text=result["final_text"])]
+        )
+    )
+
+#ADK agent for integration with the team pipeline
+
+readability_agent = LlmAgent(name="Readability", model=MODEL, instruction=(
+        "Finalize the corrected medical draft while preserving "
+        "all important clinical facts and the original point of view.\n"
+        "Draft:\n{draft}"
+    ),
+    output_key="final",
+    before_model_callback=run_readability_adk,
+)
