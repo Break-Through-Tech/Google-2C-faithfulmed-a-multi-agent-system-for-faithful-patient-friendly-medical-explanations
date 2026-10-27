@@ -31,8 +31,28 @@
 
 ## 👩🏽‍💻 **Setup and Installation**
 
-**Provide step-by-step instructions so someone else can run your code and reproduce your results. Depending on your setup, include:**
+```bash
+git clone <repo-url> && cd <repo-folder>
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
 
+Create a `.env` in the repo root (git-ignored — never commit it):
+
+```
+GEMINI_API_KEY=...
+QDRANT_URL=...
+QDRANT_API_KEY=...
+```
+
+Datasets are downloaded locally, not committed — see [data/README.md](data/README.md).
+
+**Retrieval (RAG):** building the MedlinePlus corpus and Qdrant index, calling
+`retrieve()`, and running the retrieval evaluation are documented in
+[retrieval/README.md](retrieval/README.md).
+
+**Tests:** `python -m unittest discover -s tests -t .`
 * To clone the repository, run
 ```
 git clone https://github.com/Break-Through-Tech/Google-2C-faithfulmed-a-multi-agent-system-for-faithful-patient-friendly-medical-explanations.git

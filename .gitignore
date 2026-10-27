@@ -20,12 +20,22 @@ data/*
 !data/.gitkeep
 !data/README.md
 !data/MedAESQA_methods_M1-M30.xlsx
+# Frozen, hand-labeled evaluation sets (small, versioned on purpose)
+!data/eval/
 
 # Model checkpoints / vector indexes
 *.ckpt
 *.pt
 *.faiss
 chroma/
+chroma_db/
+.chroma/
+qdrant_storage/
+
+# Generated embeddings
+embeddings/
+*.npy
+*.npz
 
 .env
 .env.example
