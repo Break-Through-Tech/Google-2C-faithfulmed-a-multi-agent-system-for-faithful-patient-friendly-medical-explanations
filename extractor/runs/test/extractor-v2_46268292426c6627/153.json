@@ -1,0 +1,255 @@
+{
+  "lock": {
+    "code_hash": "46268292426c6627",
+    "prompt_version": "extractor-v2",
+    "matcher_version": "lexical-v2",
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "seed": 42,
+    "test_question_ids": [
+      "116",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "134",
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155"
+    ]
+  },
+  "result": {
+    "source_id": "153",
+    "atoms": [
+      {
+        "claim": "In healthy women optimal Hct is 35-40%.",
+        "type": "test_result",
+        "predicate": "is",
+        "subject": "optimal Hct in healthy women",
+        "object": "35-40%",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "In healthy women optimal Hct is 35-40%",
+        "importance": "supporting",
+        "id": "A1"
+      },
+      {
+        "claim": "In healthy men optimal Hct is 39-50%.",
+        "type": "test_result",
+        "predicate": "is",
+        "subject": "optimal Hct in men",
+        "object": "39-50%",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "in men, 39-50%",
+        "importance": "supporting",
+        "id": "A2"
+      },
+      {
+        "claim": "In stable hospital patients, the recommended transfusion threshold is 7-8 g/dL hemoglobin.",
+        "type": "treatment",
+        "predicate": "is",
+        "subject": "recommended transfusion threshold in stable hospital patients",
+        "object": "7-8 g/dL hemoglobin",
+        "hedge": "recommended",
+        "hedge_text": "recommended",
+        "evidence": "in stable hospital patients, the recommended transfusion threshold is 7-8 g/dL hemoglobin",
+        "importance": "critical",
+        "id": "A3"
+      },
+      {
+        "claim": "In stable hospital patients, the recommended transfusion threshold is Hct 20-24%.",
+        "type": "treatment",
+        "predicate": "is",
+        "subject": "recommended transfusion threshold in stable hospital patients",
+        "object": "Hct 20-24%",
+        "hedge": "recommended",
+        "hedge_text": "recommended",
+        "evidence": "(Hct 20-24%)",
+        "importance": "critical",
+        "id": "A4"
+      },
+      {
+        "claim": "A 3% change in hematocrit was considered equal to a 1-unit loss of blood.",
+        "type": "other",
+        "predicate": "was considered",
+        "subject": "3% change in hematocrit",
+        "object": "1-unit loss of blood",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "a 3% change in hematocrit was considered equal to a 1-\"unit\" loss of blood",
+        "importance": "supporting",
+        "id": "A5"
+      },
+      {
+        "claim": "The 10/30 rule has been most commonly used to start blood transfusions.",
+        "type": "treatment",
+        "predicate": "used",
+        "subject": "10/30 rule",
+        "object": "start blood transfusions",
+        "hedge": "frequency",
+        "hedge_text": "commonly",
+        "evidence": "the 10/30 rule (hemoglobin 10 g/dL - hematocrit 30%) has been most commonly used to start blood transfusions",
+        "importance": "supporting",
+        "id": "A6"
+      },
+      {
+        "claim": "The 10/30 rule is hemoglobin 10 g/dL.",
+        "type": "test_result",
+        "predicate": "is",
+        "subject": "10/30 rule hemoglobin",
+        "object": "10 g/dL",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "hemoglobin 10 g/dL",
+        "importance": "supporting",
+        "id": "A7"
+      },
+      {
+        "claim": "The 10/30 rule is hematocrit 30%.",
+        "type": "test_result",
+        "predicate": "is",
+        "subject": "10/30 rule hematocrit",
+        "object": "30%",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "hematocrit 30%",
+        "importance": "supporting",
+        "id": "A8"
+      },
+      {
+        "claim": "The peripheral venous hematocrit levels alone are not enough to decide on transfusion.",
+        "type": "test_result",
+        "predicate": "are",
+        "subject": "peripheral venous hematocrit levels alone",
+        "object": "enough to decide on transfusion",
+        "hedge": "negated",
+        "hedge_text": "not",
+        "evidence": "The peripheral venous hematocrit (Hct)levels alone are not enough to decide on transfusion",
+        "importance": "critical",
+        "id": "A9"
+      },
+      {
+        "claim": "Other measurements should be taken into account to decide on transfusion.",
+        "type": "instruction",
+        "predicate": "take",
+        "subject": "other measurements",
+        "object": "account",
+        "hedge": "recommended",
+        "hedge_text": "should",
+        "evidence": "other measurements and the patient's condition should be taken into account",
+        "importance": "critical",
+        "id": "A10"
+      },
+      {
+        "claim": "The patient's condition should be taken into account to decide on transfusion.",
+        "type": "instruction",
+        "predicate": "take",
+        "subject": "patient's condition",
+        "object": "account",
+        "hedge": "recommended",
+        "hedge_text": "should",
+        "evidence": "the patient's condition should be taken into account",
+        "importance": "critical",
+        "id": "A11"
+      }
+    ],
+    "evidence_failures": [],
+    "hedge_flags": [],
+    "provenance": {
+      "model": "gemini-3.5-flash-lite",
+      "model_version": "gemini-3.5-flash-lite",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "extractor-v2",
+      "timestamp": "2026-10-27T20:29:30.049860+00:00"
+    }
+  },
+  "scores": {
+    "nugget_recall": 1.0,
+    "atom_precision_lower_bound": 0.7272727272727273,
+    "hedge_accuracy": 0.375,
+    "evidence_fail_rate": 0.0,
+    "hedge_flag_rate": 0.0,
+    "n_atoms": 11,
+    "n_nuggets": 8,
+    "n_matched": 8,
+    "matcher_version": "lexical-v2"
+  },
+  "matches": [
+    {
+      "atom": "A9",
+      "nugget": "NOT Decide (peripheral venous hematocrit levels [C0518014] alone,  transfusion [C0005841])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A5",
+      "nugget": "Equal (3% change in hematocrit [C0518014], 1-\"unit\" loss of blood [C0019080])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A4",
+      "nugget": "Is (recommended transfusion [C0005841] threshold in stable hospital patients, Hct [C0518014] 20-24%)",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A3",
+      "nugget": "Is (recommended transfusion [C0005841] threshold in stable hospital patients, 7-8 g/dL hemoglobin [C0518015])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A2",
+      "nugget": "Is (optimal Hct [C0474548] in men [C0086582], 39-50%)",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A1",
+      "nugget": "Is (optimal Hct [C0474548] in healthy women [C0043210], 35-40%)",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A6",
+      "nugget": "Use (10/30 rule, begin blood transfusions [C0005841])",
+      "similarity": 0.833
+    },
+    {
+      "atom": "A11",
+      "nugget": "Decide (other measurements [C0022885] and patient's condition [C0683521], transfusion [C0005841])",
+      "similarity": 0.8
+    }
+  ],
+  "unmatched_nuggets": [],
+  "unmatched_atoms": [
+    "A7",
+    "A8",
+    "A10"
+  ]
+}

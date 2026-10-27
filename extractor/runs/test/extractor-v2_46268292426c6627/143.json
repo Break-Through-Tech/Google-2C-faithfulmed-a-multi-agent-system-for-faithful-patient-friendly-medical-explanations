@@ -1,0 +1,329 @@
+{
+  "lock": {
+    "code_hash": "46268292426c6627",
+    "prompt_version": "extractor-v2",
+    "matcher_version": "lexical-v2",
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "seed": 42,
+    "test_question_ids": [
+      "116",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "134",
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155"
+    ]
+  },
+  "result": {
+    "source_id": "143",
+    "atoms": [
+      {
+        "claim": "Living with Huntington's disease (HD) begins with coping with the knowledge of forthcoming functional changes.",
+        "type": "condition",
+        "predicate": "begins",
+        "subject": "Living with Huntington's disease (HD)",
+        "object": "coping with the knowledge of the forthcoming functional changes",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Living with Huntington's disease (HD) begins with coping with the knowledge of the forthcoming functional, behavioral, and cognitive changes",
+        "importance": "supporting",
+        "id": "A1"
+      },
+      {
+        "claim": "Living with Huntington's disease (HD) begins with coping with the knowledge of forthcoming behavioral changes.",
+        "type": "condition",
+        "predicate": "begins",
+        "subject": "Living with Huntington's disease (HD)",
+        "object": "coping with the knowledge of the forthcoming behavioral changes",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Living with Huntington's disease (HD) begins with coping with the knowledge of the forthcoming functional, behavioral, and cognitive changes",
+        "importance": "supporting",
+        "id": "A2"
+      },
+      {
+        "claim": "Living with Huntington's disease (HD) begins with coping with the knowledge of forthcoming cognitive changes.",
+        "type": "condition",
+        "predicate": "begins",
+        "subject": "Living with Huntington's disease (HD)",
+        "object": "coping with the knowledge of the forthcoming cognitive changes",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Living with Huntington's disease (HD) begins with coping with the knowledge of the forthcoming functional, behavioral, and cognitive changes",
+        "importance": "supporting",
+        "id": "A3"
+      },
+      {
+        "claim": "Living with Huntington's disease (HD) is followed by physical dependence on other people.",
+        "type": "condition",
+        "predicate": "is followed",
+        "subject": "Living with Huntington's disease (HD)",
+        "object": "physical dependence on other people",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "followed by physical dependence on other people",
+        "importance": "critical",
+        "id": "A4"
+      },
+      {
+        "claim": "Apathy caused by the knowledge of Huntington's disease hinders employment.",
+        "type": "symptom",
+        "predicate": "hinder",
+        "subject": "apathy caused by this knowledge",
+        "object": "employment",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "apathy caused by this knowledge hinders employment",
+        "importance": "supporting",
+        "id": "A5"
+      },
+      {
+        "claim": "Chorea hinders employment.",
+        "type": "symptom",
+        "predicate": "hinder",
+        "subject": "chorea",
+        "object": "employment",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "chorea hinders employment",
+        "importance": "supporting",
+        "id": "A6"
+      },
+      {
+        "claim": "Huntington's disease starts late in a small number of people.",
+        "type": "condition",
+        "predicate": "starts",
+        "subject": "Huntington's disease",
+        "object": "late",
+        "hedge": "frequency",
+        "hedge_text": "small number of",
+        "evidence": "In a small number of people, HD starts late",
+        "importance": "supporting",
+        "id": "A7"
+      },
+      {
+        "claim": "Late Huntington's disease starts over 60 years of age.",
+        "type": "condition",
+        "predicate": "starts",
+        "subject": "Huntington's disease",
+        "object": "over 60 years of age",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "(over 60 years of age)",
+        "importance": "supporting",
+        "id": "A8"
+      },
+      {
+        "claim": "Good nutrition helps keeping health for a longer time.",
+        "type": "treatment",
+        "predicate": "help",
+        "subject": "good nutrition",
+        "object": "keeping health for a longer time",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Good nutrition helps keeping health and functions for a longer time",
+        "importance": "supporting",
+        "id": "A9"
+      },
+      {
+        "claim": "Good nutrition helps keeping functions for a longer time.",
+        "type": "treatment",
+        "predicate": "help",
+        "subject": "good nutrition",
+        "object": "keeping functions for a longer time",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Good nutrition helps keeping health and functions for a longer time",
+        "importance": "supporting",
+        "id": "A10"
+      },
+      {
+        "claim": "Rehabilitation programs improved quality of life in Huntington's disease.",
+        "type": "treatment",
+        "predicate": "improve",
+        "subject": "rehabilitation programs",
+        "object": "quality of life in Huntington's disease",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Rehabilitation programs and breathing training improved quality of life in HD",
+        "importance": "supporting",
+        "id": "A11"
+      },
+      {
+        "claim": "Breathing training improved quality of life in Huntington's disease.",
+        "type": "treatment",
+        "predicate": "improve",
+        "subject": "breathing training",
+        "object": "quality of life in Huntington's disease",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Rehabilitation programs and breathing training improved quality of life in HD",
+        "importance": "supporting",
+        "id": "A12"
+      },
+      {
+        "claim": "Currently available medications help with symptoms of Huntington's disease.",
+        "type": "medication",
+        "predicate": "help",
+        "subject": "currently available medications",
+        "object": "symptoms",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "currently available medications help with symptoms",
+        "importance": "critical",
+        "id": "A13"
+      },
+      {
+        "claim": "Treatments that target harmful body chemicals are evaluated in clinical trials.",
+        "type": "treatment",
+        "predicate": "evaluate",
+        "subject": "treatments that target the harmful body chemicals",
+        "object": "clinical trials",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "treatments that target the harmful body chemicals and harmful genes are evaluated in clinical trials",
+        "importance": "supporting",
+        "id": "A14"
+      },
+      {
+        "claim": "Treatments that target harmful genes are evaluated in clinical trials.",
+        "type": "treatment",
+        "predicate": "evaluate",
+        "subject": "treatments that target harmful genes",
+        "object": "clinical trials",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "treatments that target the harmful body chemicals and harmful genes are evaluated in clinical trials",
+        "importance": "supporting",
+        "id": "A15"
+      }
+    ],
+    "evidence_failures": [
+      "A6"
+    ],
+    "hedge_flags": [],
+    "provenance": {
+      "model": "gemini-3.5-flash-lite",
+      "model_version": "gemini-3.5-flash-lite",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "extractor-v2",
+      "timestamp": "2026-10-27T20:27:46.356109+00:00"
+    }
+  },
+  "scores": {
+    "nugget_recall": 1.0,
+    "atom_precision_lower_bound": 0.8666666666666667,
+    "hedge_accuracy": 1.0,
+    "evidence_fail_rate": 0.06666666666666667,
+    "hedge_flag_rate": 0.0,
+    "n_atoms": 15,
+    "n_nuggets": 13,
+    "n_matched": 13,
+    "matcher_version": "lexical-v2"
+  },
+  "matches": [
+    {
+      "atom": "A15",
+      "nugget": "Target (clinical trials [C0008976], harmful genes [C0872189])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A14",
+      "nugget": "Target (clinical trials [C0008976], harmful body chemicals [C0504082])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A13",
+      "nugget": "Helps (currently available medications [C0013227], symptoms [C0037088])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A12",
+      "nugget": "Improves (breathing training [C0006155], quality of life [C0518214] in Huntington's disease [C0020179])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A11",
+      "nugget": "Improves (rehabilitation programs [C0034991], quality of life [C0518214] in Huntington's disease [C0020179])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A10",
+      "nugget": "Maintains (good nutrition [C1442959], functions [C0231162])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A9",
+      "nugget": "Maintains (good nutrition [C1442959], health [C0018759])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A6",
+      "nugget": "Hinders (chorea [C0008489], employment [C0014003])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A5",
+      "nugget": "Hinders (apathy [C0085632], employment [C0014003])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A4",
+      "nugget": "Requires (living with Huntington's disease [C0020179], physical dependence [C1268609] on other people)",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A2",
+      "nugget": "Coping (living with Huntington's disease [C0020179], knowledge of the forthcoming behavioral changes [C0542299])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A1",
+      "nugget": "Coping (living with Huntington's disease [C0020179], knowledge of the forthcoming functional changes [C0516739])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A8",
+      "nugget": "Onset (Huntington's disease [C0020179], over 60 years of age [C0393574] in a small number of people)",
+      "similarity": 0.786
+    }
+  ],
+  "unmatched_nuggets": [],
+  "unmatched_atoms": [
+    "A3",
+    "A7"
+  ]
+}

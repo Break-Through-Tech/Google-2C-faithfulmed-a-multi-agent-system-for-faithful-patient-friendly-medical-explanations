@@ -1,0 +1,130 @@
+{
+  "lock": {
+    "code_hash": "46268292426c6627",
+    "prompt_version": "extractor-v2",
+    "matcher_version": "lexical-v2",
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "seed": 42,
+    "test_question_ids": [
+      "116",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "134",
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155"
+    ]
+  },
+  "result": {
+    "source_id": "155",
+    "atoms": [
+      {
+        "claim": "Using antibiotic eye drops for one week might be as effective as two weeks to prevent eye infection after cataract surgery.",
+        "type": "treatment",
+        "predicate": "prevent",
+        "subject": "antibiotic eye drops for one week",
+        "object": "eye infection after cataract surgery",
+        "hedge": "possible",
+        "hedge_text": "might",
+        "evidence": "using antibiotic eye drops for one week might be as effective as two weeks to prevent eye infection after cataract surgery",
+        "importance": "critical",
+        "id": "A1"
+      },
+      {
+        "claim": "It is recommended to see your eye doctor a week after surgery to see if you need to continue eye drops.",
+        "type": "instruction",
+        "predicate": "see",
+        "subject": "patient",
+        "object": "your eye doctor a week after surgery",
+        "hedge": "recommended",
+        "hedge_text": "recommended",
+        "evidence": "It is recommended to see your eye doctor a week after surgery to see if you need to continue eye drops",
+        "importance": "critical",
+        "id": "A2"
+      },
+      {
+        "claim": "A month-long treatment might be needed if the eyes are dry.",
+        "type": "treatment",
+        "predicate": "need",
+        "subject": "month-long treatment",
+        "object": "dry eyes",
+        "hedge": "possible",
+        "hedge_text": "might",
+        "evidence": "If the eyes are dry, a month-long treatment might be needed",
+        "importance": "critical",
+        "id": "A3"
+      }
+    ],
+    "evidence_failures": [],
+    "hedge_flags": [],
+    "provenance": {
+      "model": "gemini-3.5-flash-lite",
+      "model_version": "gemini-3.5-flash-lite",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "extractor-v2",
+      "timestamp": "2026-10-27T20:29:46.849078+00:00"
+    }
+  },
+  "scores": {
+    "nugget_recall": 1.0,
+    "atom_precision_lower_bound": 1.0,
+    "hedge_accuracy": 0.3333333333333333,
+    "evidence_fail_rate": 0.0,
+    "hedge_flag_rate": 0.0,
+    "n_atoms": 3,
+    "n_nuggets": 3,
+    "n_matched": 3,
+    "matcher_version": "lexical-v2"
+  },
+  "matches": [
+    {
+      "atom": "A2",
+      "nugget": "[recommended] Examine (patient, eye doctor [C1704292] a week after surgery [C2939459])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A1",
+      "nugget": "Prevent (using antibiotic eye drops [C0015399] for one week, eye infection [C0015403] after cataract surgery [C2939459]) EQUAL Prevent (using antibiotic eye drops [C0015399] for two week, eye infection [C0015403] after cataract surgery [C2939459])",
+      "similarity": 0.972
+    },
+    {
+      "atom": "A3",
+      "nugget": "Need (eyes are dry [C0314719], month-long treatment after surgery [C2939459])",
+      "similarity": 0.8
+    }
+  ],
+  "unmatched_nuggets": [],
+  "unmatched_atoms": []
+}

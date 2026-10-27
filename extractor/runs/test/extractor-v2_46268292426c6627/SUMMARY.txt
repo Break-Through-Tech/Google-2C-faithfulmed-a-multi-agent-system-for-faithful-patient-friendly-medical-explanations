@@ -1,0 +1,8 @@
+lock 46268292426c6627 | gemini-3.5-flash-lite | extractor-v2 | lexical-v2
+questions scored: 37/37
+nugget recall (micro): 362/453 = 0.799
+nugget recall (macro): 0.821 (min 0.29, max 1.00)
+atom precision lower bound (micro): 362/481 = 0.753
+evidence failures: 12/481 atoms = 0.025
+hedge flags: 9/481 atoms = 0.019
+hedge agreement with annotators (macro): 0.836

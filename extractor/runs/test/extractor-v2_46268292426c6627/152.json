@@ -1,0 +1,262 @@
+{
+  "lock": {
+    "code_hash": "46268292426c6627",
+    "prompt_version": "extractor-v2",
+    "matcher_version": "lexical-v2",
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "seed": 42,
+    "test_question_ids": [
+      "116",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "134",
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155"
+    ]
+  },
+  "result": {
+    "source_id": "152",
+    "atoms": [
+      {
+        "claim": "Blood pressure is decreased from pre-treatment baseline after taking amlodipine for a long time.",
+        "type": "test_result",
+        "predicate": "decreased",
+        "subject": "blood pressure",
+        "object": "pre-treatment baseline",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "blood pressure is decreased from pre-treatment baseline",
+        "importance": "critical",
+        "id": "A1"
+      },
+      {
+        "claim": "Blood pressure is stable after taking amlodipine for a long time.",
+        "type": "test_result",
+        "predicate": "is",
+        "subject": "blood pressure",
+        "object": "stable",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "stable",
+        "importance": "supporting",
+        "id": "A2"
+      },
+      {
+        "claim": "Your blood pressure will slowly return to baseline over 7-10 days if you stop taking amlodipine.",
+        "type": "other",
+        "predicate": "return",
+        "subject": "blood pressure",
+        "object": "baseline",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "your blood pressure will slowly return to baseline over 7-10 days",
+        "importance": "critical",
+        "id": "A3"
+      },
+      {
+        "claim": "Only a small part of young to middle-aged adults with mildly high blood pressure succeeded in stopping their anti-hypertensive medication over 6 months.",
+        "type": "other",
+        "predicate": "succeeded",
+        "subject": "small part of young to middle-aged adults with mildly high blood pressure",
+        "object": "stopping their anti-hypertensive medication over 6 months",
+        "hedge": "frequency",
+        "hedge_text": "Only",
+        "evidence": "Only a small part of young to middle-aged adults with mildly high blood pressure succeeded in stopping their anti-hypertensive medication over 6 months",
+        "importance": "supporting",
+        "id": "A4"
+      },
+      {
+        "claim": "Temporarily stopping antihypertensive medication for the diagnostic evaluation is safe under your doctor's guidance.",
+        "type": "instruction",
+        "predicate": "is",
+        "subject": "temporarily stopping antihypertensive medication for the diagnostic evaluation",
+        "object": "safe under your doctor's guidance",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Temporarily stopping antihypertensive medication for the diagnostic evaluation is safe under your doctor's guidance",
+        "importance": "critical",
+        "id": "A5"
+      },
+      {
+        "claim": "The dose might need to be adjusted if you are switching to another medication.",
+        "type": "instruction",
+        "predicate": "adjust",
+        "subject": "dose",
+        "object": "another medication",
+        "hedge": "possible",
+        "hedge_text": "might",
+        "evidence": "the dose might need to be adjusted",
+        "importance": "critical",
+        "id": "A6"
+      },
+      {
+        "claim": "Switching might be needed if amlodipine does not lower your blood pressure.",
+        "type": "instruction",
+        "predicate": "needed",
+        "subject": "switching",
+        "object": "amlodipine does not lower your blood pressure",
+        "hedge": "possible",
+        "hedge_text": "might",
+        "evidence": "Switching might be needed if amlodipine does not lower your blood pressure",
+        "importance": "critical",
+        "id": "A7"
+      },
+      {
+        "claim": "Amlodipine is still a good choice for older adults to control blood pressure.",
+        "type": "medication",
+        "predicate": "control",
+        "subject": "amlodipine",
+        "object": "blood pressure",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Amlodipine is still a good choice for older adults to control blood pressure",
+        "importance": "supporting",
+        "id": "A8"
+      },
+      {
+        "claim": "Amlodipine is still a good choice for older adults to protect against stroke.",
+        "type": "medication",
+        "predicate": "protect",
+        "subject": "amlodipine",
+        "object": "stroke",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "protect against stroke",
+        "importance": "critical",
+        "id": "A9"
+      },
+      {
+        "claim": "Amlodipine is still a good choice for older adults to protect against myocardial infarction.",
+        "type": "medication",
+        "predicate": "protect",
+        "subject": "amlodipine",
+        "object": "myocardial infarction",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "protect against stroke and myocardial infarction",
+        "importance": "critical",
+        "id": "A10"
+      },
+      {
+        "claim": "It is not recommended suddenly stoping the class of medications that includes amlodipine.",
+        "type": "instruction",
+        "predicate": "stop",
+        "subject": "class of medications that includes amlodipine",
+        "object": "suddenly",
+        "hedge": "negated",
+        "hedge_text": "not",
+        "evidence": "it is not recommended suddenly stoping the class of medications that includes amlodipine",
+        "importance": "critical",
+        "id": "A11"
+      }
+    ],
+    "evidence_failures": [],
+    "hedge_flags": [],
+    "provenance": {
+      "model": "gemini-3.5-flash-lite",
+      "model_version": "gemini-3.5-flash-lite",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "extractor-v2",
+      "timestamp": "2026-10-27T20:29:21.966181+00:00"
+    }
+  },
+  "scores": {
+    "nugget_recall": 0.8181818181818182,
+    "atom_precision_lower_bound": 0.8181818181818182,
+    "hedge_accuracy": 0.8333333333333334,
+    "evidence_fail_rate": 0.0,
+    "hedge_flag_rate": 0.0,
+    "n_atoms": 11,
+    "n_nuggets": 11,
+    "n_matched": 9,
+    "matcher_version": "lexical-v2"
+  },
+  "matches": [
+    {
+      "atom": "A10",
+      "nugget": "Protect (Amlodipine [C0051696], against myocardial infarction [C0027051] in older adults [C0001792])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A9",
+      "nugget": "Protect (amlodipine [C0051696], against stroke [C0038454] in older adults [C0001792])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A8",
+      "nugget": "Control (amlodipine [C0051696], blood pressure [C0005823] in older adults [C0001792])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A7",
+      "nugget": "Stabilize (amlodipine [C0051696], blood pressure [C0005823])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A5",
+      "nugget": "Is (temporarily stopping [C0850893] antihypertensive medication [C0003364] for diagnostic evaluation, safe under doctor's guidance [C0583348])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A1",
+      "nugget": "Decrease (amlodipine [C0051696], blood pressure [C0005823] from pre-treatment baseline)",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A3",
+      "nugget": "IF Stop (patient, amlodipine [C0051696]) THEN Return (blood pressure [C0005823], baseline over 7-10 days)",
+      "similarity": 0.909
+    },
+    {
+      "atom": "A4",
+      "nugget": "Succeed (stop, anti-hypertensive medication [C0003364]) IF IS (patient, young [C0238598] to middle-aged adults [C0683973] with mildly high blood pressure [C3276943])",
+      "similarity": 0.786
+    },
+    {
+      "atom": "A6",
+      "nugget": "IF Switch (patient, medication [C0003364]) THEN [may] Need (amlodipine [C0051696], adjusted dose [C2826232])",
+      "similarity": 0.571
+    }
+  ],
+  "unmatched_nuggets": [
+    "[may] Need (patient, switching to another medication [C2936279]) IF Ineffective (amlodipine [C0051696], lower blood pressure [C4529970])",
+    "NOT Recommend (doctors, suddenly stopping [C0558681] the class of medications that includes amlodipine [C0051696])"
+  ],
+  "unmatched_atoms": [
+    "A2",
+    "A11"
+  ]
+}

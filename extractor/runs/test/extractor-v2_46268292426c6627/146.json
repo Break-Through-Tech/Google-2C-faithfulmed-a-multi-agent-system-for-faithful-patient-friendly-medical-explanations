@@ -1,0 +1,337 @@
+{
+  "lock": {
+    "code_hash": "46268292426c6627",
+    "prompt_version": "extractor-v2",
+    "matcher_version": "lexical-v2",
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "seed": 42,
+    "test_question_ids": [
+      "116",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "134",
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155"
+    ]
+  },
+  "result": {
+    "source_id": "146",
+    "atoms": [
+      {
+        "claim": "The Veterans Affairs and the Department of Defense recommend trauma-focused treatments such as Cognitive Processing Therapy.",
+        "type": "treatment",
+        "predicate": "recommend",
+        "subject": "the Veterans Affairs and the Department of Defense",
+        "object": "Cognitive Processing Therapy",
+        "hedge": "recommended",
+        "hedge_text": "recommend",
+        "evidence": "the Veterans Affairs (VA) and the Department of Defense (DoD) recommend trauma-focused treatments such as Cognitive Processing Therapy (CPT)",
+        "importance": "critical",
+        "id": "A1"
+      },
+      {
+        "claim": "The Veterans Affairs and the Department of Defense recommend trauma-focused treatments such as Prolonged Exposure Therapy.",
+        "type": "treatment",
+        "predicate": "recommend",
+        "subject": "the Veterans Affairs and the Department of Defense",
+        "object": "Prolonged Exposure Therapy",
+        "hedge": "recommended",
+        "hedge_text": "recommend",
+        "evidence": "the Veterans Affairs (VA) and the Department of Defense (DoD) recommend trauma-focused treatments such as Cognitive Processing Therapy (CPT), Prolonged Exposure Therapy (PE)",
+        "importance": "critical",
+        "id": "A2"
+      },
+      {
+        "claim": "The Veterans Affairs and the Department of Defense recommend trauma-focused treatments such as Eye Movement, Desensitization, and Restructuring.",
+        "type": "treatment",
+        "predicate": "recommend",
+        "subject": "the Veterans Affairs and the Department of Defense",
+        "object": "Eye Movement, Desensitization, and Restructuring",
+        "hedge": "recommended",
+        "hedge_text": "recommend",
+        "evidence": "the Veterans Affairs (VA) and the Department of Defense (DoD) recommend trauma-focused treatments such as Cognitive Processing Therapy (CPT), Prolonged Exposure Therapy (PE), Eye Movement, Desensitization, and Restructuring (EMDR)",
+        "importance": "critical",
+        "id": "A3"
+      },
+      {
+        "claim": "The Veterans Affairs and the Department of Defense recommend avoiding benzodiazepines because of their side effects.",
+        "type": "instruction",
+        "predicate": "avoid",
+        "subject": "the Veterans Affairs and the Department of Defense",
+        "object": "benzodiazepines",
+        "hedge": "recommended",
+        "hedge_text": "recommend",
+        "evidence": "They recommend avoiding benzodiazepines and other sedative hypnotic medications because of their side effects",
+        "importance": "critical",
+        "id": "A4"
+      },
+      {
+        "claim": "The Veterans Affairs and the Department of Defense recommend avoiding sedative hypnotic medications because of their side effects.",
+        "type": "instruction",
+        "predicate": "avoid",
+        "subject": "the Veterans Affairs and the Department of Defense",
+        "object": "sedative hypnotic medications",
+        "hedge": "recommended",
+        "hedge_text": "recommend",
+        "evidence": "They recommend avoiding benzodiazepines and other sedative hypnotic medications because of their side effects",
+        "importance": "critical",
+        "id": "A5"
+      },
+      {
+        "claim": "The recommended medications include selective serotonin reuptake inhibitors.",
+        "type": "medication",
+        "predicate": "include",
+        "subject": "recommended medications",
+        "object": "selective serotonin reuptake inhibitors",
+        "hedge": "recommended",
+        "hedge_text": "recommended",
+        "evidence": "The recommended medications include selective serotonin reuptake inhibitors (SSRIs)",
+        "importance": "critical",
+        "id": "A6"
+      },
+      {
+        "claim": "Prazosin is often prescribed for nightmares.",
+        "type": "medication",
+        "predicate": "prescribe",
+        "subject": "Prazosin",
+        "object": "nightmares",
+        "hedge": "frequency",
+        "hedge_text": "often",
+        "evidence": "Prazosin is often prescribed for nightmares",
+        "importance": "critical",
+        "id": "A7"
+      },
+      {
+        "claim": "The evidence for Prazosin is inconclusive.",
+        "type": "other",
+        "predicate": "is",
+        "subject": "evidence for Prazosin",
+        "object": "inconclusive",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "the evidence for it and other drugs, such as tricyclic antidepressants and atypical antipsychotics is inconclusive",
+        "importance": "supporting",
+        "id": "A8"
+      },
+      {
+        "claim": "The evidence for tricyclic antidepressants is inconclusive.",
+        "type": "other",
+        "predicate": "is",
+        "subject": "evidence for tricyclic antidepressants",
+        "object": "inconclusive",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "the evidence for it and other drugs, such as tricyclic antidepressants and atypical antipsychotics is inconclusive",
+        "importance": "supporting",
+        "id": "A9"
+      },
+      {
+        "claim": "The evidence for atypical antipsychotics is inconclusive.",
+        "type": "other",
+        "predicate": "is",
+        "subject": "evidence for atypical antipsychotics",
+        "object": "inconclusive",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "the evidence for it and other drugs, such as tricyclic antidepressants and atypical antipsychotics is inconclusive",
+        "importance": "supporting",
+        "id": "A10"
+      },
+      {
+        "claim": "Mindfulness skills such as non-judgmental acceptance may help with the symptoms.",
+        "type": "treatment",
+        "predicate": "help",
+        "subject": "Mindfulness skills",
+        "object": "symptoms",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "Mindfulness skills, such as non-judgmental acceptance, attentional control and openness to experiences and fMRI-guided neurofeedback may help with the symptoms",
+        "importance": "supporting",
+        "id": "A11"
+      },
+      {
+        "claim": "Mindfulness skills such as attentional control may help with the symptoms.",
+        "type": "treatment",
+        "predicate": "help",
+        "subject": "Mindfulness skills",
+        "object": "symptoms",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "Mindfulness skills, such as non-judgmental acceptance, attentional control and openness to experiences and fMRI-guided neurofeedback may help with the symptoms",
+        "importance": "supporting",
+        "id": "A12"
+      },
+      {
+        "claim": "Mindfulness skills such as openness to experiences may help with the symptoms.",
+        "type": "treatment",
+        "predicate": "help",
+        "subject": "Mindfulness skills",
+        "object": "symptoms",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "Mindfulness skills, such as non-judgmental acceptance, attentional control and openness to experiences and fMRI-guided neurofeedback may help with the symptoms",
+        "importance": "supporting",
+        "id": "A13"
+      },
+      {
+        "claim": "fMRI-guided neurofeedback may help with the symptoms.",
+        "type": "treatment",
+        "predicate": "help",
+        "subject": "fMRI-guided neurofeedback",
+        "object": "symptoms",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "fMRI-guided neurofeedback may help with the symptoms",
+        "importance": "supporting",
+        "id": "A14"
+      },
+      {
+        "claim": "Hyperbaric oxygen therapy helped veterans with treatment-resistant PTSD.",
+        "type": "treatment",
+        "predicate": "help",
+        "subject": "Hyperbaric oxygen therapy",
+        "object": "veterans with treatment-resistant PTSD",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Hyperbaric oxygen therapy (HBOT) helped veterans with treatment-resistant PTSD",
+        "importance": "critical",
+        "id": "A15"
+      }
+    ],
+    "evidence_failures": [],
+    "hedge_flags": [],
+    "provenance": {
+      "model": "gemini-3.5-flash-lite",
+      "model_version": "gemini-3.5-flash-lite",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "extractor-v2",
+      "timestamp": "2026-10-27T20:28:27.426554+00:00"
+    }
+  },
+  "scores": {
+    "nugget_recall": 0.7368421052631579,
+    "atom_precision_lower_bound": 0.9333333333333333,
+    "hedge_accuracy": 0.42857142857142855,
+    "evidence_fail_rate": 0.0,
+    "hedge_flag_rate": 0.0,
+    "n_atoms": 15,
+    "n_nuggets": 19,
+    "n_matched": 14,
+    "matcher_version": "lexical-v2"
+  },
+  "matches": [
+    {
+      "atom": "A13",
+      "nugget": "Include (mindfulness skills [C3542996], openness to experiences [C0871006])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A12",
+      "nugget": "Include (mindfulness skills [C3542996], attentional control)",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A11",
+      "nugget": "Include (mindfulness skills [C3542996], non-judgmental acceptance [C0278069])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A10",
+      "nugget": "Evidence (atypical antipsychotics [C1276996], inconclusive [C0205258])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A9",
+      "nugget": "Evidence (tricyclic antidepressants [C0003290], inconclusive [C0205258])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A8",
+      "nugget": "Evidence (Prazosin [C0032912], inconclusive [C0205258])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A7",
+      "nugget": "[often] Perscribed (Prazosin [C0032912], nightmares [C0028084])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A3",
+      "nugget": "Is (Eye Movement Desensitization and Restructuring (EMDR) [C3164706], trauma-focused treatment [C1320387])",
+      "similarity": 0.9
+    },
+    {
+      "atom": "A15",
+      "nugget": "Treat (Hyperbaric oxygen therapy (HBOT) [C0020431], veterans with treatment-resistant [C4020575] PTSD [C0038436])",
+      "similarity": 0.875
+    },
+    {
+      "atom": "A2",
+      "nugget": "Is (Prolonged Exposure Therapy (PE) [C0870527], trauma-focused treatment [C1320387])",
+      "similarity": 0.875
+    },
+    {
+      "atom": "A1",
+      "nugget": "Is (Cognitive Processing Therapy (CPT) [C0009244], trauma-focused treatment [C1320387])",
+      "similarity": 0.875
+    },
+    {
+      "atom": "A4",
+      "nugget": "Recommend (Department of Defense (DoD) [C1511775], avoiding benzodiazepines [C0005064])",
+      "similarity": 0.833
+    },
+    {
+      "atom": "A14",
+      "nugget": "[may] Treat (fMRI-guided [C0376335] neurofeedback [C2713543], PTSD [C0038436] symptoms)",
+      "similarity": 0.75
+    },
+    {
+      "atom": "A5",
+      "nugget": "Recommend (Department of Defense (DoD) [C1511775], avoiding other sedative hypnotic medications [C0020592])",
+      "similarity": 0.733
+    }
+  ],
+  "unmatched_nuggets": [
+    "Treat (PTSD [C0038436], trauma-focused treatment [C1320387])",
+    "Recommend (Veterans Affairs (VA) [C1549054], avoiding benzodiazepines [C0005064])",
+    "Recommend (Veterans Affairs (VA) [C1549054], avoiding other sedative hypnotic medications [C0020592])",
+    "Treat (PTSD [C0038436], selective serotonin reuptake inhibitors (SSRIs) [C0360105])",
+    "[may] Treat (mindfulness skills [C3542996], PTSD [C0038436] symptoms)"
+  ],
+  "unmatched_atoms": [
+    "A6"
+  ]
+}

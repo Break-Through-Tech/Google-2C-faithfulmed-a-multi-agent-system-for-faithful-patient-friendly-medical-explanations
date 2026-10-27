@@ -1,0 +1,309 @@
+{
+  "lock": {
+    "code_hash": "46268292426c6627",
+    "prompt_version": "extractor-v2",
+    "matcher_version": "lexical-v2",
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "seed": 42,
+    "test_question_ids": [
+      "116",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "134",
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155"
+    ]
+  },
+  "result": {
+    "source_id": "119",
+    "atoms": [
+      {
+        "claim": "Drugs are used to lessen the symptoms of COPD.",
+        "type": "medication",
+        "predicate": "lessen",
+        "subject": "drugs",
+        "object": "symptoms of COPD",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Drugs are used to lessen the symptoms of COPD",
+        "importance": "critical",
+        "id": "A1"
+      },
+      {
+        "claim": "Drugs are used to prevent flare-ups of COPD.",
+        "type": "medication",
+        "predicate": "prevent",
+        "subject": "drugs",
+        "object": "flare-ups",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "prevent flare-ups",
+        "importance": "critical",
+        "id": "A2"
+      },
+      {
+        "claim": "Combinations of drugs that include inhaled corticosteroids improve quality of life.",
+        "type": "medication",
+        "predicate": "improve",
+        "subject": "combinations of drugs that include inhaled corticosteroids",
+        "object": "quality of life",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Combinations of drugs that include inhaled corticosteroids [...] improve quality of life",
+        "importance": "critical",
+        "id": "A3"
+      },
+      {
+        "claim": "Combinations of drugs that include inhaled corticosteroids reduce risk of death.",
+        "type": "medication",
+        "predicate": "reduce",
+        "subject": "combinations of drugs that include inhaled corticosteroids",
+        "object": "risk of death",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "reduce risk of death",
+        "importance": "critical",
+        "id": "A4"
+      },
+      {
+        "claim": "Combinations of drugs that include inhaled corticosteroids reduce risk of flare-ups.",
+        "type": "medication",
+        "predicate": "reduce",
+        "subject": "combinations of drugs that include inhaled corticosteroids",
+        "object": "flare-ups",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "reduce risk of [...] flare-ups",
+        "importance": "critical",
+        "id": "A5"
+      },
+      {
+        "claim": "Combinations of drugs that include inhaled corticosteroids improve breathing.",
+        "type": "medication",
+        "predicate": "improve",
+        "subject": "combinations of drugs that include inhaled corticosteroids",
+        "object": "breathing",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "improve breathing",
+        "importance": "critical",
+        "id": "A6"
+      },
+      {
+        "claim": "Combinations of drugs that include inhaled corticosteroids reduce symptoms.",
+        "type": "medication",
+        "predicate": "reduce",
+        "subject": "combinations of drugs that include inhaled corticosteroids",
+        "object": "symptoms",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "reduce symptoms",
+        "importance": "critical",
+        "id": "A7"
+      },
+      {
+        "claim": "Inhaled corticosteroids are steroid sprays or powders that you breathe in to reduce inflammation.",
+        "type": "medication",
+        "predicate": "is",
+        "subject": "inhaled corticosteroids",
+        "object": "steroid sprays or powders that you breathe in to reduce inflammation",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "inhaled corticosteroids (steroid sprays or powders that you breathe in to reduce inflammation)",
+        "importance": "supporting",
+        "id": "A8"
+      },
+      {
+        "claim": "The most effective triple combinations were inhaled corticosteroid/long-acting muscarinic antagonist/long-acting \u03b22-agonist.",
+        "type": "medication",
+        "predicate": "is",
+        "subject": "the most effective triple combinations",
+        "object": "inhaled corticosteroid/long-acting muscarinic antagonist/long-acting \u03b22-agonist",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "The most effective triple combinations were inhaled corticosteroid/long-acting muscarinic antagonist/long-acting \u03b22-agonist (ICS/LAMA/LABA)",
+        "importance": "supporting",
+        "id": "A9"
+      },
+      {
+        "claim": "Budesonide/glycopyrronium/formoterol fumarate is an example of inhaled corticosteroid/long-acting muscarinic antagonist/long-acting \u03b22-agonist.",
+        "type": "medication",
+        "predicate": "is",
+        "subject": "budesonide/glycopyrronium/formoterol fumarate",
+        "object": "inhaled corticosteroid/long-acting muscarinic antagonist/long-acting \u03b22-agonist",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "such as budesonide/glycopyrronium/formoterol fumarate",
+        "importance": "supporting",
+        "id": "A10"
+      },
+      {
+        "claim": "Muscarinic antagonists help the small muscles and other lung tissues work properly.",
+        "type": "medication",
+        "predicate": "help",
+        "subject": "muscarinic antagonists",
+        "object": "the small muscles and other lung tissues work properly",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Muscarinic antagonists help the small muscles and other lung tissues work properly.",
+        "importance": "supporting",
+        "id": "A11"
+      },
+      {
+        "claim": "Long-acting \u03b22-agonists are also called bronchodilators.",
+        "type": "medication",
+        "predicate": "is",
+        "subject": "long-acting \u03b22-agonists",
+        "object": "bronchodilators",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Long-acting \u03b22-agonists, also called bronchodilators,",
+        "importance": "supporting",
+        "id": "A12"
+      },
+      {
+        "claim": "Long-acting \u03b22-agonists relax the muscles in the airways.",
+        "type": "medication",
+        "predicate": "relax",
+        "subject": "long-acting \u03b22-agonists",
+        "object": "the muscles in the airways",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "relax the muscles in the airways",
+        "importance": "supporting",
+        "id": "A13"
+      },
+      {
+        "claim": "Long-acting \u03b22-agonists help the airways to open up.",
+        "type": "medication",
+        "predicate": "help",
+        "subject": "long-acting \u03b22-agonists",
+        "object": "the airways to open up",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "helping them to open up",
+        "importance": "supporting",
+        "id": "A14"
+      }
+    ],
+    "evidence_failures": [
+      "A3",
+      "A5"
+    ],
+    "hedge_flags": [],
+    "provenance": {
+      "model": "gemini-3.5-flash-lite",
+      "model_version": "gemini-3.5-flash-lite",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "extractor-v2",
+      "timestamp": "2026-10-27T20:24:37.739944+00:00"
+    }
+  },
+  "scores": {
+    "nugget_recall": 0.5625,
+    "atom_precision_lower_bound": 0.6428571428571429,
+    "hedge_accuracy": 1.0,
+    "evidence_fail_rate": 0.14285714285714285,
+    "hedge_flag_rate": 0.0,
+    "n_atoms": 14,
+    "n_nuggets": 16,
+    "n_matched": 9,
+    "matcher_version": "lexical-v2"
+  },
+  "matches": [
+    {
+      "atom": "A11",
+      "nugget": "Help (muscarinic antagonists [C0003385], lung [C0024109] tissues)",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A6",
+      "nugget": "Improve (corticosteroids [C3536709], breathing)",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A4",
+      "nugget": "Reduce (corticosteroids [C3536709], risk of death)",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A3",
+      "nugget": "Improve (corticosteroids [C3536709], quality of life)",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A2",
+      "nugget": "Prevent (drugs [C1547857], COPD flare-ups [C0340044])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A1",
+      "nugget": "Reduce (drugs [C1547857], COPD [C0024117] symptoms)",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A13",
+      "nugget": "Relax (long-acting \u03b22-agonists [C0354671] (bronchodilators [C0006280]), muscles in the airways [C0458827])",
+      "similarity": 0.9
+    },
+    {
+      "atom": "A5",
+      "nugget": "Reduce (corticosteroids [C3536709], COPD flare-ups [C0340044])",
+      "similarity": 0.833
+    },
+    {
+      "atom": "A7",
+      "nugget": "Reduce (corticosteroids [C3536709], COPD [C0024117] symptoms)",
+      "similarity": 0.75
+    }
+  ],
+  "unmatched_nuggets": [
+    "Treat (inhaled [C0001559] corticosteroid [C3536709], COPD [C0024117])",
+    "Treat (long-acting muscarinic antagonist [C0003385], COPD [C0024117])",
+    "Treat (long-acting \u03b22-agonist [C0354671] (ICS/LAMA/LABA), COPD [C0024117])",
+    "Treat (budesonide [C0054201], COPD [C0024117])",
+    "Treat (glycopyrronium [C3814772], COPD [C0024117])",
+    "Treat (formoterol fumarate [C0771469], COPD [C0024117])",
+    "Help (muscarinic antagonists [C0003385], small muscles [C4083049])"
+  ],
+  "unmatched_atoms": [
+    "A8",
+    "A9",
+    "A10",
+    "A12",
+    "A14"
+  ]
+}

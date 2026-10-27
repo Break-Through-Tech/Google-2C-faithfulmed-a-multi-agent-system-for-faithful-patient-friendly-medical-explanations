@@ -1,0 +1,325 @@
+{
+  "lock": {
+    "code_hash": "46268292426c6627",
+    "prompt_version": "extractor-v2",
+    "matcher_version": "lexical-v2",
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "seed": 42,
+    "test_question_ids": [
+      "116",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "134",
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155"
+    ]
+  },
+  "result": {
+    "source_id": "127",
+    "atoms": [
+      {
+        "claim": "Gene therapy aims to treat disease by improving genes.",
+        "type": "treatment",
+        "predicate": "treat",
+        "subject": "gene therapy",
+        "object": "disease",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Gene therapy aims to treat and cure disease by improving genes",
+        "importance": "critical",
+        "id": "A1"
+      },
+      {
+        "claim": "Gene therapy aims to cure disease by improving genes.",
+        "type": "treatment",
+        "predicate": "cure",
+        "subject": "gene therapy",
+        "object": "disease",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Gene therapy aims to treat and cure disease by improving genes",
+        "importance": "critical",
+        "id": "A2"
+      },
+      {
+        "claim": "Gene therapy can suppress the genes 'gene silencing'.",
+        "type": "treatment",
+        "predicate": "suppress",
+        "subject": "gene therapy",
+        "object": "the genes 'gene silencing'",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "Gene therapy can suppress the genes \"gene silencing\"",
+        "importance": "critical",
+        "id": "A3"
+      },
+      {
+        "claim": "Gene therapy can replace the genes.",
+        "type": "treatment",
+        "predicate": "replace",
+        "subject": "gene therapy",
+        "object": "the genes",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "Gene therapy can suppress the genes \"gene silencing\", replace the genes",
+        "importance": "critical",
+        "id": "A4"
+      },
+      {
+        "claim": "Gene therapy can edit genes.",
+        "type": "treatment",
+        "predicate": "edit",
+        "subject": "gene therapy",
+        "object": "genes",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "genes can be edited (modified)",
+        "importance": "critical",
+        "id": "A5"
+      },
+      {
+        "claim": "Each method may have side effects.",
+        "type": "other",
+        "predicate": "have",
+        "subject": "each method",
+        "object": "side effects",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "Each method may have side effects",
+        "importance": "critical",
+        "id": "A6"
+      },
+      {
+        "claim": "Gene replacement relies on viruses to deliver the gene to the target location.",
+        "type": "treatment",
+        "predicate": "rely",
+        "subject": "gene replacement",
+        "object": "viruses",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Gene replacement relies on viruses and similar cells to deliver the gene to the target location",
+        "importance": "supporting",
+        "id": "A7"
+      },
+      {
+        "claim": "Gene replacement relies on similar cells to deliver the gene to the target location.",
+        "type": "treatment",
+        "predicate": "rely",
+        "subject": "gene replacement",
+        "object": "similar cells",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Gene replacement relies on viruses and similar cells to deliver the gene to the target location",
+        "importance": "supporting",
+        "id": "A8"
+      },
+      {
+        "claim": "Gene therapy side effects include toxic damage to the liver.",
+        "type": "symptom",
+        "predicate": "include",
+        "subject": "gene therapy side effects",
+        "object": "toxic damage to the liver",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Side effects include toxic damage to the liver (hepatotoxicity)",
+        "importance": "critical",
+        "id": "A9"
+      },
+      {
+        "claim": "Gene therapy side effects include toxic damage to the heart.",
+        "type": "symptom",
+        "predicate": "include",
+        "subject": "gene therapy side effects",
+        "object": "toxic damage to the heart",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Side effects include toxic damage to the liver (hepatotoxicity), heart (cardiotoxicity)",
+        "importance": "critical",
+        "id": "A10"
+      },
+      {
+        "claim": "Gene therapy side effects include toxic damage to the nerves.",
+        "type": "symptom",
+        "predicate": "include",
+        "subject": "gene therapy side effects",
+        "object": "toxic damage to the nerves",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Side effects include toxic damage to the liver (hepatotoxicity), heart (cardiotoxicity), nerves (neurotoxicity)",
+        "importance": "critical",
+        "id": "A11"
+      },
+      {
+        "claim": "Gene therapy side effects include inflammation caused by immune response.",
+        "type": "symptom",
+        "predicate": "include",
+        "subject": "gene therapy side effects",
+        "object": "inflammation caused by immune response",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Side effects include toxic damage to the liver (hepatotoxicity), heart (cardiotoxicity), nerves (neurotoxicity), inflammation caused by immune response",
+        "importance": "critical",
+        "id": "A12"
+      },
+      {
+        "claim": "Gene therapy side effects include even death.",
+        "type": "symptom",
+        "predicate": "include",
+        "subject": "gene therapy side effects",
+        "object": "death",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Side effects include toxic damage to the liver (hepatotoxicity), heart (cardiotoxicity), nerves (neurotoxicity), inflammation caused by immune response, and even death",
+        "importance": "critical",
+        "id": "A13"
+      },
+      {
+        "claim": "Suppressing the immune response may cause secondary infections.",
+        "type": "risk_factor",
+        "predicate": "cause",
+        "subject": "suppressing the immune response",
+        "object": "secondary infections",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "Suppressing the immune response may cause secondary infections",
+        "importance": "critical",
+        "id": "A14"
+      },
+      {
+        "claim": "Gene editing may cause unintended changes.",
+        "type": "risk_factor",
+        "predicate": "cause",
+        "subject": "gene editing",
+        "object": "unintended changes",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "Gene editing may cause unintended changes",
+        "importance": "critical",
+        "id": "A15"
+      }
+    ],
+    "evidence_failures": [],
+    "hedge_flags": [],
+    "provenance": {
+      "model": "gemini-3.5-flash-lite",
+      "model_version": "gemini-3.5-flash-lite",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "extractor-v2",
+      "timestamp": "2026-10-27T20:25:36.986395+00:00"
+    }
+  },
+  "scores": {
+    "nugget_recall": 0.5263157894736842,
+    "atom_precision_lower_bound": 0.6666666666666666,
+    "hedge_accuracy": 1.0,
+    "evidence_fail_rate": 0.0,
+    "hedge_flag_rate": 0.0,
+    "n_atoms": 15,
+    "n_nuggets": 19,
+    "n_matched": 10,
+    "matcher_version": "lexical-v2"
+  },
+  "matches": [
+    {
+      "atom": "A15",
+      "nugget": "[may] Cause (gene editing [C4277689], unintended changes [C1519789])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A13",
+      "nugget": "Edit (gene therapy [C0017296], genes [C0017337])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A12",
+      "nugget": "Replace (gene therapy [C0017296], genes [C0017337])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A11",
+      "nugget": "Suppress (gene therapy [C0017296], genes [C0017337])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A2",
+      "nugget": "Cure (gene therapy [C0017296], disease [C0012634])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A1",
+      "nugget": "Treat (gene therapy [C0017296], disease [C0012634])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A14",
+      "nugget": "[may] Cause (immune response suppression [C0021079], secondary infections [C0442886])",
+      "similarity": 0.833
+    },
+    {
+      "atom": "A10",
+      "nugget": "Is (toxic damage to the heart [C0876994], adverse effect [C0879626])",
+      "similarity": 0.75
+    },
+    {
+      "atom": "A9",
+      "nugget": "Is (toxic damage to the liver [C0348754], adverse effect [C0879626])",
+      "similarity": 0.75
+    },
+    {
+      "atom": "A8",
+      "nugget": "Depends (gene replacement [1304648], viruses and similar cells to deliver the gene [C1520007])",
+      "similarity": 0.733
+    }
+  ],
+  "unmatched_nuggets": [
+    "[may] Have (gene suppression [C0017372], adverse effects [C0879626])",
+    "[may] Have (gene replacement [1304648], adverse effects [C0879626])",
+    "[may] Have (gene editing [C4277689], adverse effects [C0879626])",
+    "Is (hepatotoxicity [C0235378], adverse effect [C0879626])",
+    "Is (cardiotoxicity [C0876994], adverse effect)",
+    "Is (toxic damage to the nerves [C0393865], adverse effect [C0879626])",
+    "Is (neurotoxicity [C0235032], adverse effect [C0879626])",
+    "Is (inflammation caused by immune response [C0021384], adverse effect [C0879626])",
+    "Is (death [C1306577], adverse effect [C0879626])"
+  ],
+  "unmatched_atoms": [
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7"
+  ]
+}

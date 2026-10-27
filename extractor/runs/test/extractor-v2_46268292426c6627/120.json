@@ -1,0 +1,298 @@
+{
+  "lock": {
+    "code_hash": "46268292426c6627",
+    "prompt_version": "extractor-v2",
+    "matcher_version": "lexical-v2",
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "seed": 42,
+    "test_question_ids": [
+      "116",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "134",
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155"
+    ]
+  },
+  "result": {
+    "source_id": "120",
+    "atoms": [
+      {
+        "claim": "Facial numbness may be a sign of trigeminal neuropathy.",
+        "type": "symptom",
+        "predicate": "is",
+        "subject": "facial numbness",
+        "object": "sign of trigeminal neuropathy",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "Facial numbness may be a sign of trigeminal neuropathy",
+        "importance": "critical",
+        "id": "A1"
+      },
+      {
+        "claim": "Trigeminal neuropathy is a condition.",
+        "type": "condition",
+        "predicate": "is",
+        "subject": "trigeminal neuropathy",
+        "object": "condition",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "trigeminal neuropathy, a condition",
+        "importance": "supporting",
+        "id": "A2"
+      },
+      {
+        "claim": "In trigeminal neuropathy, the nerve that sends sensations from your face to your brain is not working properly.",
+        "type": "condition",
+        "predicate": "work",
+        "subject": "the nerve that sends sensations from your face to your brain",
+        "object": "not properly",
+        "hedge": "negated",
+        "hedge_text": "not",
+        "evidence": "the nerve that sends sensations from your face to your brain is not working properly",
+        "importance": "critical",
+        "id": "A3"
+      },
+      {
+        "claim": "The nerve can be affected by damage to the nearby blood vessels.",
+        "type": "risk_factor",
+        "predicate": "affect",
+        "subject": "damage to the nearby blood vessels",
+        "object": "the nerve",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "The nerve can be affected by damage to the nearby blood vessels",
+        "importance": "critical",
+        "id": "A4"
+      },
+      {
+        "claim": "The nerve can be affected by compression in the spine.",
+        "type": "risk_factor",
+        "predicate": "affect",
+        "subject": "compression in the spine",
+        "object": "the nerve",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "compression in the spine",
+        "importance": "critical",
+        "id": "A5"
+      },
+      {
+        "claim": "The nerve can be affected by sensitive nerves passed down from the parents.",
+        "type": "risk_factor",
+        "predicate": "affect",
+        "subject": "sensitive nerves passed down from the parents",
+        "object": "the nerve",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "sensitive nerves passed down from the parents",
+        "importance": "critical",
+        "id": "A6"
+      },
+      {
+        "claim": "The nerve can be affected by root canal treatment.",
+        "type": "risk_factor",
+        "predicate": "affect",
+        "subject": "root canal treatment",
+        "object": "the nerve",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "root canal treatment",
+        "importance": "critical",
+        "id": "A7"
+      },
+      {
+        "claim": "The nerve can be affected by Guillain-Barre Syndrome.",
+        "type": "risk_factor",
+        "predicate": "affect",
+        "subject": "Guillain-Barre Syndrome",
+        "object": "the nerve",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "Guillain-Barre Syndrome",
+        "importance": "critical",
+        "id": "A8"
+      },
+      {
+        "claim": "Guillain-Barre Syndrome is a condition in which your immune system damages the nerves.",
+        "type": "condition",
+        "predicate": "damage",
+        "subject": "your immune system",
+        "object": "the nerves",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "in which your immune system damages the nerves",
+        "importance": "supporting",
+        "id": "A9"
+      },
+      {
+        "claim": "The nerve can be affected by tumors.",
+        "type": "risk_factor",
+        "predicate": "affect",
+        "subject": "tumors",
+        "object": "the nerve",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "tumors",
+        "importance": "critical",
+        "id": "A10"
+      },
+      {
+        "claim": "The nerve can be affected by damage to the brain.",
+        "type": "risk_factor",
+        "predicate": "affect",
+        "subject": "damage to the brain",
+        "object": "the nerve",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "damage to the brain",
+        "importance": "critical",
+        "id": "A11"
+      },
+      {
+        "claim": "The nerve can be affected by Sj\u00f6gren's Syndrome.",
+        "type": "risk_factor",
+        "predicate": "affect",
+        "subject": "Sj\u00f6gren's Syndrome",
+        "object": "the nerve",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "Sj\u00f6gren's Syndrome",
+        "importance": "critical",
+        "id": "A12"
+      },
+      {
+        "claim": "Sj\u00f6gren's Syndrome is a disease.",
+        "type": "condition",
+        "predicate": "is",
+        "subject": "Sj\u00f6gren's Syndrome",
+        "object": "disease",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Sj\u00f6gren's Syndrome, another disease",
+        "importance": "supporting",
+        "id": "A13"
+      },
+      {
+        "claim": "In Sj\u00f6gren's Syndrome, the immune system attacks the body.",
+        "type": "condition",
+        "predicate": "attack",
+        "subject": "the immune system",
+        "object": "the body",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "in which the immune system attacks the body",
+        "importance": "supporting",
+        "id": "A14"
+      }
+    ],
+    "evidence_failures": [],
+    "hedge_flags": [],
+    "provenance": {
+      "model": "gemini-3.5-flash-lite",
+      "model_version": "gemini-3.5-flash-lite",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "extractor-v2",
+      "timestamp": "2026-10-27T20:24:46.021868+00:00"
+    }
+  },
+  "scores": {
+    "nugget_recall": 1.0,
+    "atom_precision_lower_bound": 0.6428571428571429,
+    "hedge_accuracy": 0.8888888888888888,
+    "evidence_fail_rate": 0.0,
+    "hedge_flag_rate": 0.0,
+    "n_atoms": 14,
+    "n_nuggets": 9,
+    "n_matched": 9,
+    "matcher_version": "lexical-v2"
+  },
+  "matches": [
+    {
+      "atom": "A1",
+      "nugget": "[may] Associated (facial numbness [C0239511], trigeminal neuropathy [C0393789])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A12",
+      "nugget": "[may] Affected (trigeminal nerve [C0040996], Sj\u00f6gren's Syndrome [C1527336])",
+      "similarity": 0.75
+    },
+    {
+      "atom": "A11",
+      "nugget": "[may] Affected (trigeminal nerve [C0040996], damage to the brain [C0270611])",
+      "similarity": 0.75
+    },
+    {
+      "atom": "A10",
+      "nugget": "[may] Affected (trigeminal nerve [C0040996], tumors [C0027651])",
+      "similarity": 0.75
+    },
+    {
+      "atom": "A9",
+      "nugget": "[may] Affected (trigeminal nerve [C0040996], Guillain-Barre Syndrome [C0018378])",
+      "similarity": 0.75
+    },
+    {
+      "atom": "A7",
+      "nugget": "[may] Affected (trigeminal nerve [C0040996], root canal treatment [C0700632])",
+      "similarity": 0.75
+    },
+    {
+      "atom": "A5",
+      "nugget": "[may] Affected (trigeminal nerve [C0040996], compression in the spine [C0037926])",
+      "similarity": 0.75
+    },
+    {
+      "atom": "A4",
+      "nugget": "[may] Affected (trigeminal nerve [C0040996], damage to nearby blood vessels [C0178324])",
+      "similarity": 0.75
+    },
+    {
+      "atom": "A6",
+      "nugget": "[may] Affected (trigeminal nerve [C0040996], genetically sensitive nerves [C0027889])",
+      "similarity": 0.583
+    }
+  ],
+  "unmatched_nuggets": [],
+  "unmatched_atoms": [
+    "A2",
+    "A3",
+    "A8",
+    "A13",
+    "A14"
+  ]
+}

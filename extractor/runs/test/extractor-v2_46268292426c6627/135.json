@@ -1,0 +1,289 @@
+{
+  "lock": {
+    "code_hash": "46268292426c6627",
+    "prompt_version": "extractor-v2",
+    "matcher_version": "lexical-v2",
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "seed": 42,
+    "test_question_ids": [
+      "116",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "134",
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155"
+    ]
+  },
+  "result": {
+    "source_id": "135",
+    "atoms": [
+      {
+        "claim": "Untreated hypothyroidism can cause you to be fatigued.",
+        "type": "symptom",
+        "predicate": "cause",
+        "subject": "untreated hypothyroidism",
+        "object": "fatigue",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "you will be fatigued",
+        "importance": "critical",
+        "id": "A1"
+      },
+      {
+        "claim": "Untreated hypothyroidism can cause you to gain weight.",
+        "type": "symptom",
+        "predicate": "cause",
+        "subject": "untreated hypothyroidism",
+        "object": "weight gain",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "gain weight",
+        "importance": "critical",
+        "id": "A2"
+      },
+      {
+        "claim": "Untreated hypothyroidism can cause you to have constipation.",
+        "type": "symptom",
+        "predicate": "cause",
+        "subject": "untreated hypothyroidism",
+        "object": "constipation",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "have constipation",
+        "importance": "critical",
+        "id": "A3"
+      },
+      {
+        "claim": "Untreated hypothyroidism can cause dry skin.",
+        "type": "symptom",
+        "predicate": "cause",
+        "subject": "untreated hypothyroidism",
+        "object": "dry skin",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "dry skin",
+        "importance": "critical",
+        "id": "A4"
+      },
+      {
+        "claim": "Untreated hypothyroidism can cause cold intolerance.",
+        "type": "symptom",
+        "predicate": "cause",
+        "subject": "untreated hypothyroidism",
+        "object": "cold intolerance",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "cold intolerance",
+        "importance": "critical",
+        "id": "A5"
+      },
+      {
+        "claim": "Untreated hypothyroidism may cause heart failure.",
+        "type": "condition",
+        "predicate": "cause",
+        "subject": "untreated hypothyroidism",
+        "object": "heart failure",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "yo may have severe complications like heart failure",
+        "importance": "critical",
+        "id": "A6"
+      },
+      {
+        "claim": "Untreated hypothyroidism may cause infertility.",
+        "type": "condition",
+        "predicate": "cause",
+        "subject": "untreated hypothyroidism",
+        "object": "infertility",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "heart failure, infertility",
+        "importance": "critical",
+        "id": "A7"
+      },
+      {
+        "claim": "Untreated hypothyroidism may cause myxedema coma.",
+        "type": "condition",
+        "predicate": "cause",
+        "subject": "untreated hypothyroidism",
+        "object": "myxedema coma",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "myxedema coma",
+        "importance": "critical",
+        "id": "A8"
+      },
+      {
+        "claim": "Myxedema coma causes decreased mental status.",
+        "type": "symptom",
+        "predicate": "cause",
+        "subject": "myxedema coma",
+        "object": "decreased mental status",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "people experience decreased mental status",
+        "importance": "critical",
+        "id": "A9"
+      },
+      {
+        "claim": "Myxedema coma causes hypothermia.",
+        "type": "symptom",
+        "predicate": "cause",
+        "subject": "myxedema coma",
+        "object": "hypothermia",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "hypothermia (low body temperature)",
+        "importance": "critical",
+        "id": "A10"
+      },
+      {
+        "claim": "Myxedema coma causes slowing of function in multiple organs.",
+        "type": "symptom",
+        "predicate": "cause",
+        "subject": "myxedema coma",
+        "object": "slowing of function in multiple organs",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "slowing of function in multiple organs",
+        "importance": "critical",
+        "id": "A11"
+      },
+      {
+        "claim": "Myxedema coma can lead to death.",
+        "type": "condition",
+        "predicate": "lead",
+        "subject": "myxedema coma",
+        "object": "death",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "which can lead to death",
+        "importance": "critical",
+        "id": "A12"
+      },
+      {
+        "claim": "Most people will have these problems if they don't take their medications for hypothyroidism.",
+        "type": "condition",
+        "predicate": "affect",
+        "subject": "untreated hypothyroidism",
+        "object": "most people",
+        "hedge": "frequency",
+        "hedge_text": "Most",
+        "evidence": "Most people will have these problems if they don't take their medications",
+        "importance": "supporting",
+        "id": "A13"
+      },
+      {
+        "claim": "Untreated hyperthyroidism may have a life-threatening emergency called thyroid storm.",
+        "type": "condition",
+        "predicate": "cause",
+        "subject": "untreated hyperthyroidism",
+        "object": "thyroid storm",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "you may have a life-threatening emergency called thyroid storm",
+        "importance": "critical",
+        "id": "A14"
+      }
+    ],
+    "evidence_failures": [],
+    "hedge_flags": [],
+    "provenance": {
+      "model": "gemini-3.5-flash-lite",
+      "model_version": "gemini-3.5-flash-lite",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "extractor-v2",
+      "timestamp": "2026-10-27T20:26:41.468636+00:00"
+    }
+  },
+  "scores": {
+    "nugget_recall": 0.2857142857142857,
+    "atom_precision_lower_bound": 0.2857142857142857,
+    "hedge_accuracy": 0.75,
+    "evidence_fail_rate": 0.0,
+    "hedge_flag_rate": 0.0,
+    "n_atoms": 14,
+    "n_nuggets": 14,
+    "n_matched": 4,
+    "matcher_version": "lexical-v2"
+  },
+  "matches": [
+    {
+      "atom": "A14",
+      "nugget": "Cause (untreated hyperthyroidism [C0020550], thyroid storm [C0040127])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A11",
+      "nugget": "Symptom (slowing of function in multiple organs [C0679384], myxedema coma [C0238298])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A10",
+      "nugget": "Symptom (hypothermia [C0020672], myxedema coma [C0238298])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A9",
+      "nugget": "Symptom (decreased mental status [C0234985], myxedema coma [C0238298])",
+      "similarity": 1.0
+    }
+  ],
+  "unmatched_nuggets": [
+    "Symptom (under-active thyroid gland (hypothyroidism) [C0020676], fatigue)",
+    "Symptom (under-active thyroid gland (hypothyroidism) [C0020676], weight gain)",
+    "Symptom (under-active thyroid gland (hypothyroidism) [C0020676], constipation)",
+    "Symptom (under-active thyroid gland (hypothyroidism) [C0020676], dry skin)",
+    "Symptom (under-active thyroid gland (hypothyroidism) [C0020676], cold intolerance)",
+    "Cause (untreated under-active thyroid gland (hypothyroidism) [C2749407], severe complications [C3495031])",
+    "Include (severe complications [C3495031], heart failure [C0018801])",
+    "Include (severe complications [C3495031], infertility [C0021359])",
+    "Include (severe complications [C3495031], myxedema coma [C0238298])",
+    "[may] Cause (slowing of function in multiple organs [C0679384], death [C1306577])"
+  ],
+  "unmatched_atoms": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8",
+    "A12",
+    "A13"
+  ]
+}
