@@ -19,8 +19,8 @@ from functools import lru_cache
 import json
 from pathlib import Path
 
+
 import textstat
-from sklearn.metrics import cohen_kappa_score, accuracy_score
 
 import os
 import re
