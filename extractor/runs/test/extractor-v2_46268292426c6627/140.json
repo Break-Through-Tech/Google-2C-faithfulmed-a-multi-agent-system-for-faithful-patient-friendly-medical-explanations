@@ -1,0 +1,284 @@
+{
+  "lock": {
+    "code_hash": "46268292426c6627",
+    "prompt_version": "extractor-v2",
+    "matcher_version": "lexical-v2",
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "seed": 42,
+    "test_question_ids": [
+      "116",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "134",
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155"
+    ]
+  },
+  "result": {
+    "source_id": "140",
+    "atoms": [
+      {
+        "claim": "Brittle bones are a cause of fractures of the bones without trauma.",
+        "type": "risk_factor",
+        "predicate": "cause",
+        "subject": "brittle bones",
+        "object": "fractures of the bones without trauma",
+        "hedge": "frequency",
+        "hedge_text": "most common",
+        "evidence": "The most common causes of fractures of the bones without trauma are brittle bones",
+        "importance": "critical",
+        "id": "A1"
+      },
+      {
+        "claim": "Taking too much vitamin A is a cause of fractures of the bones without trauma.",
+        "type": "risk_factor",
+        "predicate": "cause",
+        "subject": "taking too much vitamin A",
+        "object": "fractures of the bones without trauma",
+        "hedge": "frequency",
+        "hedge_text": "most common",
+        "evidence": "taking too much vitamin A",
+        "importance": "critical",
+        "id": "A2"
+      },
+      {
+        "claim": "Lack of vitamin D is a cause of fractures of the bones without trauma.",
+        "type": "risk_factor",
+        "predicate": "cause",
+        "subject": "lack of vitamin D",
+        "object": "fractures of the bones without trauma",
+        "hedge": "frequency",
+        "hedge_text": "most common",
+        "evidence": "lack of vitamin D",
+        "importance": "critical",
+        "id": "A3"
+      },
+      {
+        "claim": "Enchondromas are non-cancer tumors.",
+        "type": "condition",
+        "predicate": "is",
+        "subject": "enchondromas",
+        "object": "non-cancer tumors",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "non-cancer tumors called enchondromas",
+        "importance": "supporting",
+        "id": "A4"
+      },
+      {
+        "claim": "Chondromas are non-cancer tumors.",
+        "type": "condition",
+        "predicate": "is",
+        "subject": "chondromas",
+        "object": "non-cancer tumors",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "non-cancer tumors called enchondromas and chondromas",
+        "importance": "supporting",
+        "id": "A5"
+      },
+      {
+        "claim": "Enchondromas in the hands may cause fractures.",
+        "type": "risk_factor",
+        "predicate": "cause",
+        "subject": "enchondromas",
+        "object": "fractures",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "In the hands, non-cancer tumors called enchondromas and chondromas and bone cysts may cause fractures",
+        "importance": "critical",
+        "id": "A6"
+      },
+      {
+        "claim": "Chondromas in the hands may cause fractures.",
+        "type": "risk_factor",
+        "predicate": "cause",
+        "subject": "chondromas",
+        "object": "fractures",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "In the hands, non-cancer tumors called enchondromas and chondromas and bone cysts may cause fractures",
+        "importance": "critical",
+        "id": "A7"
+      },
+      {
+        "claim": "Bone cysts in the hands may cause fractures.",
+        "type": "risk_factor",
+        "predicate": "cause",
+        "subject": "bone cysts",
+        "object": "fractures",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "In the hands, non-cancer tumors called enchondromas and chondromas and bone cysts may cause fractures",
+        "importance": "critical",
+        "id": "A8"
+      },
+      {
+        "claim": "Osteosarcoma is a cancerous tumor.",
+        "type": "condition",
+        "predicate": "is",
+        "subject": "osteosarcoma",
+        "object": "cancerous tumor",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "cancerous tumors, such as osteosarcoma",
+        "importance": "supporting",
+        "id": "A9"
+      },
+      {
+        "claim": "Ewing's sarcoma is a cancerous tumor.",
+        "type": "condition",
+        "predicate": "is",
+        "subject": "Ewing's sarcoma",
+        "object": "cancerous tumor",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "cancerous tumors, such as osteosarcoma and Ewing's sarcoma",
+        "importance": "supporting",
+        "id": "A10"
+      },
+      {
+        "claim": "Osteosarcoma causes fractures.",
+        "type": "risk_factor",
+        "predicate": "cause",
+        "subject": "osteosarcoma",
+        "object": "fractures",
+        "hedge": "frequency",
+        "hedge_text": "Not often",
+        "evidence": "Not often, fractures are caused by cancerous tumors, such as osteosarcoma and Ewing's sarcoma",
+        "importance": "critical",
+        "id": "A11"
+      },
+      {
+        "claim": "Ewing's sarcoma causes fractures.",
+        "type": "risk_factor",
+        "predicate": "cause",
+        "subject": "Ewing's sarcoma",
+        "object": "fractures",
+        "hedge": "frequency",
+        "hedge_text": "Not often",
+        "evidence": "Not often, fractures are caused by cancerous tumors, such as osteosarcoma and Ewing's sarcoma",
+        "importance": "critical",
+        "id": "A12"
+      },
+      {
+        "claim": "Paget's disease causes fractures.",
+        "type": "risk_factor",
+        "predicate": "cause",
+        "subject": "Paget's disease",
+        "object": "fractures",
+        "hedge": "frequency",
+        "hedge_text": "Not often",
+        "evidence": "Not often, fractures are caused by cancerous tumors, such as osteosarcoma and Ewing's sarcoma and Paget's disease",
+        "importance": "critical",
+        "id": "A13"
+      }
+    ],
+    "evidence_failures": [],
+    "hedge_flags": [],
+    "provenance": {
+      "model": "gemini-3.5-flash-lite",
+      "model_version": "gemini-3.5-flash-lite",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "extractor-v2",
+      "timestamp": "2026-10-27T20:27:21.815629+00:00"
+    }
+  },
+  "scores": {
+    "nugget_recall": 0.8,
+    "atom_precision_lower_bound": 0.6153846153846154,
+    "hedge_accuracy": 0.625,
+    "evidence_fail_rate": 0.0,
+    "hedge_flag_rate": 0.0,
+    "n_atoms": 13,
+    "n_nuggets": 10,
+    "n_matched": 8,
+    "matcher_version": "lexical-v2"
+  },
+  "matches": [
+    {
+      "atom": "A10",
+      "nugget": "Is (Ewing's sarcoma [C0553580], cancerous tumor [C0006826])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A9",
+      "nugget": "Is (osteosarcoma [C0029463], cancerous tumor [C0006826])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A8",
+      "nugget": "[may] Cause (bone cysts [C0005937], fractures in the hands [C0435632])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A6",
+      "nugget": "[may] Cause (enchondromas [C1704356], fractures in the hands [C0435632])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A3",
+      "nugget": "Cause (lack of vitamin D [C0042870], fractures without trauma [C5936342])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A2",
+      "nugget": "Cause (taking too much vitamin A [C0573813], fractures without trauma [C5936342])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A1",
+      "nugget": "Cause (brittle bones [C1859069], fractures without trauma [C5936342])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A7",
+      "nugget": "[may] Cause (chondromas [C0936248)], fractures in the hands [C0435632])",
+      "similarity": 0.75
+    }
+  ],
+  "unmatched_nuggets": [
+    "[infrequently] Cause (cancerous tumors [C0006826], fractures [C5936342])",
+    "Is (Paget's disease [C1368019], cancerous tumor [C0006826])"
+  ],
+  "unmatched_atoms": [
+    "A4",
+    "A5",
+    "A11",
+    "A12",
+    "A13"
+  ]
+}

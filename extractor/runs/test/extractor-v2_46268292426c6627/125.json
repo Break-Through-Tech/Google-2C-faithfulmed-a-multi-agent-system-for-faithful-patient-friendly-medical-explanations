@@ -1,0 +1,285 @@
+{
+  "lock": {
+    "code_hash": "46268292426c6627",
+    "prompt_version": "extractor-v2",
+    "matcher_version": "lexical-v2",
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "seed": 42,
+    "test_question_ids": [
+      "116",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "134",
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155"
+    ]
+  },
+  "result": {
+    "source_id": "125",
+    "atoms": [
+      {
+        "claim": "Tamsulosin is used to treat benign prostatic hyperplasia.",
+        "type": "medication",
+        "predicate": "treat",
+        "subject": "tamsulosin",
+        "object": "benign prostatic hyperplasia",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Tamsulosin is mostly used to treat benign prostatic hyperplasia (BPH, a condition in men in which the prostate gland is enlarged)",
+        "importance": "critical",
+        "id": "A1"
+      },
+      {
+        "claim": "Benign prostatic hyperplasia is a condition in men in which the prostate gland is enlarged.",
+        "type": "condition",
+        "predicate": "is",
+        "subject": "benign prostatic hyperplasia",
+        "object": "a condition in men in which the prostate gland is enlarged",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "benign prostatic hyperplasia (BPH, a condition in men in which the prostate gland is enlarged)",
+        "importance": "supporting",
+        "id": "A2"
+      },
+      {
+        "claim": "Tamsulosin is used to treat the overactive bladder linked to prostate inflammation.",
+        "type": "medication",
+        "predicate": "treat",
+        "subject": "tamsulosin",
+        "object": "the overactive bladder linked to prostate inflammation",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Tamsulosin is mostly used to treat benign prostatic hyperplasia (BPH, a condition in men in which the prostate gland is enlarged), and the overactive bladder (OAB) and lower urinary tract symptoms (LUTS) linked to prostate inflammation",
+        "importance": "critical",
+        "id": "A3"
+      },
+      {
+        "claim": "Tamsulosin is used to treat the overactive bladder linked to benign prostatic hyperplasia.",
+        "type": "medication",
+        "predicate": "treat",
+        "subject": "tamsulosin",
+        "object": "the overactive bladder linked to benign prostatic hyperplasia",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Tamsulosin is mostly used to treat benign prostatic hyperplasia (BPH, a condition in men in which the prostate gland is enlarged), and the overactive bladder (OAB) and lower urinary tract symptoms (LUTS) linked to prostate inflammation and BPH",
+        "importance": "critical",
+        "id": "A4"
+      },
+      {
+        "claim": "Tamsulosin is used to treat lower urinary tract symptoms linked to prostate inflammation.",
+        "type": "medication",
+        "predicate": "treat",
+        "subject": "tamsulosin",
+        "object": "lower urinary tract symptoms linked to prostate inflammation",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Tamsulosin is mostly used to treat benign prostatic hyperplasia (BPH, a condition in men in which the prostate gland is enlarged), and the overactive bladder (OAB) and lower urinary tract symptoms (LUTS) linked to prostate inflammation",
+        "importance": "critical",
+        "id": "A5"
+      },
+      {
+        "claim": "Tamsulosin is used to treat lower urinary tract symptoms linked to benign prostatic hyperplasia.",
+        "type": "medication",
+        "predicate": "treat",
+        "subject": "tamsulosin",
+        "object": "lower urinary tract symptoms linked to benign prostatic hyperplasia",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Tamsulosin is mostly used to treat benign prostatic hyperplasia (BPH, a condition in men in which the prostate gland is enlarged), and the overactive bladder (OAB) and lower urinary tract symptoms (LUTS) linked to prostate inflammation and BPH",
+        "importance": "critical",
+        "id": "A6"
+      },
+      {
+        "claim": "Tamsulosin is used to treat ureteral stones.",
+        "type": "medication",
+        "predicate": "treat",
+        "subject": "tamsulosin",
+        "object": "ureteral stones",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "It is also used to treat ureteral stones (a stone in the urinary tract)",
+        "importance": "critical",
+        "id": "A7"
+      },
+      {
+        "claim": "Ureteral stones are a stone in the urinary tract.",
+        "type": "condition",
+        "predicate": "is",
+        "subject": "ureteral stones",
+        "object": "a stone in the urinary tract",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "ureteral stones (a stone in the urinary tract)",
+        "importance": "supporting",
+        "id": "A8"
+      },
+      {
+        "claim": "Tamsulosin is used to treat pain caused by ureteral stones.",
+        "type": "medication",
+        "predicate": "treat",
+        "subject": "tamsulosin",
+        "object": "pain caused by ureteral stones",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "It is also used to treat ureteral stones (a stone in the urinary tract) and pain caused by these stones (renal colic)",
+        "importance": "critical",
+        "id": "A9"
+      },
+      {
+        "claim": "Pain caused by ureteral stones is renal colic.",
+        "type": "condition",
+        "predicate": "is",
+        "subject": "pain caused by these stones",
+        "object": "renal colic",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "pain caused by these stones (renal colic)",
+        "importance": "supporting",
+        "id": "A10"
+      },
+      {
+        "claim": "Tamsulosin is used to treat lower urinary tract symptoms in children.",
+        "type": "medication",
+        "predicate": "treat",
+        "subject": "tamsulosin",
+        "object": "lower urinary tract symptoms in children",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Tamsulosin is also used to treat lower urinary tract symptoms in children and women",
+        "importance": "critical",
+        "id": "A11"
+      },
+      {
+        "claim": "Tamsulosin is used to treat lower urinary tract symptoms in women.",
+        "type": "medication",
+        "predicate": "treat",
+        "subject": "tamsulosin",
+        "object": "lower urinary tract symptoms in women",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Tamsulosin is also used to treat lower urinary tract symptoms in children and women",
+        "importance": "critical",
+        "id": "A12"
+      }
+    ],
+    "evidence_failures": [],
+    "hedge_flags": [
+      "A1",
+      "A3",
+      "A4",
+      "A5",
+      "A6"
+    ],
+    "provenance": {
+      "model": "gemini-3.5-flash-lite",
+      "model_version": "gemini-3.5-flash-lite",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "extractor-v2",
+      "timestamp": "2026-10-27T20:25:19.046788+00:00"
+    }
+  },
+  "scores": {
+    "nugget_recall": 0.8333333333333334,
+    "atom_precision_lower_bound": 0.8333333333333334,
+    "hedge_accuracy": 1.0,
+    "evidence_fail_rate": 0.0,
+    "hedge_flag_rate": 0.4166666666666667,
+    "n_atoms": 12,
+    "n_nuggets": 12,
+    "n_matched": 10,
+    "matcher_version": "lexical-v2"
+  },
+  "matches": [
+    {
+      "atom": "A12",
+      "nugget": "Treat (tamsulosin [C0257343], lower urinary tract symptoms [C0574785] in women [C0043210])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A11",
+      "nugget": "Treat (tamsulosin [C0257343], lower urinary tract symptoms [C0574785] in children [C0008059])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A10",
+      "nugget": "Is (pain caused by ureteral stones [C0235633], renal colic [C0152169])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A9",
+      "nugget": "Treat (tamsulosin [C0257343], pain caused by ureteral stones [C0235633])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A8",
+      "nugget": "Is (ureteral stones [C0041952], a stone in the urinary tract [C0042018])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A7",
+      "nugget": "Treat (tamsulosin [C0257343], ureteral stones [C0041952])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A6",
+      "nugget": "Treat (tamsulosin [C0257343], benign prostatic hyperplasia [C1704272])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A2",
+      "nugget": "Is (benign prostatic hyperplasia [C1704272], enlarged prostate gland [C0426732])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A5",
+      "nugget": "Associated (lower urinary tract symptoms (LUTS) [C0574785], prostate inflammation [C0033581])",
+      "similarity": 0.9
+    },
+    {
+      "atom": "A4",
+      "nugget": "Treat (tamsulosin [C0257343], overactive bladder (OAB) [C0878773])",
+      "similarity": 0.833
+    }
+  ],
+  "unmatched_nuggets": [
+    "Treat (tamsulosin [C0257343], lower urinary tract symptoms (LUTS) [C0574785])",
+    "Associated (lower urinary tract symptoms (LUTS) [C0574785], BPH [C1704272])"
+  ],
+  "unmatched_atoms": [
+    "A1",
+    "A3"
+  ]
+}

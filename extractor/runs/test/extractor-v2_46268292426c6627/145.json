@@ -1,0 +1,355 @@
+{
+  "lock": {
+    "code_hash": "46268292426c6627",
+    "prompt_version": "extractor-v2",
+    "matcher_version": "lexical-v2",
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "seed": 42,
+    "test_question_ids": [
+      "116",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "134",
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155"
+    ]
+  },
+  "result": {
+    "source_id": "145",
+    "atoms": [
+      {
+        "claim": "Opdivo (nivolumab) side effects can mostly be managed.",
+        "type": "treatment",
+        "predicate": "manage",
+        "subject": "Opdivo (nivolumab) side effects",
+        "object": "managed",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "Opdivo (nivolumab) side effects can mostly be managed",
+        "importance": "critical",
+        "id": "A1"
+      },
+      {
+        "claim": "The most frequent side effects are skin reactions.",
+        "type": "symptom",
+        "predicate": "are",
+        "subject": "most frequent side effects",
+        "object": "skin reactions",
+        "hedge": "frequency",
+        "hedge_text": "frequent",
+        "evidence": "The most frequent side effects are skin reactions",
+        "importance": "critical",
+        "id": "A2"
+      },
+      {
+        "claim": "Skin reactions include itching.",
+        "type": "symptom",
+        "predicate": "include",
+        "subject": "skin reactions",
+        "object": "itching",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "skin reactions, such as itching",
+        "importance": "supporting",
+        "id": "A3"
+      },
+      {
+        "claim": "Skin reactions include rash.",
+        "type": "symptom",
+        "predicate": "include",
+        "subject": "skin reactions",
+        "object": "rash",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "skin reactions, such as ... rash",
+        "importance": "supporting",
+        "id": "A4"
+      },
+      {
+        "claim": "Skin reactions include vitiligo.",
+        "type": "symptom",
+        "predicate": "include",
+        "subject": "skin reactions",
+        "object": "vitiligo",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "skin reactions, such as ... and vitiligo",
+        "importance": "supporting",
+        "id": "A5"
+      },
+      {
+        "claim": "Frequent side effects include hepatitis.",
+        "type": "condition",
+        "predicate": "include",
+        "subject": "frequent side effects",
+        "object": "hepatitis",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "hepatitis",
+        "importance": "critical",
+        "id": "A6"
+      },
+      {
+        "claim": "Frequent side effects include reactions to drug infusion.",
+        "type": "symptom",
+        "predicate": "include",
+        "subject": "frequent side effects",
+        "object": "reactions to drug infusion",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "reactions to drug infusion",
+        "importance": "critical",
+        "id": "A7"
+      },
+      {
+        "claim": "Nivolumab may affect blood.",
+        "type": "medication",
+        "predicate": "affect",
+        "subject": "nivolumab",
+        "object": "blood",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "Nivolumab may also affect blood",
+        "importance": "critical",
+        "id": "A8"
+      },
+      {
+        "claim": "Nivolumab may lead to lymphocytic leukemia.",
+        "type": "medication",
+        "predicate": "lead to",
+        "subject": "nivolumab",
+        "object": "lymphocytic leukemia",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "Nivolumab may also affect blood, e.g. leading to lymphocytic leukemia",
+        "importance": "critical",
+        "id": "A9"
+      },
+      {
+        "claim": "Nivolumab affects the nervous system.",
+        "type": "medication",
+        "predicate": "affect",
+        "subject": "nivolumab",
+        "object": "nervous system",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "It affects the nervous system",
+        "importance": "critical",
+        "id": "A10"
+      },
+      {
+        "claim": "Nivolumab affects neuropathy.",
+        "type": "medication",
+        "predicate": "affect",
+        "subject": "nivolumab",
+        "object": "neuropathy",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "It affects the nervous system, including neuropathy",
+        "importance": "critical",
+        "id": "A11"
+      },
+      {
+        "claim": "Nivolumab affects inflammation of the brain tissues.",
+        "type": "condition",
+        "predicate": "affect",
+        "subject": "nivolumab",
+        "object": "inflammation of the brain tissues",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "It affects the nervous system, including ... inflammation of the brain tissues",
+        "importance": "critical",
+        "id": "A12"
+      },
+      {
+        "claim": "Inflammation of the brain tissues includes meningitis.",
+        "type": "condition",
+        "predicate": "include",
+        "subject": "inflammation of the brain tissues",
+        "object": "meningitis",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "(meningitis",
+        "importance": "supporting",
+        "id": "A13"
+      },
+      {
+        "claim": "Inflammation of the brain tissues includes encephalitis.",
+        "type": "condition",
+        "predicate": "include",
+        "subject": "inflammation of the brain tissues",
+        "object": "encephalitis",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "encephalitis)",
+        "importance": "supporting",
+        "id": "A14"
+      },
+      {
+        "claim": "Nivolumab may damage kidneys.",
+        "type": "medication",
+        "predicate": "damage",
+        "subject": "nivolumab",
+        "object": "kidneys",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "Nivolumab may damage kidneys",
+        "importance": "critical",
+        "id": "A15"
+      },
+      {
+        "claim": "Nivolumab may damage thyroid function.",
+        "type": "medication",
+        "predicate": "damage",
+        "subject": "nivolumab",
+        "object": "thyroid function",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "Nivolumab may damage ... thyroid function",
+        "importance": "critical",
+        "id": "A16"
+      },
+      {
+        "claim": "Nivolumab may damage swelling of the face.",
+        "type": "medication",
+        "predicate": "damage",
+        "subject": "nivolumab",
+        "object": "swelling of the face",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "Nivolumab may damage ... and swelling of the face",
+        "importance": "critical",
+        "id": "A17"
+      }
+    ],
+    "evidence_failures": [],
+    "hedge_flags": [],
+    "provenance": {
+      "model": "gemini-3.5-flash-lite",
+      "model_version": "gemini-3.5-flash-lite",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "extractor-v2",
+      "timestamp": "2026-10-27T20:28:03.831487+00:00"
+    }
+  },
+  "scores": {
+    "nugget_recall": 0.7058823529411765,
+    "atom_precision_lower_bound": 0.7058823529411765,
+    "hedge_accuracy": 0.9166666666666666,
+    "evidence_fail_rate": 0.0,
+    "hedge_flag_rate": 0.0,
+    "n_atoms": 17,
+    "n_nuggets": 17,
+    "n_matched": 12,
+    "matcher_version": "lexical-v2"
+  },
+  "matches": [
+    {
+      "atom": "A17",
+      "nugget": "[may] Cause (nivolumab [C3657270], swelling of the face [C0151602])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A16",
+      "nugget": "[may] Damage (nivolumab [C3657270], thyroid function [C2242456])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A15",
+      "nugget": "[may] Damage (nivolumab [C3657270], kidney [C0022646])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A14",
+      "nugget": "Includes (inflammation of the brain tissues [C5883489], encephalitis [C0014038])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A13",
+      "nugget": "Includes (inflammation of the brain tissues [C5883489], meningitis [C0025289])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A10",
+      "nugget": "Affects (nivolumab [C3657270], nervous system [C0027763])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A9",
+      "nugget": "[may] Cause (nivolumab [C3657270], lymphocytic leukemia [C0023449])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A8",
+      "nugget": "[may] Affect (nivolumab [C3657270], blood [C0005767])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A5",
+      "nugget": "Is (vitiligo [C0042900], skin reaction [C0221743])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A4",
+      "nugget": "Is (rash [C5779628], skin reaction [C0221743])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A3",
+      "nugget": "Is (itching [C0033774], skin reaction [C0221743])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A1",
+      "nugget": "[mostly] Can (opdivo [C3872108] (nivolumab [C3657270]) side effects, be managed)",
+      "similarity": 1.0
+    }
+  ],
+  "unmatched_nuggets": [
+    "[most frequent] Side effect (skin reactions [C0221743], opdivo [C3872108] (nivolumab [C3657270]))",
+    "Side effect (hepatitis [C0019158], opdivo [C3872108] (nivolumab [C3657270]))",
+    "Side effect (reactions to drug infusion [C2368034], opdivo [C3872108] (nivolumab [C3657270]))",
+    "Includes (nervous system [C0027763] effects, neuropathy [C0442874])",
+    "Includes (nervous system [C0027763] effects, inflammation of the brain tissues [C5883489])"
+  ],
+  "unmatched_atoms": [
+    "A2",
+    "A6",
+    "A7",
+    "A11",
+    "A12"
+  ]
+}

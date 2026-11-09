@@ -1,0 +1,315 @@
+{
+  "lock": {
+    "code_hash": "46268292426c6627",
+    "prompt_version": "extractor-v2",
+    "matcher_version": "lexical-v2",
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "seed": 42,
+    "test_question_ids": [
+      "116",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "134",
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155"
+    ]
+  },
+  "result": {
+    "source_id": "124",
+    "atoms": [
+      {
+        "claim": "Coronary artery disease is a heart condition.",
+        "type": "condition",
+        "predicate": "is",
+        "subject": "coronary artery disease",
+        "object": "heart condition",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Coronary artery disease (CAD, also called coronary heart disease, CHD) is a heart condition",
+        "importance": "critical",
+        "id": "A1"
+      },
+      {
+        "claim": "Coronary heart disease is a heart condition.",
+        "type": "condition",
+        "predicate": "is",
+        "subject": "coronary heart disease",
+        "object": "heart condition",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Coronary artery disease (CAD, also called coronary heart disease, CHD) is a heart condition",
+        "importance": "supporting",
+        "id": "A2"
+      },
+      {
+        "claim": "Coronary artery disease is called coronary heart disease.",
+        "type": "condition",
+        "predicate": "is called",
+        "subject": "coronary artery disease",
+        "object": "coronary heart disease",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Coronary artery disease (CAD, also called coronary heart disease, CHD)",
+        "importance": "supporting",
+        "id": "A3"
+      },
+      {
+        "claim": "Not enough blood gets to the heart muscle in coronary artery disease.",
+        "type": "condition",
+        "predicate": "gets",
+        "subject": "not enough blood",
+        "object": "heart muscle",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "not enough blood and oxygen gets to the heart muscle",
+        "importance": "critical",
+        "id": "A4"
+      },
+      {
+        "claim": "Not enough oxygen gets to the heart muscle in coronary artery disease.",
+        "type": "condition",
+        "predicate": "gets",
+        "subject": "not enough oxygen",
+        "object": "heart muscle",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "not enough blood and oxygen gets to the heart muscle",
+        "importance": "critical",
+        "id": "A5"
+      },
+      {
+        "claim": "Myocardial ischemia is a condition in which not enough blood and oxygen gets to the heart muscle.",
+        "type": "condition",
+        "predicate": "is",
+        "subject": "myocardial ischemia",
+        "object": "condition in which not enough blood and oxygen gets to the heart muscle",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "condition called myocardial ischemia",
+        "importance": "supporting",
+        "id": "A6"
+      },
+      {
+        "claim": "Angina is chest pain that happens repeatedly.",
+        "type": "condition",
+        "predicate": "is",
+        "subject": "angina",
+        "object": "chest pain that happens repeatedly",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Angina is chest pain that happens repeatedly",
+        "importance": "critical",
+        "id": "A7"
+      },
+      {
+        "claim": "Angina can be a symptom of coronary artery disease.",
+        "type": "symptom",
+        "predicate": "be",
+        "subject": "angina",
+        "object": "symptom of CAD",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "it can be a symptom of CAD",
+        "importance": "critical",
+        "id": "A8"
+      },
+      {
+        "claim": "Silent ischemia is coronary artery disease without angina.",
+        "type": "condition",
+        "predicate": "is",
+        "subject": "silent ischemia",
+        "object": "CAD without angina",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "CAD without angina, called silent ischemia",
+        "importance": "supporting",
+        "id": "A9"
+      },
+      {
+        "claim": "Silent ischemia is often found in middle-aged and old men.",
+        "type": "condition",
+        "predicate": "found",
+        "subject": "silent ischemia",
+        "object": "middle-aged and old men",
+        "hedge": "frequency",
+        "hedge_text": "often",
+        "evidence": "which is often found in middle-aged and old men",
+        "importance": "supporting",
+        "id": "A10"
+      },
+      {
+        "claim": "Coronary artery disease without angina increases the risk of severe CHD-complications over 12-15 years.",
+        "type": "risk_factor",
+        "predicate": "increases",
+        "subject": "CAD without angina",
+        "object": "risk of severe CHD-complications over 12-15 years",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "CAD without angina, called silent ischemia, which is often found in middle-aged and old men, increases the risk of severe CHD-complications over 12-15 years",
+        "importance": "critical",
+        "id": "A11"
+      },
+      {
+        "claim": "Three quarter of the patients had no angina in study of 5070 patients with coronary artery disease.",
+        "type": "other",
+        "predicate": "had",
+        "subject": "three quarter of the patients",
+        "object": "no angina",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "In study of 5070 patients with CAD, three quarter of the patients had no angina",
+        "importance": "supporting",
+        "id": "A12"
+      },
+      {
+        "claim": "Coronary artery disease patients without angina may have better results from coronary artery bypass graft surgery.",
+        "type": "treatment",
+        "predicate": "have",
+        "subject": "CAD patients without angina",
+        "object": "better results from coronary artery bypass graft (CABG) surgery",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "CAD patients without angina may have better results from coronary artery bypass graft (CABG) surgery",
+        "importance": "critical",
+        "id": "A13"
+      },
+      {
+        "claim": "Coronary artery disease without symptoms is associated with less diagnostic tests compared to coronary artery disease with angina.",
+        "type": "other",
+        "predicate": "associated",
+        "subject": "CAD without symptoms",
+        "object": "less diagnostic tests compared to CAD with angina",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "CAD without symptoms is associated with less diagnostic tests and treatments compared to CAD with angina",
+        "importance": "critical",
+        "id": "A14"
+      },
+      {
+        "claim": "Coronary artery disease without symptoms is associated with less treatments compared to coronary artery disease with angina.",
+        "type": "other",
+        "predicate": "associated",
+        "subject": "CAD without symptoms",
+        "object": "less treatments compared to CAD with angina",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "CAD without symptoms is associated with less diagnostic tests and treatments compared to CAD with angina",
+        "importance": "critical",
+        "id": "A15"
+      }
+    ],
+    "evidence_failures": [],
+    "hedge_flags": [
+      "A4",
+      "A5",
+      "A11"
+    ],
+    "provenance": {
+      "model": "gemini-3.5-flash-lite",
+      "model_version": "gemini-3.5-flash-lite",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "extractor-v2",
+      "timestamp": "2026-10-27T20:25:10.528553+00:00"
+    }
+  },
+  "scores": {
+    "nugget_recall": 0.7272727272727273,
+    "atom_precision_lower_bound": 0.5333333333333333,
+    "hedge_accuracy": 0.8333333333333334,
+    "evidence_fail_rate": 0.0,
+    "hedge_flag_rate": 0.2,
+    "n_atoms": 15,
+    "n_nuggets": 11,
+    "n_matched": 8,
+    "matcher_version": "lexical-v2"
+  },
+  "matches": [
+    {
+      "atom": "A15",
+      "nugget": "[may] Symptom (angina [C0002962], CAD [C1956346])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A6",
+      "nugget": "Is (myocardial ischemia [C0151744], not enough blood and oxygen to heart muscle [C2371010])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A12",
+      "nugget": "NOT Have (three quarters of patients in a study of 5070 patients with CAD [C1956346], angina [C0002962])",
+      "similarity": 0.917
+    },
+    {
+      "atom": "A1",
+      "nugget": "Is (Coronary artery disease (CAD) [C1956346], a heart condition [C0018799])",
+      "similarity": 0.875
+    },
+    {
+      "atom": "A7",
+      "nugget": "Is (angina [C0002962], repeated chest pain [C1740831])",
+      "similarity": 0.833
+    },
+    {
+      "atom": "A9",
+      "nugget": "Cause (CAD [C1956346], myocardial ischemia [C0151744])",
+      "similarity": 0.75
+    },
+    {
+      "atom": "A13",
+      "nugget": "[may] Treat (coronary artery bypass graft (CABG) surgery [C0010055], CAD patients without angina [C3248525])  GREATER THAN Treat (other treatments [C0087111], CAD patients without angina [C3248525])",
+      "similarity": 0.667
+    },
+    {
+      "atom": "A14",
+      "nugget": "Angina absent (CAD) [C3248525]  LESS Diagnostic tests [C0086143]  THAN Angina present (CAD)[C3248257]",
+      "similarity": 0.625
+    }
+  ],
+  "unmatched_nuggets": [
+    "[common] Affects (CAD without angina [C3248525] (silent ischemia [C0340291]), middle-aged and old men [C3825963])",
+    "Increase (silent ischemia [C0340291], risk of severe CHD-complications [C3649666])",
+    "Associated (silent ischemia [C0340291], less diagnostic tests [C0086143] and treatments [C0087111])"
+  ],
+  "unmatched_atoms": [
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A8",
+    "A10",
+    "A11"
+  ]
+}

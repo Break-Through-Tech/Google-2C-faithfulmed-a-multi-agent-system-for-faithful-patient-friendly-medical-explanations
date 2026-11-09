@@ -1,0 +1,144 @@
+{
+  "lock": {
+    "code_hash": "46268292426c6627",
+    "prompt_version": "extractor-v2",
+    "matcher_version": "lexical-v2",
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "seed": 42,
+    "test_question_ids": [
+      "116",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "134",
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155"
+    ]
+  },
+  "result": {
+    "source_id": "118",
+    "atoms": [
+      {
+        "claim": "Most corneal injuries heal in 24 to 72 hours.",
+        "type": "condition",
+        "predicate": "heal",
+        "subject": "most corneal injuries",
+        "object": "24 to 72 hours",
+        "hedge": "frequency",
+        "hedge_text": "Most",
+        "evidence": "Most corneal injuries heal in 24 to 72 hours",
+        "importance": "critical",
+        "id": "A1"
+      },
+      {
+        "claim": "A doctor should evaluate the injury again after 24 hours if the injury is greater than 4mm.",
+        "type": "instruction",
+        "predicate": "evaluate",
+        "subject": "doctor",
+        "object": "corneal injury",
+        "hedge": "recommended",
+        "hedge_text": "should",
+        "evidence": "If the injury is greater than 4mm and vision is not getting better, a doctor should evaluate it again after 24 hours",
+        "importance": "critical",
+        "id": "A2"
+      },
+      {
+        "claim": "A doctor should evaluate the injury again after 24 hours if vision is not getting better.",
+        "type": "instruction",
+        "predicate": "evaluate",
+        "subject": "doctor",
+        "object": "corneal injury",
+        "hedge": "recommended",
+        "hedge_text": "should",
+        "evidence": "If the injury is greater than 4mm and vision is not getting better, a doctor should evaluate it again after 24 hours",
+        "importance": "critical",
+        "id": "A3"
+      },
+      {
+        "claim": "Severe injuries might need two weeks of treatment or more.",
+        "type": "treatment",
+        "predicate": "need",
+        "subject": "severe injuries",
+        "object": "two weeks of treatment or more",
+        "hedge": "possible",
+        "hedge_text": "might",
+        "evidence": "Severe injuries might need two weeks of treatment or more",
+        "importance": "critical",
+        "id": "A4"
+      }
+    ],
+    "evidence_failures": [],
+    "hedge_flags": [],
+    "provenance": {
+      "model": "gemini-3.5-flash-lite",
+      "model_version": "gemini-3.5-flash-lite",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "extractor-v2",
+      "timestamp": "2026-10-27T20:24:29.015224+00:00"
+    }
+  },
+  "scores": {
+    "nugget_recall": 1.0,
+    "atom_precision_lower_bound": 0.75,
+    "hedge_accuracy": 1.0,
+    "evidence_fail_rate": 0.0,
+    "hedge_flag_rate": 0.0,
+    "n_atoms": 4,
+    "n_nuggets": 3,
+    "n_matched": 3,
+    "matcher_version": "lexical-v2"
+  },
+  "matches": [
+    {
+      "atom": "A1",
+      "nugget": "[most] Heal (corneal injuries [C0521711], 24 to 72 hours)",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A4",
+      "nugget": "[may] Need (severe corneal injuries [C0521711], two weeks of treatment or more)",
+      "similarity": 0.833
+    },
+    {
+      "atom": "A3",
+      "nugget": "IF injury [C0521711] is greater than 4mm and vision is not getting better [C0042798] THEN a doctor should evaluate it again after 24 hours",
+      "similarity": 0.8
+    }
+  ],
+  "unmatched_nuggets": [],
+  "unmatched_atoms": [
+    "A2"
+  ]
+}

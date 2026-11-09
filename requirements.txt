@@ -1,5 +1,6 @@
 # ── Google GCP-first stack ─────────────────────────────────────────────
 google-genai          # unified Gemini SDK (Google AI Studio + Vertex AI)
+python-dotenv         # loads GOOGLE_API_KEY / GEMINI_MODEL from .env
 google-adk            # Agent Development Kit — multi-agent orchestration
 litellm               # lets ADK call Gemma / external open models for the leaderboard
 
