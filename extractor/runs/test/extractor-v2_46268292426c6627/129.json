@@ -1,0 +1,266 @@
+{
+  "lock": {
+    "code_hash": "46268292426c6627",
+    "prompt_version": "extractor-v2",
+    "matcher_version": "lexical-v2",
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "seed": 42,
+    "test_question_ids": [
+      "116",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "134",
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155"
+    ]
+  },
+  "result": {
+    "source_id": "129",
+    "atoms": [
+      {
+        "claim": "Suddenly stopping metoprolol may cause withdrawal symptoms.",
+        "type": "medication",
+        "predicate": "cause",
+        "subject": "suddenly stopping metoprolol",
+        "object": "withdrawal symptoms",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "Suddenly stopping metropolis may cause withdrawal symptoms",
+        "importance": "critical",
+        "id": "A1"
+      },
+      {
+        "claim": "Suddenly stopping metoprolol may cause return of high blood pressure.",
+        "type": "medication",
+        "predicate": "cause",
+        "subject": "suddenly stopping metoprolol",
+        "object": "return of high blood pressure",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "return of high blood pressure",
+        "importance": "critical",
+        "id": "A2"
+      },
+      {
+        "claim": "Suddenly stopping metoprolol may cause heart problems.",
+        "type": "medication",
+        "predicate": "cause",
+        "subject": "suddenly stopping metoprolol",
+        "object": "heart problems",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "heart problems",
+        "importance": "critical",
+        "id": "A3"
+      },
+      {
+        "claim": "Withdrawal symptoms include fast heartbeat.",
+        "type": "symptom",
+        "predicate": "include",
+        "subject": "withdrawal symptoms",
+        "object": "fast heartbeat",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Withdrawal symptoms include fast heartbeat",
+        "importance": "supporting",
+        "id": "A4"
+      },
+      {
+        "claim": "Withdrawal symptoms include headache.",
+        "type": "symptom",
+        "predicate": "include",
+        "subject": "withdrawal symptoms",
+        "object": "headache",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "headache",
+        "importance": "supporting",
+        "id": "A5"
+      },
+      {
+        "claim": "Withdrawal symptoms include agitation.",
+        "type": "symptom",
+        "predicate": "include",
+        "subject": "withdrawal symptoms",
+        "object": "agitation",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "agitation",
+        "importance": "supporting",
+        "id": "A6"
+      },
+      {
+        "claim": "Withdrawal symptoms include nausea.",
+        "type": "symptom",
+        "predicate": "include",
+        "subject": "withdrawal symptoms",
+        "object": "nausea",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "nausea",
+        "importance": "supporting",
+        "id": "A7"
+      },
+      {
+        "claim": "Withdrawal symptoms include heart palpitations.",
+        "type": "symptom",
+        "predicate": "include",
+        "subject": "withdrawal symptoms",
+        "object": "heart palpitations",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "heart palpitations",
+        "importance": "supporting",
+        "id": "A8"
+      },
+      {
+        "claim": "Withdrawal symptoms include shaking.",
+        "type": "symptom",
+        "predicate": "include",
+        "subject": "withdrawal symptoms",
+        "object": "shaking",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "shaking",
+        "importance": "supporting",
+        "id": "A9"
+      },
+      {
+        "claim": "Patients with severe heart problems may die.",
+        "type": "condition",
+        "predicate": "die",
+        "subject": "patients with severe heart problems",
+        "object": "death",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "Patients with severe heart problems may die",
+        "importance": "critical",
+        "id": "A10"
+      },
+      {
+        "claim": "These withdrawal effects may be prevented by gradual withdrawal on a prolonged small dose of metoprolol.",
+        "type": "treatment",
+        "predicate": "prevent",
+        "subject": "gradual withdrawal on a prolonged small dose of metoprolol",
+        "object": "withdrawal effects",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "These withdrawal effects may be prevented by gradual withdrawal on a prolonged small dose of metoprolol",
+        "importance": "critical",
+        "id": "A11"
+      }
+    ],
+    "evidence_failures": [],
+    "hedge_flags": [],
+    "provenance": {
+      "model": "gemini-3.5-flash-lite",
+      "model_version": "gemini-3.5-flash-lite",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "extractor-v2",
+      "timestamp": "2026-10-27T20:25:52.982641+00:00"
+    }
+  },
+  "scores": {
+    "nugget_recall": 1.0,
+    "atom_precision_lower_bound": 1.0,
+    "hedge_accuracy": 1.0,
+    "evidence_fail_rate": 0.0,
+    "hedge_flag_rate": 0.0,
+    "n_atoms": 11,
+    "n_nuggets": 11,
+    "n_matched": 11,
+    "matcher_version": "lexical-v2"
+  },
+  "matches": [
+    {
+      "atom": "A11",
+      "nugget": "[may] Prevent (gradual withdrawal [C0441640] on a prolonged small dose of metoprolol [C0025859], withdrawal effects [C0086189])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A3",
+      "nugget": "[may] Cause (suddenly stopping metoprolol [C0025859], heart problems [C0795691])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A2",
+      "nugget": "[may] Cause (suddenly stopping metoprolol [C0025859], return of high blood pressure [C0520540])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A1",
+      "nugget": "[may] Cause (suddenly stopping metoprolol [C0025859], withdrawal symptoms [C0086189])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A9",
+      "nugget": "Is (shaking [C0040822], metoprolol [C0025859] withdrawal symptom [C0086189])",
+      "similarity": 0.833
+    },
+    {
+      "atom": "A8",
+      "nugget": "Is (heart palpitations [C0030252], metoprolol [C0025859] withdrawal symptom [C0086189])",
+      "similarity": 0.833
+    },
+    {
+      "atom": "A7",
+      "nugget": "Is (nausea [C0027497], metoprolol [C0025859] withdrawal symptom [C0086189])",
+      "similarity": 0.833
+    },
+    {
+      "atom": "A6",
+      "nugget": "Is (agitation [C0085631], metoprolol [C0025859] withdrawal symptom [C0086189])",
+      "similarity": 0.833
+    },
+    {
+      "atom": "A5",
+      "nugget": "Is (headache [C0018681], metoprolol [C0025859] withdrawal symptom [C0086189])",
+      "similarity": 0.833
+    },
+    {
+      "atom": "A4",
+      "nugget": "Is (fast heartbeat [C0039231], metoprolol [C0025859] withdrawal symptom [C0086189])",
+      "similarity": 0.833
+    },
+    {
+      "atom": "A10",
+      "nugget": "[may] Cause (suddenly stopping metoprolol [C0025859] in patients with severe heart problems [C0741926],  [C1306577] death)",
+      "similarity": 0.786
+    }
+  ],
+  "unmatched_nuggets": [],
+  "unmatched_atoms": []
+}

@@ -1,0 +1,339 @@
+{
+  "result": {
+    "source_id": "133",
+    "atoms": [
+      {
+        "claim": "Surgery may remove the cyst.",
+        "type": "procedure",
+        "predicate": "remove",
+        "subject": "surgery",
+        "object": "the cyst",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "Surgery may remove the cyst",
+        "importance": "critical",
+        "id": "A1"
+      },
+      {
+        "claim": "Surgery may drain the cyst.",
+        "type": "procedure",
+        "predicate": "drain",
+        "subject": "surgery",
+        "object": "the cyst",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "drain it",
+        "importance": "critical",
+        "id": "A2"
+      },
+      {
+        "claim": "Surgery may cauterize the cyst.",
+        "type": "procedure",
+        "predicate": "cauterize",
+        "subject": "surgery",
+        "object": "the cyst",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "cauterize (sear) it",
+        "importance": "critical",
+        "id": "A3"
+      },
+      {
+        "claim": "The surgeon will try to remove the cyst through laparoscopy.",
+        "type": "procedure",
+        "predicate": "remove",
+        "subject": "the surgeon",
+        "object": "the cyst through a small cut (laparoscopy)",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "the surgeon will try to do it through a small cut (laparoscopy)",
+        "importance": "supporting",
+        "id": "A4"
+      },
+      {
+        "claim": "The surgeon will try to fall back to laparotomy.",
+        "type": "procedure",
+        "predicate": "fall back to",
+        "subject": "the surgeon",
+        "object": "opening the abdomen (laparotomy)",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "fall back to opening the abdomen (laparotomy)",
+        "importance": "supporting",
+        "id": "A5"
+      },
+      {
+        "claim": "Cysts may form again in a small number of patients after laparoscopy.",
+        "type": "condition",
+        "predicate": "form",
+        "subject": "the cysts",
+        "object": "again",
+        "hedge": "frequency",
+        "hedge_text": "small number of patients",
+        "evidence": "After laparoscopy, in a small number of patients, the cysts may form again",
+        "importance": "critical",
+        "id": "A6"
+      },
+      {
+        "claim": "Spillage of the cyst contents into the abdomen may cause peritonitis.",
+        "type": "condition",
+        "predicate": "cause",
+        "subject": "spillage of the cyst content into abdomen",
+        "object": "inflammation in the abdomen (peritonitis)",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "Spillage of the cyst content into abdomen, which is rare, may cause inflammation in the abdomen (peritonitis)",
+        "importance": "critical",
+        "id": "A7"
+      },
+      {
+        "claim": "Major surgery effects include accidental cuts to bowels.",
+        "type": "risk_factor",
+        "predicate": "include",
+        "subject": "major surgery effects",
+        "object": "accidental cuts to bowels",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Major surgery effects include accidental cuts to bowels",
+        "importance": "critical",
+        "id": "A8"
+      },
+      {
+        "claim": "Major surgery effects include accidental cuts to the ureter.",
+        "type": "risk_factor",
+        "predicate": "include",
+        "subject": "major surgery effects",
+        "object": "accidental cuts to ureter",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Major surgery effects include accidental cuts to bowels and ureter",
+        "importance": "critical",
+        "id": "A9"
+      },
+      {
+        "claim": "Small blood vessels may be nicked during surgery.",
+        "type": "risk_factor",
+        "predicate": "nick",
+        "subject": "small blood vessels",
+        "object": "during surgery",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "During surgery, small blood vessels may be nicked",
+        "importance": "supporting",
+        "id": "A10"
+      },
+      {
+        "claim": "There may be some blood loss during surgery.",
+        "type": "risk_factor",
+        "predicate": "be",
+        "subject": "some blood loss",
+        "object": "during surgery",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "there may be some blood loss",
+        "importance": "supporting",
+        "id": "A11"
+      },
+      {
+        "claim": "Inflammation may develop around the cut after surgery.",
+        "type": "condition",
+        "predicate": "develop",
+        "subject": "inflammation",
+        "object": "around the cut",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "After surgery, inflammation may develop around the cut",
+        "importance": "critical",
+        "id": "A12"
+      },
+      {
+        "claim": "A part of the organ may come through the cut after surgery.",
+        "type": "condition",
+        "predicate": "come through",
+        "subject": "a part of the organ",
+        "object": "the cut (incisional hernia)",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "a part of the organ may come through the cut (incisional hernia)",
+        "importance": "critical",
+        "id": "A13"
+      },
+      {
+        "claim": "Infertility is a major long-term risk of the surgery.",
+        "type": "risk_factor",
+        "predicate": "is",
+        "subject": "infertility",
+        "object": "a major long-term risk of the surgery",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "A major long-term risk of the surgery is infertility",
+        "importance": "critical",
+        "id": "A14"
+      },
+      {
+        "claim": "Infertility is more common among women who had cyst surgery.",
+        "type": "condition",
+        "predicate": "is",
+        "subject": "infertility",
+        "object": "more common among women who had cyst surgery",
+        "hedge": "frequency",
+        "hedge_text": "more common",
+        "evidence": "Infertility is more common among women who had cyst surgery",
+        "importance": "critical",
+        "id": "A15"
+      },
+      {
+        "claim": "The impact of surgery on fertility can be reduced by selecting the best surgery for the cyst.",
+        "type": "treatment",
+        "predicate": "reduce",
+        "subject": "selecting the best surgery for the cyst",
+        "object": "the impact of surgery on fertility",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "The impact of surgery on fertility can be reduced by selecting the best surgery for the cyst",
+        "importance": "critical",
+        "id": "A16"
+      },
+      {
+        "claim": "The impact of surgery on fertility can be reduced by being careful during surgery.",
+        "type": "treatment",
+        "predicate": "reduce",
+        "subject": "being careful during surgery",
+        "object": "the impact of surgery on fertility",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "being careful during surgery",
+        "importance": "critical",
+        "id": "A17"
+      },
+      {
+        "claim": "The impact of surgery on fertility can be reduced by using cauterization sparingly.",
+        "type": "treatment",
+        "predicate": "reduce",
+        "subject": "using cauterization sparingly",
+        "object": "the impact of surgery on fertility",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "using cauterization sparingly",
+        "importance": "critical",
+        "id": "A18"
+      }
+    ],
+    "evidence_failures": [],
+    "hedge_flags": [],
+    "provenance": {
+      "model": "gemini-3.5-flash-lite",
+      "model_version": "gemini-3.5-flash-lite",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "extractor-v2",
+      "timestamp": "2026-10-27T20:20:53.752601+00:00"
+    }
+  },
+  "scores": {
+    "nugget_recall": 0.85,
+    "atom_precision_lower_bound": 0.9444444444444444,
+    "hedge_accuracy": 0.7333333333333333,
+    "evidence_fail_rate": 0.0,
+    "hedge_flag_rate": 0.0,
+    "n_atoms": 18,
+    "n_nuggets": 20,
+    "n_matched": 17,
+    "matcher_version": "lexical-v2"
+  },
+  "matches": [
+    {
+      "atom": "A18",
+      "nugget": "Reduce (using cauterization sparingly, impact of surgery on fertility [C0015895])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A17",
+      "nugget": "Reduce (being careful during surgery [C0747096], impact of surgery on fertility [C0015895])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A16",
+      "nugget": "Associated (surgery for the cyst [C0747096], impact of surgery on fertility [C0015895])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A14",
+      "nugget": "Is (infertility [C0021361], major long-term risk of the surgery [C0274311])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A13",
+      "nugget": "[may] Occur (part of the organ [C1268117], come through the cut (incisional hernia) [C0267716])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A12",
+      "nugget": "[may] Develop (cut [C0332803], inflammation [C0021368])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A10",
+      "nugget": "[may] Damage (surgery [C0543467], small blood vessels [C0225988])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A9",
+      "nugget": "Is (accidental cuts [C0418667] to ureter [C0041951], major surgery effect [C0274311])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A8",
+      "nugget": "Is (accidental cuts [C0418667] to bowels [C0021853], major surgery effect [C0274311])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A7",
+      "nugget": "[may] Cause (spillage of the cyst content [C1511235] into abdomen [C0230168], inflammation in the abdomen (peritonitis) [C0031154])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A11",
+      "nugget": "[may] Cause (surgery [C0543467], minor blood loss [C3163616])",
+      "similarity": 0.833
+    },
+    {
+      "atom": "A6",
+      "nugget": "IF Treat (laparoscopy [C0031150], ovarian cyst [C0029927]) THEN [may] Form (small number of patients, ovarian cyst [C0029927] again after laparoscopy)",
+      "similarity": 0.8
+    },
+    {
+      "atom": "A4",
+      "nugget": "[try] Treat (small cut (laparoscopy) [C0031150], ovarian cyst [C0029927])",
+      "similarity": 0.75
+    },
+    {
+      "atom": "A3",
+      "nugget": "[may] Treat (Cauterize [C0007471], ovarian cyst [C0029927])",
+      "similarity": 0.75
+    },
+    {
+      "atom": "A2",
+      "nugget": "[may] Treat (Drain [C0554361], ovarian cyst [C0029927])",
+      "similarity": 0.75
+    },
+    {
+      "atom": "A1",
+      "nugget": "[may] Treat (Remove [C0195488], ovarian cyst [C0029927])",
+      "similarity": 0.75
+    },
+    {
+      "atom": "A15",
+      "nugget": "Occur (infertility [C0021361], among women who had cyst surgery [C0747096]) GREATER THAN Occur (infertility [C0021361], among women who did NOT have cyst surgery)",
+      "similarity": 0.538
+    }
+  ],
+  "unmatched_nuggets": [
+    "[may] Treat (opening the abdomen (laparotomy) [C0023038], ovarian cyst [C0029927])",
+    "IF Occur (contents of ovarian cyst [C4518393] spills [C1511235], into abdomen [C0230168]) THEN [may] Form (patient, ovarian cyst [C0029927])",
+    "Is (ureter [C0041951], the tube that carries urine from the kidney to the bladder)"
+  ],
+  "unmatched_atoms": [
+    "A5"
+  ]
+}

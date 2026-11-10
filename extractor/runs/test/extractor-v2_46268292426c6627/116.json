@@ -1,0 +1,418 @@
+{
+  "lock": {
+    "code_hash": "46268292426c6627",
+    "prompt_version": "extractor-v2",
+    "matcher_version": "lexical-v2",
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "seed": 42,
+    "test_question_ids": [
+      "116",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "134",
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155"
+    ]
+  },
+  "result": {
+    "source_id": "116",
+    "atoms": [
+      {
+        "claim": "There are ways to prevent sleep apnea naturally.",
+        "type": "treatment",
+        "predicate": "prevent",
+        "subject": "ways",
+        "object": "sleep apnea",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "There are ways to prevent and treat sleep apnea naturally",
+        "importance": "critical",
+        "id": "A1"
+      },
+      {
+        "claim": "There are ways to treat sleep apnea naturally.",
+        "type": "treatment",
+        "predicate": "treat",
+        "subject": "ways",
+        "object": "sleep apnea",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "There are ways to prevent and treat sleep apnea naturally",
+        "importance": "critical",
+        "id": "A2"
+      },
+      {
+        "claim": "Lifestyle changes may prevent sleep apnea.",
+        "type": "treatment",
+        "predicate": "prevent",
+        "subject": "lifestyle changes",
+        "object": "sleep apnea",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "Lifestyle changes may prevent and treat sleep apnea",
+        "importance": "critical",
+        "id": "A3"
+      },
+      {
+        "claim": "Lifestyle changes may treat sleep apnea.",
+        "type": "treatment",
+        "predicate": "treat",
+        "subject": "lifestyle changes",
+        "object": "sleep apnea",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "Lifestyle changes may prevent and treat sleep apnea",
+        "importance": "critical",
+        "id": "A4"
+      },
+      {
+        "claim": "Losing weight can prevent sleep apnea.",
+        "type": "treatment",
+        "predicate": "prevent",
+        "subject": "losing weight",
+        "object": "sleep apnea",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "Sleep apnea can be prevented by losing weight",
+        "importance": "critical",
+        "id": "A5"
+      },
+      {
+        "claim": "Keeping weight down with diet can prevent sleep apnea.",
+        "type": "treatment",
+        "predicate": "prevent",
+        "subject": "keeping weight down with diet",
+        "object": "sleep apnea",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "keeping it down with diet and exercise",
+        "importance": "critical",
+        "id": "A6"
+      },
+      {
+        "claim": "Keeping weight down with exercise can prevent sleep apnea.",
+        "type": "treatment",
+        "predicate": "prevent",
+        "subject": "keeping weight down with exercise",
+        "object": "sleep apnea",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "keeping it down with diet and exercise",
+        "importance": "critical",
+        "id": "A7"
+      },
+      {
+        "claim": "Quitting alcohol can prevent sleep apnea.",
+        "type": "treatment",
+        "predicate": "prevent",
+        "subject": "quitting alcohol",
+        "object": "sleep apnea",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "quitting alcohol and smoking",
+        "importance": "critical",
+        "id": "A8"
+      },
+      {
+        "claim": "Quitting smoking can prevent sleep apnea.",
+        "type": "treatment",
+        "predicate": "prevent",
+        "subject": "quitting smoking",
+        "object": "sleep apnea",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "quitting alcohol and smoking",
+        "importance": "critical",
+        "id": "A9"
+      },
+      {
+        "claim": "Changing sleep position can prevent sleep apnea.",
+        "type": "treatment",
+        "predicate": "prevent",
+        "subject": "changing sleep position",
+        "object": "sleep apnea",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "changing sleep position",
+        "importance": "critical",
+        "id": "A10"
+      },
+      {
+        "claim": "Continuous Positive Airway Pressure is the standard treatment for obstructive sleep apnea.",
+        "type": "treatment",
+        "predicate": "is",
+        "subject": "Continuous Positive Airway Pressure",
+        "object": "standard treatment for obstructive sleep apnea",
+        "hedge": "recommended",
+        "hedge_text": "standard",
+        "evidence": "Continuous Positive Airway Pressure (CPAP, a machine that uses mild air pressure to keep breathing airways open while you sleep) is the standard treatment for obstructive sleep apnea (OSA)",
+        "importance": "critical",
+        "id": "A11"
+      },
+      {
+        "claim": "Continuous Positive Airway Pressure is a machine that uses mild air pressure to keep breathing airways open while you sleep.",
+        "type": "treatment",
+        "predicate": "is",
+        "subject": "Continuous Positive Airway Pressure",
+        "object": "machine that uses mild air pressure to keep breathing airways open while you sleep",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Continuous Positive Airway Pressure (CPAP, a machine that uses mild air pressure to keep breathing airways open while you sleep)",
+        "importance": "supporting",
+        "id": "A12"
+      },
+      {
+        "claim": "Chinese massage Tui Na reduces snoring.",
+        "type": "treatment",
+        "predicate": "reduce",
+        "subject": "Chinese massage Tui Na",
+        "object": "snoring",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Chinese massage Tui Na, dental treatments to change teeth and jaw position; and exercises for tongue and throat reduce snoring and apnea",
+        "importance": "critical",
+        "id": "A13"
+      },
+      {
+        "claim": "Chinese massage Tui Na reduces apnea.",
+        "type": "treatment",
+        "predicate": "reduce",
+        "subject": "Chinese massage Tui Na",
+        "object": "apnea",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Chinese massage Tui Na, dental treatments to change teeth and jaw position; and exercises for tongue and throat reduce snoring and apnea",
+        "importance": "critical",
+        "id": "A14"
+      },
+      {
+        "claim": "Dental treatments to change teeth and jaw position reduce snoring.",
+        "type": "treatment",
+        "predicate": "reduce",
+        "subject": "dental treatments to change teeth and jaw position",
+        "object": "snoring",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "dental treatments to change teeth and jaw position; and exercises for tongue and throat reduce snoring and apnea",
+        "importance": "critical",
+        "id": "A15"
+      },
+      {
+        "claim": "Dental treatments to change teeth and jaw position reduce apnea.",
+        "type": "treatment",
+        "predicate": "reduce",
+        "subject": "dental treatments to change teeth and jaw position",
+        "object": "apnea",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "dental treatments to change teeth and jaw position; and exercises for tongue and throat reduce snoring and apnea",
+        "importance": "critical",
+        "id": "A16"
+      },
+      {
+        "claim": "Exercises for tongue and throat reduce snoring.",
+        "type": "treatment",
+        "predicate": "reduce",
+        "subject": "exercises for tongue and throat",
+        "object": "snoring",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "exercises for tongue and throat reduce snoring and apnea",
+        "importance": "critical",
+        "id": "A17"
+      },
+      {
+        "claim": "Exercises for tongue and throat reduce apnea.",
+        "type": "treatment",
+        "predicate": "reduce",
+        "subject": "exercises for tongue and throat",
+        "object": "apnea",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "exercises for tongue and throat reduce snoring and apnea",
+        "importance": "critical",
+        "id": "A18"
+      },
+      {
+        "claim": "Treatments with drugs were suggested.",
+        "type": "treatment",
+        "predicate": "suggest",
+        "subject": "treatments with drugs",
+        "object": "treatments with drugs",
+        "hedge": "possible",
+        "hedge_text": "were",
+        "evidence": "Treatments with drugs, nerve stimulation and surgery were also suggested",
+        "importance": "critical",
+        "id": "A19"
+      },
+      {
+        "claim": "Treatments with nerve stimulation were suggested.",
+        "type": "treatment",
+        "predicate": "suggest",
+        "subject": "treatments with nerve stimulation",
+        "object": "treatments with nerve stimulation",
+        "hedge": "possible",
+        "hedge_text": "were",
+        "evidence": "Treatments with drugs, nerve stimulation and surgery were also suggested",
+        "importance": "critical",
+        "id": "A20"
+      },
+      {
+        "claim": "Treatments with surgery were suggested.",
+        "type": "treatment",
+        "predicate": "suggest",
+        "subject": "treatments with surgery",
+        "object": "treatments with surgery",
+        "hedge": "possible",
+        "hedge_text": "were",
+        "evidence": "Treatments with drugs, nerve stimulation and surgery were also suggested",
+        "importance": "critical",
+        "id": "A21"
+      }
+    ],
+    "evidence_failures": [],
+    "hedge_flags": [],
+    "provenance": {
+      "model": "gemini-3.5-flash-lite",
+      "model_version": "gemini-3.5-flash-lite",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "extractor-v2",
+      "timestamp": "2026-10-27T20:24:22.208975+00:00"
+    }
+  },
+  "scores": {
+    "nugget_recall": 0.7894736842105263,
+    "atom_precision_lower_bound": 0.7142857142857143,
+    "hedge_accuracy": 0.6,
+    "evidence_fail_rate": 0.0,
+    "hedge_flag_rate": 0.0,
+    "n_atoms": 21,
+    "n_nuggets": 19,
+    "n_matched": 15,
+    "matcher_version": "lexical-v2"
+  },
+  "matches": [
+    {
+      "atom": "A18",
+      "nugget": "Reduce (tongue and throat exercises [C0886220], apnea [C0003578])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A17",
+      "nugget": "Reduce (tongue and throat exercises [C0886220], snoring [C0037384])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A16",
+      "nugget": "Reduce (dental treatments [C0011331], apnea [C0003578])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A15",
+      "nugget": "Reduce (dental treatments [C0011331], snoring [C0037384])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A14",
+      "nugget": "Reduce (massage [C3536731], apnea [C0003578])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A13",
+      "nugget": "Reduce (massage [C3536731], snoring [C0037384])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A9",
+      "nugget": "Prevent (quitting smoking [C0085134], sleep apnea [C0037315])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A8",
+      "nugget": "Prevent (quitting alcohol [C3873525], sleep apnea [C0037315])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A7",
+      "nugget": "Prevent (keeping weight down with exercise [C0920298], sleep apnea [C0037315])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A6",
+      "nugget": "Prevent (keeping weight down with diet [C0920298], sleep apnea [C0037315])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A5",
+      "nugget": "Prevent (losing weight [C5439413], sleep apnea [C0037315])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A4",
+      "nugget": "[may] Treat (lifestyle changes [C0870811], sleep apnea [C0037315])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A3",
+      "nugget": "[may] Prevent (lifestyle changes [C0870811], sleep apnea [C0037315])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A2",
+      "nugget": "Exists (treat naturally[C0027495], sleep apnea [C0037315])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A10",
+      "nugget": "Prevent (changing sleeping position [C2136000], sleep apnea [C0037315])",
+      "similarity": 0.833
+    }
+  ],
+  "unmatched_nuggets": [
+    "[standard] Treat (CPAP [C0199451], obstructive sleep apnea [C0520679])",
+    "[may] Treat (drugs [C1547857], sleep apnea [C0037315])",
+    "[may] Treat (nerve stimulation [C0457946], sleep apnea [C0037315])",
+    "[may] Treat (surgery [C0543467], sleep apnea [C0037315])"
+  ],
+  "unmatched_atoms": [
+    "A1",
+    "A11",
+    "A12",
+    "A19",
+    "A20",
+    "A21"
+  ]
+}

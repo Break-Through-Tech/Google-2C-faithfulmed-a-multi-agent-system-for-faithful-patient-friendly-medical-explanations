@@ -1,0 +1,195 @@
+{
+  "lock": {
+    "code_hash": "46268292426c6627",
+    "prompt_version": "extractor-v2",
+    "matcher_version": "lexical-v2",
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "seed": 42,
+    "test_question_ids": [
+      "116",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "134",
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155"
+    ]
+  },
+  "result": {
+    "source_id": "128",
+    "atoms": [
+      {
+        "claim": "Cannabidiol (CBD) is a chemical found in Cannabis (marijuana).",
+        "type": "medication",
+        "predicate": "is",
+        "subject": "Cannabidiol (CBD)",
+        "object": "chemical found in Cannabis (marijuana)",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Cannabidiol (CBD) is a non-psychoactive (not causing 'high') chemical found in Cannabis (marijuana)",
+        "importance": "supporting",
+        "id": "A1"
+      },
+      {
+        "claim": "Cannabidiol (CBD) is non-psychoactive.",
+        "type": "medication",
+        "predicate": "is",
+        "subject": "Cannabidiol (CBD)",
+        "object": "non-psychoactive",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Cannabidiol (CBD) is a non-psychoactive",
+        "importance": "supporting",
+        "id": "A2"
+      },
+      {
+        "claim": "Cannabidiol (CBD) does not cause 'high'.",
+        "type": "medication",
+        "predicate": "cause",
+        "subject": "Cannabidiol (CBD)",
+        "object": "'high'",
+        "hedge": "negated",
+        "hedge_text": "not",
+        "evidence": "not causing 'high'",
+        "importance": "supporting",
+        "id": "A3"
+      },
+      {
+        "claim": "Cannabidiol (CBD) causes liver enzymes to be higher than normal.",
+        "type": "medication",
+        "predicate": "cause",
+        "subject": "Cannabidiol (CBD)",
+        "object": "liver enzymes to be higher than normal",
+        "hedge": "frequency",
+        "hedge_text": "Some",
+        "evidence": "Some studies show that it causes liver enzymes to be higher than normal",
+        "importance": "critical",
+        "id": "A4"
+      },
+      {
+        "claim": "Cannabidiol (CBD) in higher doses damages liver.",
+        "type": "medication",
+        "predicate": "damage",
+        "subject": "Cannabidiol (CBD) in higher doses",
+        "object": "liver",
+        "hedge": "frequency",
+        "hedge_text": "Some",
+        "evidence": "which shows CBD in higher doses damages liver",
+        "importance": "critical",
+        "id": "A5"
+      },
+      {
+        "claim": "Cannabidiol (CBD) is not linked to higher liver enzymes in healthy adults.",
+        "type": "medication",
+        "predicate": "link",
+        "subject": "Cannabidiol (CBD)",
+        "object": "higher liver enzymes in healthy adults",
+        "hedge": "negated",
+        "hedge_text": "not",
+        "evidence": "CBD is not linked to higher liver enzymes",
+        "importance": "critical",
+        "id": "A6"
+      },
+      {
+        "claim": "Cannabidiol (CBD) may be protective in some liver diseases.",
+        "type": "medication",
+        "predicate": "protective",
+        "subject": "Cannabidiol (CBD)",
+        "object": "some liver diseases",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "it may be protective in some liver diseases",
+        "importance": "critical",
+        "id": "A7"
+      }
+    ],
+    "evidence_failures": [],
+    "hedge_flags": [
+      "A1"
+    ],
+    "provenance": {
+      "model": "gemini-3.5-flash-lite",
+      "model_version": "gemini-3.5-flash-lite",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "extractor-v2",
+      "timestamp": "2026-10-27T20:25:45.312631+00:00"
+    }
+  },
+  "scores": {
+    "nugget_recall": 0.8333333333333334,
+    "atom_precision_lower_bound": 0.7142857142857143,
+    "hedge_accuracy": 0.6,
+    "evidence_fail_rate": 0.0,
+    "hedge_flag_rate": 0.14285714285714285,
+    "n_atoms": 7,
+    "n_nuggets": 6,
+    "n_matched": 5,
+    "matcher_version": "lexical-v2"
+  },
+  "matches": [
+    {
+      "atom": "A7",
+      "nugget": "[may] Prevent (CBD [C0006863], some liver diseases [C0023895])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A6",
+      "nugget": "[not] Associated (CBD [C0006863], higher liver enzymes [C0857093] in healthy adults [C0686750])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A5",
+      "nugget": "[may] Cause (higher doses of CBD [C0006863], liver damage [C0151763])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A4",
+      "nugget": "[may] Cause (CBD [C0006863], liver enzymes to be higher than normal [C0857093])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A1",
+      "nugget": "Contains (Cannabidiol (CBD) [C0006863], Cannabis (marijuana) [C0936079])",
+      "similarity": 1.0
+    }
+  ],
+  "unmatched_nuggets": [
+    "Is (Cannabidiol (CBD) [C0006863], a non-psychoactive chemical [NOT  C0682880])"
+  ],
+  "unmatched_atoms": [
+    "A2",
+    "A3"
+  ]
+}

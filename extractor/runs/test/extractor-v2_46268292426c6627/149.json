@@ -1,0 +1,229 @@
+{
+  "lock": {
+    "code_hash": "46268292426c6627",
+    "prompt_version": "extractor-v2",
+    "matcher_version": "lexical-v2",
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "seed": 42,
+    "test_question_ids": [
+      "116",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "134",
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155"
+    ]
+  },
+  "result": {
+    "source_id": "149",
+    "atoms": [
+      {
+        "claim": "Disc herniation is diagnosed with a history of the problem.",
+        "type": "procedure",
+        "predicate": "diagnose",
+        "subject": "disc herniation",
+        "object": "history of the problem",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Disc herniation is diagnosed with a history of the problem",
+        "importance": "critical",
+        "id": "A1"
+      },
+      {
+        "claim": "Disc herniation is diagnosed with physical examination by your doctor.",
+        "type": "procedure",
+        "predicate": "diagnose",
+        "subject": "disc herniation",
+        "object": "physical examination by your doctor",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "physical examination by your doctor",
+        "importance": "critical",
+        "id": "A2"
+      },
+      {
+        "claim": "Disc herniation is diagnosed with advanced medical imaging.",
+        "type": "procedure",
+        "predicate": "diagnose",
+        "subject": "disc herniation",
+        "object": "advanced medical imaging",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "advanced medical imaging",
+        "importance": "critical",
+        "id": "A3"
+      },
+      {
+        "claim": "Some studies value imaging less than the examination and history.",
+        "type": "other",
+        "predicate": "value",
+        "subject": "some studies",
+        "object": "imaging",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "some studies value imaging les than the examination and history",
+        "importance": "supporting",
+        "id": "A4"
+      },
+      {
+        "claim": "MRI is considered the best imaging method.",
+        "type": "procedure",
+        "predicate": "is",
+        "subject": "MRI",
+        "object": "the best imaging method",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "MRI is considered the best imaging method",
+        "importance": "critical",
+        "id": "A5"
+      },
+      {
+        "claim": "Deterioration of muscles around the spine is linked to disc herniation.",
+        "type": "risk_factor",
+        "predicate": "link",
+        "subject": "deterioration of muscles around the spine",
+        "object": "disc herniation",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Deterioration of muscles around the spine is linked to disc herniation",
+        "importance": "critical",
+        "id": "A6"
+      },
+      {
+        "claim": "Lumbar provocation discography may help finding if the disc causes pain.",
+        "type": "procedure",
+        "predicate": "help",
+        "subject": "lumbar provocation discography",
+        "object": "finding if the disc causes pain",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "Lumbar provocation discography (imaging with special materials) may help finding if the disc causes pain",
+        "importance": "critical",
+        "id": "A7"
+      },
+      {
+        "claim": "Patients cannot have MRI.",
+        "type": "condition",
+        "predicate": "have",
+        "subject": "patient",
+        "object": "MRI",
+        "hedge": "negated",
+        "hedge_text": "cannot",
+        "evidence": "If a patient cannot have MRI",
+        "importance": "critical",
+        "id": "A8"
+      },
+      {
+        "claim": "Special CT images can be used if a patient cannot have MRI.",
+        "type": "procedure",
+        "predicate": "use",
+        "subject": "special CT images",
+        "object": "patient",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "special CT images can be used",
+        "importance": "critical",
+        "id": "A9"
+      }
+    ],
+    "evidence_failures": [],
+    "hedge_flags": [],
+    "provenance": {
+      "model": "gemini-3.5-flash-lite",
+      "model_version": "gemini-3.5-flash-lite",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "extractor-v2",
+      "timestamp": "2026-10-27T20:28:58.894801+00:00"
+    }
+  },
+  "scores": {
+    "nugget_recall": 1.0,
+    "atom_precision_lower_bound": 0.8888888888888888,
+    "hedge_accuracy": 1.0,
+    "evidence_fail_rate": 0.0,
+    "hedge_flag_rate": 0.0,
+    "n_atoms": 9,
+    "n_nuggets": 8,
+    "n_matched": 8,
+    "matcher_version": "lexical-v2"
+  },
+  "matches": [
+    {
+      "atom": "A6",
+      "nugget": "Associated (deterioration of muscles around the spine [C0026846], disc herniation [C0021818])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A5",
+      "nugget": "Is (MRI [C0024485], the best imaging method [C0025086])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A4",
+      "nugget": "[some] Value LESS (imaging [C0025086], examination [C0031809] and history [C0683519])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A3",
+      "nugget": "Diagnose (advanced medical imaging [C0025086], disc herniation [C0021818])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A2",
+      "nugget": "Diagnose (physical examination [C0031809] by your doctor, disc herniation [C0021818])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A1",
+      "nugget": "Diagnose (history of the problem [C0683519], disc herniation [C0021818])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A9",
+      "nugget": "IF Contraindicated (patient, MRI [C0024485]) THEN Have (patient, special CT images[C4055114])",
+      "similarity": 0.857
+    },
+    {
+      "atom": "A7",
+      "nugget": "[may] Diagnose (lumbar provocation discography [C0203209], disc herniation [C0021818])",
+      "similarity": 0.75
+    }
+  ],
+  "unmatched_nuggets": [],
+  "unmatched_atoms": [
+    "A8"
+  ]
+}

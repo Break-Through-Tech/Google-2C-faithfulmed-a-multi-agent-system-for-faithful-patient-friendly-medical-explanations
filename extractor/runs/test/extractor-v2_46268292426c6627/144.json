@@ -1,0 +1,283 @@
+{
+  "lock": {
+    "code_hash": "46268292426c6627",
+    "prompt_version": "extractor-v2",
+    "matcher_version": "lexical-v2",
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "seed": 42,
+    "test_question_ids": [
+      "116",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "134",
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155"
+    ]
+  },
+  "result": {
+    "source_id": "144",
+    "atoms": [
+      {
+        "claim": "Guidelines for starting blood pressure treatments take into account blood pressure levels.",
+        "type": "other",
+        "predicate": "take",
+        "subject": "guidelines for starting blood pressure treatments",
+        "object": "blood pressure levels",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Guidelines for starting blood pressure treatments take into account blood pressure levels",
+        "importance": "supporting",
+        "id": "A1"
+      },
+      {
+        "claim": "Guidelines for starting blood pressure treatments take into account risk of heart disease.",
+        "type": "other",
+        "predicate": "take",
+        "subject": "guidelines for starting blood pressure treatments",
+        "object": "risk of heart disease",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "risk of heart disease and stroke",
+        "importance": "supporting",
+        "id": "A2"
+      },
+      {
+        "claim": "Guidelines for starting blood pressure treatments take into account risk of stroke.",
+        "type": "other",
+        "predicate": "take",
+        "subject": "guidelines for starting blood pressure treatments",
+        "object": "risk of stroke",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "risk of heart disease and stroke",
+        "importance": "supporting",
+        "id": "A3"
+      },
+      {
+        "claim": "The guidelines have changed over the years, particularly for the elderly.",
+        "type": "other",
+        "predicate": "changed",
+        "subject": "the guidelines",
+        "object": "the elderly",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "The guidelines have changed over the years, particularly for the elderly",
+        "importance": "supporting",
+        "id": "A4"
+      },
+      {
+        "claim": "The guidelines have changed over the years, particularly for patients with diabetic kidney disease.",
+        "type": "other",
+        "predicate": "changed",
+        "subject": "the guidelines",
+        "object": "patients with diabetic kidney disease",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "patients with diabetic kidney disease",
+        "importance": "supporting",
+        "id": "A5"
+      },
+      {
+        "claim": "The guidelines have changed over the years, particularly for patients with chronic kidney disease.",
+        "type": "other",
+        "predicate": "changed",
+        "subject": "the guidelines",
+        "object": "patients with chronic kidney disease",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "chronic kidney disease",
+        "importance": "supporting",
+        "id": "A6"
+      },
+      {
+        "claim": "The guidelines have changed over the years, particularly for patients with stroke.",
+        "type": "other",
+        "predicate": "changed",
+        "subject": "the guidelines",
+        "object": "patients with stroke",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "stroke",
+        "importance": "supporting",
+        "id": "A7"
+      },
+      {
+        "claim": "American College of Cardiology recommends 130/80 mmHg blood pressure levels.",
+        "type": "treatment",
+        "predicate": "recommends",
+        "subject": "American College of Cardiology",
+        "object": "130/80 mmHg blood pressure levels",
+        "hedge": "recommended",
+        "hedge_text": "recommends",
+        "evidence": "American College of Cardiology recommends 130/80 mmHg blood pressure levels",
+        "importance": "critical",
+        "id": "A8"
+      },
+      {
+        "claim": "Lowering blood pressure below 120/70 mmHg may cause heart problems.",
+        "type": "treatment",
+        "predicate": "cause",
+        "subject": "lowering blood pressure below 120/70 mmHg",
+        "object": "heart problems",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "Lowering blood pressure below 120/70 mmHg may cause heart and other problems",
+        "importance": "critical",
+        "id": "A9"
+      },
+      {
+        "claim": "Lowering blood pressure below 120/70 mmHg may cause other problems.",
+        "type": "treatment",
+        "predicate": "cause",
+        "subject": "lowering blood pressure below 120/70 mmHg",
+        "object": "other problems",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "Lowering blood pressure below 120/70 mmHg may cause heart and other problems",
+        "importance": "critical",
+        "id": "A10"
+      },
+      {
+        "claim": "According to European guidelines, the threshold should be adjusted for people over 65 years old.",
+        "type": "instruction",
+        "predicate": "adjust",
+        "subject": "the threshold",
+        "object": "people over 65 years old",
+        "hedge": "recommended",
+        "hedge_text": "should",
+        "evidence": "According to European guidelines, the threshold should be adjusted for people over 65 years old",
+        "importance": "critical",
+        "id": "A11"
+      },
+      {
+        "claim": "The best time of the day to take the medications is in the evening.",
+        "type": "instruction",
+        "predicate": "is",
+        "subject": "the best time of the day to take the medications",
+        "object": "in the evening",
+        "hedge": "recommended",
+        "hedge_text": "best",
+        "evidence": "The best time of the day to take the medications is in the evening",
+        "importance": "critical",
+        "id": "A12"
+      }
+    ],
+    "evidence_failures": [],
+    "hedge_flags": [],
+    "provenance": {
+      "model": "gemini-3.5-flash-lite",
+      "model_version": "gemini-3.5-flash-lite",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "extractor-v2",
+      "timestamp": "2026-10-27T20:27:54.506626+00:00"
+    }
+  },
+  "scores": {
+    "nugget_recall": 1.0,
+    "atom_precision_lower_bound": 1.0,
+    "hedge_accuracy": 0.9166666666666666,
+    "evidence_fail_rate": 0.0,
+    "hedge_flag_rate": 0.0,
+    "n_atoms": 12,
+    "n_nuggets": 12,
+    "n_matched": 12,
+    "matcher_version": "lexical-v2"
+  },
+  "matches": [
+    {
+      "atom": "A11",
+      "nugget": "[should] Adjusted (threshold [C0449864], people over 65 years old [C3843802])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A10",
+      "nugget": "[may] Cause (lowering blood pressure [C4529970] below 120/70 mmHg, other problems)",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A9",
+      "nugget": "[may] Cause (lowering blood pressure [C4529970] below 120/70 mmHg, heart problems [C0795691])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A8",
+      "nugget": "Recommends (American College of Cardiology, 130/80 mmHg blood pressure levels [C1271104])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A7",
+      "nugget": "Changed (guidelines [C0162791], for patients with stroke [C0038454])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A6",
+      "nugget": "Changed (guidelines [C0162791], for patients with chronic kidney disease [C1561643])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A5",
+      "nugget": "Changed (guidelines [C0162791], for patients with diabetic kidney disease [C0011881])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A4",
+      "nugget": "Changed (guidelines [C0162791], for elderly [C0001792])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A2",
+      "nugget": "Start (blood pressure treatments [C0419824], consider risk of heart disease [C0850624])",
+      "similarity": 0.875
+    },
+    {
+      "atom": "A1",
+      "nugget": "Start (blood pressure treatments [C0419824], consider blood pressure levels [C1271104])",
+      "similarity": 0.875
+    },
+    {
+      "atom": "A12",
+      "nugget": "[best] Time (take the medications [1290952], evening [C0587117])",
+      "similarity": 0.833
+    },
+    {
+      "atom": "A3",
+      "nugget": "Start (blood pressure treatments [C0419824], consider risk of stroke [C1277291])",
+      "similarity": 0.833
+    }
+  ],
+  "unmatched_nuggets": [],
+  "unmatched_atoms": []
+}

@@ -1,0 +1,484 @@
+{
+  "lock": {
+    "code_hash": "46268292426c6627",
+    "prompt_version": "extractor-v2",
+    "matcher_version": "lexical-v2",
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "seed": 42,
+    "test_question_ids": [
+      "116",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "134",
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155"
+    ]
+  },
+  "result": {
+    "source_id": "154",
+    "atoms": [
+      {
+        "claim": "Shortness of breath may be caused by many different health problems.",
+        "type": "symptom",
+        "predicate": "cause",
+        "subject": "many different health problems",
+        "object": "shortness of breath",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "Shortness of breath (SoB) may be caused by many different health problems",
+        "importance": "critical",
+        "id": "A1"
+      },
+      {
+        "claim": "Treating health problems causing shortness of breath will help with shortness of breath.",
+        "type": "treatment",
+        "predicate": "help",
+        "subject": "treating health problems causing shortness of breath",
+        "object": "shortness of breath",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "treating which will help with SoB",
+        "importance": "critical",
+        "id": "A2"
+      },
+      {
+        "claim": "In patients with lung disease, strengthening respiratory muscles helps.",
+        "type": "treatment",
+        "predicate": "help",
+        "subject": "strengthening respiratory muscles",
+        "object": "patients with lung disease",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "strengthening respiratory (breathing) muscles",
+        "importance": "critical",
+        "id": "A3"
+      },
+      {
+        "claim": "In patients with lung disease, strengthening breathing muscles helps.",
+        "type": "treatment",
+        "predicate": "help",
+        "subject": "strengthening breathing muscles",
+        "object": "patients with lung disease",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "strengthening respiratory (breathing) muscles",
+        "importance": "critical",
+        "id": "A4"
+      },
+      {
+        "claim": "In patients with lung disease, strengthening breast muscles helps.",
+        "type": "treatment",
+        "predicate": "help",
+        "subject": "strengthening breast muscles",
+        "object": "patients with lung disease",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "breast",
+        "importance": "supporting",
+        "id": "A5"
+      },
+      {
+        "claim": "In patients with lung disease, strengthening ribcage muscles helps.",
+        "type": "treatment",
+        "predicate": "help",
+        "subject": "strengthening ribcage muscles",
+        "object": "patients with lung disease",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "ribcage",
+        "importance": "supporting",
+        "id": "A6"
+      },
+      {
+        "claim": "In patients with lung disease, strengthening stomach muscles helps.",
+        "type": "treatment",
+        "predicate": "help",
+        "subject": "strengthening stomach muscles",
+        "object": "patients with lung disease",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "stomach muscles",
+        "importance": "supporting",
+        "id": "A7"
+      },
+      {
+        "claim": "In patients with lung disease, pursed lips breathing helps.",
+        "type": "treatment",
+        "predicate": "help",
+        "subject": "pursed lips breathing",
+        "object": "patients with lung disease",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "pursed lips breathing",
+        "importance": "critical",
+        "id": "A8"
+      },
+      {
+        "claim": "In patients with lung disease, leaning forward helps.",
+        "type": "treatment",
+        "predicate": "help",
+        "subject": "leaning forward",
+        "object": "patients with lung disease",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "leaning forward help",
+        "importance": "critical",
+        "id": "A9"
+      },
+      {
+        "claim": "Aerobic exercise with breathing exercises improve breathing.",
+        "type": "treatment",
+        "predicate": "improve",
+        "subject": "aerobic exercise with breathing exercises",
+        "object": "breathing",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Aerobic exercise with or without breathing exercises",
+        "importance": "critical",
+        "id": "A10"
+      },
+      {
+        "claim": "Aerobic exercise without breathing exercises improve breathing.",
+        "type": "treatment",
+        "predicate": "improve",
+        "subject": "aerobic exercise without breathing exercises",
+        "object": "breathing",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Aerobic exercise with or without breathing exercises",
+        "importance": "critical",
+        "id": "A11"
+      },
+      {
+        "claim": "Inspiratory muscle training improve breathing.",
+        "type": "treatment",
+        "predicate": "improve",
+        "subject": "inspiratory muscle training",
+        "object": "breathing",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "inspiratory muscle training (IMT) improve breathing",
+        "importance": "critical",
+        "id": "A12"
+      },
+      {
+        "claim": "Inspiratory muscle training helps by itself.",
+        "type": "treatment",
+        "predicate": "help",
+        "subject": "inspiratory muscle training",
+        "object": "breathing",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "IMT also helps by itself",
+        "importance": "supporting",
+        "id": "A13"
+      },
+      {
+        "claim": "Reducing physical activity improved breathing.",
+        "type": "treatment",
+        "predicate": "improve",
+        "subject": "reducing physical activity",
+        "object": "breathing",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "reducing physical activity",
+        "importance": "supporting",
+        "id": "A14"
+      },
+      {
+        "claim": "Psychological strategies improved breathing.",
+        "type": "treatment",
+        "predicate": "improve",
+        "subject": "psychological strategies",
+        "object": "breathing",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "psychological strategies",
+        "importance": "supporting",
+        "id": "A15"
+      },
+      {
+        "claim": "Breathing techniques improved breathing.",
+        "type": "treatment",
+        "predicate": "improve",
+        "subject": "breathing techniques",
+        "object": "breathing",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "breathing techniques",
+        "importance": "supporting",
+        "id": "A16"
+      },
+      {
+        "claim": "Breathing positions improved breathing.",
+        "type": "treatment",
+        "predicate": "improve",
+        "subject": "breathing positions",
+        "object": "breathing",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "positions",
+        "importance": "supporting",
+        "id": "A17"
+      },
+      {
+        "claim": "Breathing SPACE approach was developed to help with all breathing problems.",
+        "type": "treatment",
+        "predicate": "help",
+        "subject": "Breathing SPACE approach",
+        "object": "all breathing problems",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "\"Breathing SPACE\" approach, in which S stands for stopping smoking, P for treating pulmonary (lung) disease, A for managing anxiety/psychosocial factors, C for cardiac disease, and E for exercise/fitness, was developed to help with all breathing problems",
+        "importance": "critical",
+        "id": "A18"
+      },
+      {
+        "claim": "Stopping smoking is part of the Breathing SPACE approach.",
+        "type": "treatment",
+        "predicate": "is",
+        "subject": "stopping smoking",
+        "object": "part of the Breathing SPACE approach",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "S stands for stopping smoking",
+        "importance": "supporting",
+        "id": "A19"
+      },
+      {
+        "claim": "Treating pulmonary disease is part of the Breathing SPACE approach.",
+        "type": "treatment",
+        "predicate": "is",
+        "subject": "treating pulmonary disease",
+        "object": "part of the Breathing SPACE approach",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "P for treating pulmonary (lung) disease",
+        "importance": "supporting",
+        "id": "A20"
+      },
+      {
+        "claim": "Managing anxiety/psychosocial factors is part of the Breathing SPACE approach.",
+        "type": "treatment",
+        "predicate": "is",
+        "subject": "managing anxiety/psychosocial factors",
+        "object": "part of the Breathing SPACE approach",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "A for managing anxiety/psychosocial factors",
+        "importance": "supporting",
+        "id": "A21"
+      },
+      {
+        "claim": "Cardiac disease management is part of the Breathing SPACE approach.",
+        "type": "treatment",
+        "predicate": "is",
+        "subject": "cardiac disease management",
+        "object": "part of the Breathing SPACE approach",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "C for cardiac disease",
+        "importance": "supporting",
+        "id": "A22"
+      },
+      {
+        "claim": "Exercise/fitness is part of the Breathing SPACE approach.",
+        "type": "treatment",
+        "predicate": "is",
+        "subject": "exercise/fitness",
+        "object": "part of the Breathing SPACE approach",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "E for exercise/fitness",
+        "importance": "supporting",
+        "id": "A23"
+      },
+      {
+        "claim": "Yoga with pranayama breathing techniques improved breathing.",
+        "type": "treatment",
+        "predicate": "improve",
+        "subject": "yoga with pranayama breathing techniques",
+        "object": "breathing",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Yoga with pranayama breathing techniques improved breathing",
+        "importance": "supporting",
+        "id": "A24"
+      },
+      {
+        "claim": "The effect of diaphragmatic breathing is not clear.",
+        "type": "treatment",
+        "predicate": "is",
+        "subject": "effect of diaphragmatic breathing",
+        "object": "not clear",
+        "hedge": "negated",
+        "hedge_text": "not",
+        "evidence": "while the effect of diaphragmatic breathing is not clear",
+        "importance": "supporting",
+        "id": "A25"
+      },
+      {
+        "claim": "Using a fan may help with shortness of breath.",
+        "type": "treatment",
+        "predicate": "help",
+        "subject": "using a fan",
+        "object": "shortness of breath",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "Using a fan may help with SoB",
+        "importance": "supporting",
+        "id": "A26"
+      }
+    ],
+    "evidence_failures": [],
+    "hedge_flags": [],
+    "provenance": {
+      "model": "gemini-3.5-flash-lite",
+      "model_version": "gemini-3.5-flash-lite",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "extractor-v2",
+      "timestamp": "2026-10-27T20:29:40.404089+00:00"
+    }
+  },
+  "scores": {
+    "nugget_recall": 0.6086956521739131,
+    "atom_precision_lower_bound": 0.5384615384615384,
+    "hedge_accuracy": 0.9090909090909091,
+    "evidence_fail_rate": 0.0,
+    "hedge_flag_rate": 0.0,
+    "n_atoms": 26,
+    "n_nuggets": 23,
+    "n_matched": 14,
+    "matcher_version": "lexical-v2"
+  },
+  "matches": [
+    {
+      "atom": "A25",
+      "nugget": "Effect (diaphragmatic breathing [C0231898] on breathing [C0035203], not clear)",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A24",
+      "nugget": "Improve (yoga [C1883583] with pranayama breathing techniques, breathing [C0035203])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A21",
+      "nugget": "Is (\"A\" in \"Breathing SPACE\" approach, managing anxiety [C0871652]/psychosocial factors [C0009647])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A18",
+      "nugget": "Help (\"Breathing SPACE\" approach, all breathing problems [C1260922])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A15",
+      "nugget": "[reported] Improve (psychological strategies [C0009647], breathing [C0035203])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A14",
+      "nugget": "[reported] Improve (reducing physical activity [C2095488], breathing [C0035203])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A11",
+      "nugget": "Improve (aerobic exercise [C0001701] with or without breathing exercises [C0006155], breathing [C0035203])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A23",
+      "nugget": "Is (\"E\" in \"Breathing SPACE\" approach, exercise [C0015259]/fitness [C1319164])",
+      "similarity": 0.875
+    },
+    {
+      "atom": "A20",
+      "nugget": "Is (\"P\" in \"Breathing SPACE\" approach, treating pulmonary disease [C0024115])",
+      "similarity": 0.875
+    },
+    {
+      "atom": "A19",
+      "nugget": "Is (\"S\" in \"Breathing SPACE\" approach, stopping smoking [C0085134])",
+      "similarity": 0.875
+    },
+    {
+      "atom": "A13",
+      "nugget": "Improve (inspiratory muscle training (IMT) [C0454511], breathing [C0035203])",
+      "similarity": 0.875
+    },
+    {
+      "atom": "A17",
+      "nugget": "[reported] Improve (breathing techniques and positions [C0006155], breathing [C0035203])",
+      "similarity": 0.833
+    },
+    {
+      "atom": "A1",
+      "nugget": "[may] Cause (many different health problems [C0012634], shortness of breath (SoB) [C0013404])",
+      "similarity": 0.833
+    },
+    {
+      "atom": "A22",
+      "nugget": "Is (\"C\" in \"Breathing SPACE\" approach, managing cardiac disease [C0018799])",
+      "similarity": 0.708
+    }
+  ],
+  "unmatched_nuggets": [
+    "Help (treating health problems [C0087111], SoB [C0013404])",
+    "Help (strengthening respiratory muscles [C3874239], SoB [C0013404])",
+    "Help (strengthening breast muscles [C0419118], SoB [C0013404])",
+    "Help (strengthening ribcage muscles [C0846687], SoB [C0013404])",
+    "Help (strengthening stomach muscles [C4287200], SoB [C0013404])",
+    "Help (pursed lips breathing [C0425465], SoB [C0013404])",
+    "Help (leaning forward [C0459198], SoB [C0013404])",
+    "Help (IMT [C0454511], breathing [C0035203])",
+    "[may] Help (using a fan [C0441039], SoB [C0013404])"
+  ],
+  "unmatched_atoms": [
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8",
+    "A9",
+    "A10",
+    "A12",
+    "A16",
+    "A26"
+  ]
+}

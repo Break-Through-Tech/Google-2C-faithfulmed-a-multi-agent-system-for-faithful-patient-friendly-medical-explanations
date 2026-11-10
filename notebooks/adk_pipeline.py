@@ -9,28 +9,33 @@ instruction, output schema, and tools.
 
 Setup:
     pip install google-adk
-    export GEMINI_API_KEY=...        # free key from https://aistudio.google.com
+    GOOGLE_API_KEY=... in .env        # free key from https://aistudio.google.com
+    GEMINI_MODEL=...  (optional)      # defaults to gemini-3.5-flash-lite
 Docs: https://google.github.io/adk-docs
 
 Note: ADK's exact class/kwarg names evolve — check the docs for your installed version. The intent
 (SequentialAgent for the DAG, LoopAgent with a hard iteration cap for the refine step) is the point.
 """
+import os
+import sys
+from pathlib import Path
+
 from google.adk.agents import LlmAgent, SequentialAgent, LoopAgent
 from readability_agent import readability_agent
 
-MODEL = "gemini-2.0-flash"  # start on the free tier; swap per-agent for the leaderboard
+# The extractor/ package lives at the repo root; make it importable from notebooks/.
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from extractor.agent import build_extractor_agent  # noqa: E402
 
-# 1) Extractor — pull clinical "atoms" (facts + types) from the source document.
-extractor = LlmAgent(
-    name="Extractor",
-    model=MODEL,
-    instruction=(
-        "Extract every clinically meaningful fact from the SOURCE as a JSON list of atoms, each "
-        "with {text, type} where type is one of: diagnosis, medication, lab_value, procedure, "
-        "instruction. Do not add facts that are not in the SOURCE."
-    ),
-    output_key="atoms",
-)
+# One switch for the whole pipeline, same as readability_agent.py. gemini-2.0-flash (the old
+# default) is no longer served to new API keys.
+MODEL = os.getenv("GEMINI_MODEL", "gemini-3.5-flash-lite")
+
+# 1) Extractor — atomic, evidence-backed clinical facts (see extractor/). Writes state["atoms"]:
+#    {atoms: [{id, claim, type, predicate, subject, object, hedge, evidence, importance}],
+#     evidence_failures, hedge_flags, prompt_version, model_version}.
+#    Send preprocess(text) from extractor.preprocess as the user message.
+extractor = build_extractor_agent(model=MODEL)
 
 # 2) Simplifier — rewrite into plain language, grounded by RAG (wire retrieval into instruction/tools).
 simplifier = LlmAgent(

@@ -1,0 +1,187 @@
+{
+  "lock": {
+    "code_hash": "46268292426c6627",
+    "prompt_version": "extractor-v2",
+    "matcher_version": "lexical-v2",
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "seed": 42,
+    "test_question_ids": [
+      "116",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "134",
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155"
+    ]
+  },
+  "result": {
+    "source_id": "150",
+    "atoms": [
+      {
+        "claim": "Physical therapy is effective as the first line treatment of lumbar disc herniation.",
+        "type": "treatment",
+        "predicate": "is",
+        "subject": "physical therapy",
+        "object": "the first line treatment of lumbar disc herniation",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Physical therapy is effective as the first line treatment of lumbar disc herniation",
+        "importance": "critical",
+        "id": "A1"
+      },
+      {
+        "claim": "Pain reducing physical therapies such as cold are effective additional treatments for lumbar disc herniation.",
+        "type": "treatment",
+        "predicate": "are",
+        "subject": "pain reducing physical therapies such as cold",
+        "object": "effective additional treatments",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "pain reducing physical therapies such as cold or electrotherapy are effective additional treatments",
+        "importance": "critical",
+        "id": "A2"
+      },
+      {
+        "claim": "Pain reducing physical therapies such as electrotherapy are effective additional treatments for lumbar disc herniation.",
+        "type": "treatment",
+        "predicate": "are",
+        "subject": "pain reducing physical therapies such as electrotherapy",
+        "object": "effective additional treatments",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "pain reducing physical therapies such as cold or electrotherapy are effective additional treatments",
+        "importance": "critical",
+        "id": "A3"
+      },
+      {
+        "claim": "Specific successful procedures include mobilization therapies.",
+        "type": "procedure",
+        "predicate": "include",
+        "subject": "specific successful procedures",
+        "object": "mobilization therapies",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Specific successful procedures include mobilization therapies, exercise, traction, and decompression",
+        "importance": "supporting",
+        "id": "A4"
+      },
+      {
+        "claim": "Specific successful procedures include exercise.",
+        "type": "treatment",
+        "predicate": "include",
+        "subject": "specific successful procedures",
+        "object": "exercise",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Specific successful procedures include mobilization therapies, exercise, traction, and decompression",
+        "importance": "supporting",
+        "id": "A5"
+      },
+      {
+        "claim": "Specific successful procedures include traction.",
+        "type": "procedure",
+        "predicate": "include",
+        "subject": "specific successful procedures",
+        "object": "traction",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Specific successful procedures include mobilization therapies, exercise, traction, and decompression",
+        "importance": "supporting",
+        "id": "A6"
+      },
+      {
+        "claim": "Specific successful procedures include decompression.",
+        "type": "procedure",
+        "predicate": "include",
+        "subject": "specific successful procedures",
+        "object": "decompression",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Specific successful procedures include mobilization therapies, exercise, traction, and decompression",
+        "importance": "supporting",
+        "id": "A7"
+      }
+    ],
+    "evidence_failures": [],
+    "hedge_flags": [],
+    "provenance": {
+      "model": "gemini-3.5-flash-lite",
+      "model_version": "gemini-3.5-flash-lite",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "extractor-v2",
+      "timestamp": "2026-10-27T20:29:06.189108+00:00"
+    }
+  },
+  "scores": {
+    "nugget_recall": 0.5,
+    "atom_precision_lower_bound": 0.42857142857142855,
+    "hedge_accuracy": 1.0,
+    "evidence_fail_rate": 0.0,
+    "hedge_flag_rate": 0.0,
+    "n_atoms": 7,
+    "n_nuggets": 6,
+    "n_matched": 3,
+    "matcher_version": "lexical-v2"
+  },
+  "matches": [
+    {
+      "atom": "A3",
+      "nugget": "Effective (pain reducing [C5230944] physical therapies [C0949766], lumbar disc herniation [C0281899])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A1",
+      "nugget": "Effective (physical therapy [C0949766], lumbar disc herniation [C0281899])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A4",
+      "nugget": "Include (physical therapies [C0949766], mobilization therapies [C2080791])",
+      "similarity": 0.75
+    }
+  ],
+  "unmatched_nuggets": [
+    "Include (physical therapies [C0949766], exercise [C0015259])",
+    "Include (physical therapies [C0949766], traction [C0040597])",
+    "Include (physical therapies [C0949766], decompression [C1829459])"
+  ],
+  "unmatched_atoms": [
+    "A2",
+    "A5",
+    "A6",
+    "A7"
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "lock": {
+    "code_hash": "46268292426c6627",
+    "prompt_version": "extractor-v2",
+    "matcher_version": "lexical-v2",
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "seed": 42,
+    "test_question_ids": [
+      "116",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "134",
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155"
+    ]
+  },
+  "result": {
+    "source_id": "141",
+    "atoms": [
+      {
+        "claim": "Severe cases of yellow fever can cause bleeding.",
+        "type": "condition",
+        "predicate": "cause",
+        "subject": "severe cases of yellow fever",
+        "object": "bleeding",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "Severe cases of yellow fever can cause bleeding",
+        "importance": "critical",
+        "id": "A1"
+      },
+      {
+        "claim": "Severe cases of yellow fever can cause damage to liver.",
+        "type": "condition",
+        "predicate": "cause",
+        "subject": "severe cases of yellow fever",
+        "object": "damage to liver",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "Severe cases of yellow fever can cause bleeding, damage to liver, nerves and kidneys",
+        "importance": "critical",
+        "id": "A2"
+      },
+      {
+        "claim": "Severe cases of yellow fever can cause damage to nerves.",
+        "type": "condition",
+        "predicate": "cause",
+        "subject": "severe cases of yellow fever",
+        "object": "damage to nerves",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "Severe cases of yellow fever can cause bleeding, damage to liver, nerves and kidneys",
+        "importance": "critical",
+        "id": "A3"
+      },
+      {
+        "claim": "Severe cases of yellow fever can cause damage to kidneys.",
+        "type": "condition",
+        "predicate": "cause",
+        "subject": "severe cases of yellow fever",
+        "object": "damage to kidneys",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "Severe cases of yellow fever can cause bleeding, damage to liver, nerves and kidneys",
+        "importance": "critical",
+        "id": "A4"
+      },
+      {
+        "claim": "Severe cases of yellow fever can cause death.",
+        "type": "condition",
+        "predicate": "cause",
+        "subject": "severe cases of yellow fever",
+        "object": "death",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "Severe cases of yellow fever can cause bleeding, damage to liver, nerves and kidneys, and even death",
+        "importance": "critical",
+        "id": "A5"
+      },
+      {
+        "claim": "Yellow fever can cause blood clotting problems.",
+        "type": "condition",
+        "predicate": "cause",
+        "subject": "yellow fever",
+        "object": "blood clotting problems",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "Yellow fwver can also cause blood clotting problems",
+        "importance": "critical",
+        "id": "A6"
+      },
+      {
+        "claim": "Yellow fever can cause damage to the heart.",
+        "type": "condition",
+        "predicate": "cause",
+        "subject": "yellow fever",
+        "object": "damage to the heart",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "Yellow fwver can also cause blood clotting problems, damage to the heart",
+        "importance": "critical",
+        "id": "A7"
+      },
+      {
+        "claim": "Yellow fever can cause damage to the pancreas.",
+        "type": "condition",
+        "predicate": "cause",
+        "subject": "yellow fever",
+        "object": "damage to the pancreas",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "Yellow fwver can also cause blood clotting problems, damage to the heart, pancreas",
+        "importance": "critical",
+        "id": "A8"
+      },
+      {
+        "claim": "Yellow fever can cause multi-organ failure.",
+        "type": "condition",
+        "predicate": "cause",
+        "subject": "yellow fever",
+        "object": "multi-organ failure",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "Yellow fwver can also cause blood clotting problems, damage to the heart, pancreas and multi-organ failure",
+        "importance": "critical",
+        "id": "A9"
+      },
+      {
+        "claim": "Liver problems include hepatitis.",
+        "type": "condition",
+        "predicate": "include",
+        "subject": "liver problems",
+        "object": "hepatitis",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Liver problems include hepatitis",
+        "importance": "supporting",
+        "id": "A10"
+      },
+      {
+        "claim": "Hepatitis is inflammation of the liver.",
+        "type": "condition",
+        "predicate": "is",
+        "subject": "hepatitis",
+        "object": "inflammation of the liver",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "hepatitis (inflammation of the liver)",
+        "importance": "supporting",
+        "id": "A11"
+      },
+      {
+        "claim": "Kidney problems include acute kidney injury.",
+        "type": "condition",
+        "predicate": "include",
+        "subject": "kidney problems",
+        "object": "acute kidney injury",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Kidney problems include acute kidney injury",
+        "importance": "supporting",
+        "id": "A12"
+      }
+    ],
+    "evidence_failures": [],
+    "hedge_flags": [],
+    "provenance": {
+      "model": "gemini-3.5-flash-lite",
+      "model_version": "gemini-3.5-flash-lite",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "extractor-v2",
+      "timestamp": "2026-10-27T20:27:29.806170+00:00"
+    }
+  },
+  "scores": {
+    "nugget_recall": 1.0,
+    "atom_precision_lower_bound": 1.0,
+    "hedge_accuracy": 1.0,
+    "evidence_fail_rate": 0.0,
+    "hedge_flag_rate": 0.0,
+    "n_atoms": 12,
+    "n_nuggets": 12,
+    "n_matched": 12,
+    "matcher_version": "lexical-v2"
+  },
+  "matches": [
+    {
+      "atom": "A12",
+      "nugget": "Include (kidney problems [C0812426], acute kidney injury [C2609414])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A11",
+      "nugget": "Is (hepatitis [C0019158], inflammation of the liver)",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A10",
+      "nugget": "Include (liver problems [C0577060], hepatitis [C0019158])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A9",
+      "nugget": "[may] Cause (yellow fever [C0043395], multi-organ failure [C0026766])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A7",
+      "nugget": "[may] Cause (yellow fever [C0043395], heart damage [C3844005])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A6",
+      "nugget": "[may] Cause (yellow fever [C0043395], blood clotting problems [C1846821])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A5",
+      "nugget": "[may] Cause (severe cases of yellow fever [C0043395], death [C1306577])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A4",
+      "nugget": "[may] Cause (severe cases of yellow fever [C0043395], kidney damage [C1408258])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A3",
+      "nugget": "[may] Cause (severe cases of yellow fever [C0043395], nerve damage [C0161479])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A2",
+      "nugget": "[may] Cause (severe cases of yellow fever [C0043395], liver damage [C0151763])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A1",
+      "nugget": "[may] Cause (severe cases of yellow fever [C0043395], bleeding [C0019080])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A8",
+      "nugget": "[may] Cause (yellow fever [C0043395], pancreatic damage [C0813176])",
+      "similarity": 0.75
+    }
+  ],
+  "unmatched_nuggets": [],
+  "unmatched_atoms": []
+}
