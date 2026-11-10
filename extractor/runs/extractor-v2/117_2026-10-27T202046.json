@@ -1,0 +1,220 @@
+{
+  "result": {
+    "source_id": "117",
+    "atoms": [
+      {
+        "claim": "The effect of the RUNX2 mutation depends on the kind of the mutation.",
+        "type": "other",
+        "predicate": "depends",
+        "subject": "effect of the runx2 mutation",
+        "object": "kind of the mutation",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "The effect of the runx2 mutation depends on the kind of the mutation",
+        "importance": "supporting",
+        "id": "A1"
+      },
+      {
+        "claim": "RUNX2 mostly affects bone development.",
+        "type": "other",
+        "predicate": "affects",
+        "subject": "RUNX2",
+        "object": "bone development",
+        "hedge": "frequency",
+        "hedge_text": "mostly",
+        "evidence": "This gene mostly affects bone development",
+        "importance": "supporting",
+        "id": "A2"
+      },
+      {
+        "claim": "RUNX2 mutations can cause bone deformities.",
+        "type": "risk_factor",
+        "predicate": "cause",
+        "subject": "RUNX2 mutations",
+        "object": "bone deformities",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "Mutations can cause bone deformities",
+        "importance": "critical",
+        "id": "A3"
+      },
+      {
+        "claim": "RUNX2 mutations can cause height lower than expected.",
+        "type": "risk_factor",
+        "predicate": "cause",
+        "subject": "RUNX2 mutations",
+        "object": "height lower than expected",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "Mutations can cause... height lower than expected",
+        "importance": "critical",
+        "id": "A4"
+      },
+      {
+        "claim": "RUNX2 mutations can cause extra teeth.",
+        "type": "risk_factor",
+        "predicate": "cause",
+        "subject": "RUNX2 mutations",
+        "object": "extra teeth",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "Mutations can cause... extra teeth",
+        "importance": "critical",
+        "id": "A5"
+      },
+      {
+        "claim": "RUNX2 mutations can cause other dental problems.",
+        "type": "risk_factor",
+        "predicate": "cause",
+        "subject": "RUNX2 mutations",
+        "object": "other dental problems",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "Mutations can cause... and other dental problems",
+        "importance": "critical",
+        "id": "A6"
+      },
+      {
+        "claim": "Later in life, having more RUNX2 is linked to pancreatic cancer.",
+        "type": "risk_factor",
+        "predicate": "linked",
+        "subject": "having more RUNX2",
+        "object": "pancreatic cancer",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Later in life, having more RUNX2 is linked to cancers, such as pancreatic and bone cancer, prostate and breast cancer, and small cell lung cancer",
+        "importance": "critical",
+        "id": "A7"
+      },
+      {
+        "claim": "Later in life, having more RUNX2 is linked to bone cancer.",
+        "type": "risk_factor",
+        "predicate": "linked",
+        "subject": "having more RUNX2",
+        "object": "bone cancer",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Later in life, having more RUNX2 is linked to cancers, such as pancreatic and bone cancer, prostate and breast cancer, and small cell lung cancer",
+        "importance": "critical",
+        "id": "A8"
+      },
+      {
+        "claim": "Later in life, having more RUNX2 is linked to prostate cancer.",
+        "type": "risk_factor",
+        "predicate": "linked",
+        "subject": "having more RUNX2",
+        "object": "prostate cancer",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Later in life, having more RUNX2 is linked to cancers, such as pancreatic and bone cancer, prostate and breast cancer, and small cell lung cancer",
+        "importance": "critical",
+        "id": "A9"
+      },
+      {
+        "claim": "Later in life, having more RUNX2 is linked to breast cancer.",
+        "type": "risk_factor",
+        "predicate": "linked",
+        "subject": "having more RUNX2",
+        "object": "breast cancer",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Later in life, having more RUNX2 is linked to cancers, such as pancreatic and bone cancer, prostate and breast cancer, and small cell lung cancer",
+        "importance": "critical",
+        "id": "A10"
+      },
+      {
+        "claim": "Later in life, having more RUNX2 is linked to small cell lung cancer.",
+        "type": "risk_factor",
+        "predicate": "linked",
+        "subject": "having more RUNX2",
+        "object": "small cell lung cancer",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Later in life, having more RUNX2 is linked to cancers, such as pancreatic and bone cancer, prostate and breast cancer, and small cell lung cancer",
+        "importance": "critical",
+        "id": "A11"
+      }
+    ],
+    "evidence_failures": [
+      "A4",
+      "A5",
+      "A6"
+    ],
+    "hedge_flags": [],
+    "provenance": {
+      "model": "gemini-3.5-flash-lite",
+      "model_version": "gemini-3.5-flash-lite",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "extractor-v2",
+      "timestamp": "2026-10-27T20:20:46.208446+00:00"
+    }
+  },
+  "scores": {
+    "nugget_recall": 1.0,
+    "atom_precision_lower_bound": 0.9090909090909091,
+    "hedge_accuracy": 0.5,
+    "evidence_fail_rate": 0.2727272727272727,
+    "hedge_flag_rate": 0.0,
+    "n_atoms": 11,
+    "n_nuggets": 10,
+    "n_matched": 10,
+    "matcher_version": "lexical-v2"
+  },
+  "matches": [
+    {
+      "atom": "A6",
+      "nugget": "Cause (runx2 [C1419771] mutation [C0596611], dental problems [C3842047])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A5",
+      "nugget": "Cause (runx2 [C1419771] mutation [C0596611], extra teeth [C0040457])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A4",
+      "nugget": "Cause (runx2 [C1419771] mutation [C0596611], height lower than expected [C1629859])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A3",
+      "nugget": "Cause (runx2 [C1419771] mutation [C0596611], bone deformities [C0410719])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A11",
+      "nugget": "Associated (runx2 [C1419771] mutation [C0596611], small cell lung cancer [C0149925])",
+      "similarity": 0.75
+    },
+    {
+      "atom": "A10",
+      "nugget": "Associated (runx2 [C1419771] mutation [C0596611], breast cancer [C0006142])",
+      "similarity": 0.75
+    },
+    {
+      "atom": "A9",
+      "nugget": "Associated (runx2 [C1419771] mutation [C0596611], prostate cancer [C0376358])",
+      "similarity": 0.75
+    },
+    {
+      "atom": "A8",
+      "nugget": "Associated (runx2 [C1419771] mutation [C0596611], bone cancer [C0279530])",
+      "similarity": 0.75
+    },
+    {
+      "atom": "A7",
+      "nugget": "Associated (runx2 [C1419771] mutation [C0596611], pancreatic cancer [C0346647])",
+      "similarity": 0.75
+    },
+    {
+      "atom": "A2",
+      "nugget": "Affects (runx2 [C1419771] mutation [C0596611], bone development [C0005939])",
+      "similarity": 0.75
+    }
+  ],
+  "unmatched_nuggets": [],
+  "unmatched_atoms": [
+    "A1"
+  ]
+}

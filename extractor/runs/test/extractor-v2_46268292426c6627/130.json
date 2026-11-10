@@ -1,0 +1,214 @@
+{
+  "lock": {
+    "code_hash": "46268292426c6627",
+    "prompt_version": "extractor-v2",
+    "matcher_version": "lexical-v2",
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "seed": 42,
+    "test_question_ids": [
+      "116",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "134",
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155"
+    ]
+  },
+  "result": {
+    "source_id": "130",
+    "atoms": [
+      {
+        "claim": "PCOS patients have confirmed signs of oxidative stress in their lab tests.",
+        "type": "test_result",
+        "predicate": "have",
+        "subject": "PCOS patients",
+        "object": "signs of oxidative stress in their lab tests",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "PCOS patients have confirmed signs of oxidative stress (OS) in their lab tests",
+        "importance": "critical",
+        "id": "A1"
+      },
+      {
+        "claim": "The causes of PCOS are not known.",
+        "type": "risk_factor",
+        "predicate": "know",
+        "subject": "causes of PCOS",
+        "object": "causes of PCOS",
+        "hedge": "negated",
+        "hedge_text": "not",
+        "evidence": "The causes of PCOS are not known",
+        "importance": "critical",
+        "id": "A2"
+      },
+      {
+        "claim": "Oxidative stress may start the problems linked to PCOS.",
+        "type": "risk_factor",
+        "predicate": "start",
+        "subject": "oxidative stress",
+        "object": "problems linked to PCOS",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "oxidative stress may start the problems linked to PCOS",
+        "importance": "critical",
+        "id": "A3"
+      },
+      {
+        "claim": "Oxidative stress may increase the risk of cancers caused by PCOS.",
+        "type": "risk_factor",
+        "predicate": "increase",
+        "subject": "oxidative stress",
+        "object": "risk of cancers caused by PCOS",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "oxidative stress may start the problems linked to PCOS and increase the risk of cancers caused by PCOS",
+        "importance": "critical",
+        "id": "A4"
+      },
+      {
+        "claim": "Oxidative stress disrupts hormonal balance.",
+        "type": "condition",
+        "predicate": "disrupt",
+        "subject": "oxidative stress",
+        "object": "hormonal balance",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "OS disrupts hormonal balance",
+        "importance": "critical",
+        "id": "A5"
+      },
+      {
+        "claim": "Hormonal balance disruption leads to fertility problems.",
+        "type": "condition",
+        "predicate": "lead",
+        "subject": "hormonal balance disruption",
+        "object": "fertility problems",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "which leads to fertility problems",
+        "importance": "critical",
+        "id": "A6"
+      },
+      {
+        "claim": "Oxidative stress is linked to heart problems in PCOS.",
+        "type": "condition",
+        "predicate": "link",
+        "subject": "oxidative stress",
+        "object": "heart problems in PCOS",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "OS is also linked to heart and blood problems in PCOS",
+        "importance": "critical",
+        "id": "A7"
+      },
+      {
+        "claim": "Oxidative stress is linked to blood problems in PCOS.",
+        "type": "condition",
+        "predicate": "link",
+        "subject": "oxidative stress",
+        "object": "blood problems in PCOS",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "OS is also linked to heart and blood problems in PCOS",
+        "importance": "critical",
+        "id": "A8"
+      }
+    ],
+    "evidence_failures": [],
+    "hedge_flags": [],
+    "provenance": {
+      "model": "gemini-3.5-flash-lite",
+      "model_version": "gemini-3.5-flash-lite",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "extractor-v2",
+      "timestamp": "2026-10-27T20:26:00.695155+00:00"
+    }
+  },
+  "scores": {
+    "nugget_recall": 0.875,
+    "atom_precision_lower_bound": 0.875,
+    "hedge_accuracy": 0.7142857142857143,
+    "evidence_fail_rate": 0.0,
+    "hedge_flag_rate": 0.0,
+    "n_atoms": 8,
+    "n_nuggets": 8,
+    "n_matched": 7,
+    "matcher_version": "lexical-v2"
+  },
+  "matches": [
+    {
+      "atom": "A8",
+      "nugget": "Associated (oxidative stress [C0242606], blood problems [C0018939])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A7",
+      "nugget": "Associated (oxidative stress [C0242606], heart problems [C0795691])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A4",
+      "nugget": "[may] Increase (oxidative stress [C0242606], risk of cancers [C4040945] caused by PCOS [C0032460])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A3",
+      "nugget": "Associated (PCOS [C0032460], oxidative stress (OS) [C0242606])",
+      "similarity": 0.833
+    },
+    {
+      "atom": "A6",
+      "nugget": "Cause (hormonal imbalance [C3263685], fertility problems [C0278048])",
+      "similarity": 0.75
+    },
+    {
+      "atom": "A5",
+      "nugget": "Cause (oxidative stress [C0242606], hormonal imbalance [C3263685])",
+      "similarity": 0.75
+    },
+    {
+      "atom": "A1",
+      "nugget": "[may] Cause (oxidative stress [C0242606], PCOS [C0032460] symptoms)",
+      "similarity": 0.75
+    }
+  ],
+  "unmatched_nuggets": [
+    "Cause (unkown [C0743626], PCOS [C0032460])"
+  ],
+  "unmatched_atoms": [
+    "A2"
+  ]
+}

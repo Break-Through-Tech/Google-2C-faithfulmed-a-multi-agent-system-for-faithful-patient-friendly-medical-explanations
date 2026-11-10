@@ -1,0 +1,371 @@
+{
+  "lock": {
+    "code_hash": "46268292426c6627",
+    "prompt_version": "extractor-v2",
+    "matcher_version": "lexical-v2",
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "seed": 42,
+    "test_question_ids": [
+      "116",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "134",
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155"
+    ]
+  },
+  "result": {
+    "source_id": "126",
+    "atoms": [
+      {
+        "claim": "Nondisjunction is the errors in splitting genetic materials when our body cells divide.",
+        "type": "other",
+        "predicate": "is",
+        "subject": "nondisjunction",
+        "object": "the errors in splitting genetic materials when our body cells divide",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Nondisjunction is the errors in splitting genetic materials when our body cells divide",
+        "importance": "critical",
+        "id": "A1"
+      },
+      {
+        "claim": "Meiosis is a type of cell division that takes only one of two copies of each chromosome from the parent cell for the baby to have a set of chromosomes from each parent.",
+        "type": "other",
+        "predicate": "is",
+        "subject": "meiosis",
+        "object": "a type of cell division that takes only one of two copies of each chromosome from the parent cell, for the baby to have a set of chromosomes from each parent",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "A type of cell division that takes only one of two copies of each chromosome (cell structures that store genetic information) from the parent cell, for the baby to have a set of chromosomes from each parent, is called meiosis",
+        "importance": "supporting",
+        "id": "A2"
+      },
+      {
+        "claim": "Chromosomes are cell structures that store genetic information.",
+        "type": "other",
+        "predicate": "are",
+        "subject": "chromosomes",
+        "object": "cell structures that store genetic information",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "cell structures that store genetic information",
+        "importance": "supporting",
+        "id": "A3"
+      },
+      {
+        "claim": "Mitosis is a type of cell division where the number of chromosomes remains the same in the new cells when the cells divide for growth and to maintain our bodies.",
+        "type": "other",
+        "predicate": "is",
+        "subject": "this type of cell division",
+        "object": "mitosis",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "When the cells divide for growth and to maintain our bodies, the number of chromosomes remains the same in the new cells, and this type of cell division is called mitosis",
+        "importance": "supporting",
+        "id": "A4"
+      },
+      {
+        "claim": "Non-disjunction can happen during mitosis.",
+        "type": "other",
+        "predicate": "happen",
+        "subject": "non-disjunction",
+        "object": "mitosis",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "Non-disjunction can happen during both types of cell division",
+        "importance": "critical",
+        "id": "A5"
+      },
+      {
+        "claim": "Non-disjunction can happen during meiosis.",
+        "type": "other",
+        "predicate": "happen",
+        "subject": "non-disjunction",
+        "object": "meiosis",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "Non-disjunction can happen during both types of cell division",
+        "importance": "critical",
+        "id": "A6"
+      },
+      {
+        "claim": "Chromosomes failing to split properly causes a condition called aneuploidy.",
+        "type": "risk_factor",
+        "predicate": "causes",
+        "subject": "chromosomes failing to split properly",
+        "object": "a condition called aneuploidy",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "When the chromosomes fail to split properly, it causes a condition called aneuploidy",
+        "importance": "critical",
+        "id": "A7"
+      },
+      {
+        "claim": "Aneuploidy is having too many or too few chromosomes instead of the normal two of each.",
+        "type": "condition",
+        "predicate": "is",
+        "subject": "aneuploidy",
+        "object": "having too many or too few chromosomes instead of the normal two of each",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "having too many or too few chromosomes instead of the normal two of each",
+        "importance": "critical",
+        "id": "A8"
+      },
+      {
+        "claim": "Nondisjunction can be caused by the genes.",
+        "type": "risk_factor",
+        "predicate": "caused",
+        "subject": "nondisjunction",
+        "object": "the genes",
+        "hedge": "possible",
+        "hedge_text": null,
+        "evidence": "Nondisjunction can be caused by the genes and environment",
+        "importance": "supporting",
+        "id": "A9"
+      },
+      {
+        "claim": "Nondisjunction can be caused by environment.",
+        "type": "risk_factor",
+        "predicate": "caused",
+        "subject": "nondisjunction",
+        "object": "environment",
+        "hedge": "possible",
+        "hedge_text": null,
+        "evidence": "Nondisjunction can be caused by the genes and environment",
+        "importance": "supporting",
+        "id": "A10"
+      },
+      {
+        "claim": "During meiosis, women's eggs may have faulty chromosomes.",
+        "type": "condition",
+        "predicate": "have",
+        "subject": "women's eggs",
+        "object": "faulty chromosomes",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "During meiosis, both women's eggs and male sperm may have faulty chromosomes",
+        "importance": "critical",
+        "id": "A11"
+      },
+      {
+        "claim": "During meiosis, male sperm may have faulty chromosomes.",
+        "type": "condition",
+        "predicate": "have",
+        "subject": "male sperm",
+        "object": "faulty chromosomes",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "During meiosis, both women's eggs and male sperm may have faulty chromosomes",
+        "importance": "critical",
+        "id": "A12"
+      },
+      {
+        "claim": "Nondisjunction happens more often in older women.",
+        "type": "risk_factor",
+        "predicate": "happens",
+        "subject": "nondisjunction",
+        "object": "older women",
+        "hedge": "frequency",
+        "hedge_text": "more often",
+        "evidence": "It happens more often in older women and in men who inherited faulty chromosomes",
+        "importance": "critical",
+        "id": "A13"
+      },
+      {
+        "claim": "Nondisjunction happens more often in men who inherited faulty chromosomes.",
+        "type": "risk_factor",
+        "predicate": "happens",
+        "subject": "nondisjunction",
+        "object": "men who inherited faulty chromosomes",
+        "hedge": "frequency",
+        "hedge_text": "more often",
+        "evidence": "It happens more often in older women and in men who inherited faulty chromosomes",
+        "importance": "critical",
+        "id": "A14"
+      },
+      {
+        "claim": "Hormone imbalance plays an important role in nondisjunction.",
+        "type": "risk_factor",
+        "predicate": "plays",
+        "subject": "hormone imbalance",
+        "object": "an important role in nondisjunction",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Hormone imbalance plays an important role in nondisjunction",
+        "importance": "critical",
+        "id": "A15"
+      },
+      {
+        "claim": "Faulty chromosomes in sperm were linked to drug treatments.",
+        "type": "risk_factor",
+        "predicate": "linked",
+        "subject": "faulty chromosomes in sperm",
+        "object": "drug treatments",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Faulty chromosomes in sperm were linked to drug treatments, occupational agents and lifestyle",
+        "importance": "critical",
+        "id": "A16"
+      },
+      {
+        "claim": "Faulty chromosomes in sperm were linked to occupational agents.",
+        "type": "risk_factor",
+        "predicate": "linked",
+        "subject": "faulty chromosomes in sperm",
+        "object": "occupational agents",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Faulty chromosomes in sperm were linked to drug treatments, occupational agents and lifestyle",
+        "importance": "critical",
+        "id": "A17"
+      },
+      {
+        "claim": "Faulty chromosomes in sperm were linked to lifestyle.",
+        "type": "risk_factor",
+        "predicate": "linked",
+        "subject": "faulty chromosomes in sperm",
+        "object": "lifestyle",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Faulty chromosomes in sperm were linked to drug treatments, occupational agents and lifestyle",
+        "importance": "critical",
+        "id": "A18"
+      }
+    ],
+    "evidence_failures": [],
+    "hedge_flags": [],
+    "provenance": {
+      "model": "gemini-3.5-flash-lite",
+      "model_version": "gemini-3.5-flash-lite",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "extractor-v2",
+      "timestamp": "2026-10-27T20:25:28.178645+00:00"
+    }
+  },
+  "scores": {
+    "nugget_recall": 0.7647058823529411,
+    "atom_precision_lower_bound": 0.7222222222222222,
+    "hedge_accuracy": 0.8461538461538461,
+    "evidence_fail_rate": 0.0,
+    "hedge_flag_rate": 0.0,
+    "n_atoms": 18,
+    "n_nuggets": 17,
+    "n_matched": 13,
+    "matcher_version": "lexical-v2"
+  },
+  "matches": [
+    {
+      "atom": "A18",
+      "nugget": "Associated (faulty chromosomes in sperm [C0478108], lifestyle [C0023676])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A17",
+      "nugget": "Associated (faulty chromosomes in sperm [C0478108], occupational agents [C0337074])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A16",
+      "nugget": "Associated (faulty chromosomes in sperm [C0478108], drug treatments [C0013216])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A15",
+      "nugget": "Associated (hormone imbalance [C3263685], nondisjunction [C1834741])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A14",
+      "nugget": "Occur (nondisjunction [C1834741], in men who inherited faulty chromosomes [C0478108])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A12",
+      "nugget": "[may] Cause (meiosis [C0025186], faulty chromosome in male sperm [C4020789])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A11",
+      "nugget": "[may] Cause (meiosis [C0025186], faulty chromosome in women's eggs [C2903189])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A10",
+      "nugget": "[may] Cause (environment [C1516998], nondisjunction [C1834741])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A8",
+      "nugget": "Is (aneuploidy [C0002938], having too many or too few chromosomes instead of the normal two of each)",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A7",
+      "nugget": "Cause (chromosomes failing to split properly [C0028303], aneuploidy [C0002938])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A2",
+      "nugget": "Is (meiosis [C0025186], cell division that takes one of two copies of each chromosome)",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A1",
+      "nugget": "[may] Cause (genetics [C4510149], nondisjunction [C1834741])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A4",
+      "nugget": "Is (mitosis [C0026255], cell division for growth and maintenance such that the number of chromosomes remains the same in the new cells)",
+      "similarity": 0.9
+    }
+  ],
+  "unmatched_nuggets": [
+    "Is (nondisjunction [C1834741], errors in splitting genetic materials [C0028303])",
+    "Associated (nondisjunction [C0028303], mitosis [C0026255])",
+    "Associated (nondisjunction [C0028303], meiosis [C0025186])",
+    "Occur (nondisjunction [C1834741], in older women [C4699285]) GREATER THAN Occur (nondisjunction [C1834741], in others)"
+  ],
+  "unmatched_atoms": [
+    "A3",
+    "A5",
+    "A6",
+    "A9",
+    "A13"
+  ]
+}

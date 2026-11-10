@@ -1,0 +1,256 @@
+{
+  "result": {
+    "source_id": "123",
+    "atoms": [
+      {
+        "claim": "FBN1 is a gene that tells the body how to build connective tissues.",
+        "type": "other",
+        "predicate": "is",
+        "subject": "FBN1",
+        "object": "a gene that tells the body how to build connective tissues",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "FBN1 is a gene that tells the body how to build connective tissues",
+        "importance": "supporting",
+        "id": "A1"
+      },
+      {
+        "claim": "Connective tissues support and protect the structure of the human body.",
+        "type": "other",
+        "predicate": "support",
+        "subject": "connective tissues",
+        "object": "the structure of the human body",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "connective tissues that support and protect the structure of the human body",
+        "importance": "supporting",
+        "id": "A2"
+      },
+      {
+        "claim": "Connective tissues protect the structure of the human body.",
+        "type": "other",
+        "predicate": "protect",
+        "subject": "connective tissues",
+        "object": "the structure of the human body",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "connective tissues that support and protect the structure of the human body",
+        "importance": "supporting",
+        "id": "A3"
+      },
+      {
+        "claim": "Mutations in specific parts of FBN1 can cause health problems.",
+        "type": "risk_factor",
+        "predicate": "cause",
+        "subject": "mutations in specific parts of FBN1",
+        "object": "health problems",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "Mutations in specific parts of FBN1 can cause health problems",
+        "importance": "critical",
+        "id": "A4"
+      },
+      {
+        "claim": "Some mutations called missense mutation cause tall or short stature.",
+        "type": "risk_factor",
+        "predicate": "cause",
+        "subject": "some of these mutations called missense mutation",
+        "object": "tall or short stature",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Some of these mutations called missense mutation (like misspelling the instructions) cause tall or short stature, finger deformities, and problems with aorta (the major artery that supplies the body with blood)",
+        "importance": "critical",
+        "id": "A5"
+      },
+      {
+        "claim": "Some mutations called missense mutation cause finger deformities.",
+        "type": "risk_factor",
+        "predicate": "cause",
+        "subject": "some of these mutations called missense mutation",
+        "object": "finger deformities",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Some of these mutations called missense mutation (like misspelling the instructions) cause tall or short stature, finger deformities, and problems with aorta (the major artery that supplies the body with blood)",
+        "importance": "critical",
+        "id": "A6"
+      },
+      {
+        "claim": "Some mutations called missense mutation cause problems with aorta.",
+        "type": "risk_factor",
+        "predicate": "cause",
+        "subject": "some of these mutations called missense mutation",
+        "object": "problems with aorta",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Some of these mutations called missense mutation (like misspelling the instructions) cause tall or short stature, finger deformities, and problems with aorta (the major artery that supplies the body with blood)",
+        "importance": "critical",
+        "id": "A7"
+      },
+      {
+        "claim": "The aorta is the major artery that supplies the body with blood.",
+        "type": "other",
+        "predicate": "is",
+        "subject": "the aorta",
+        "object": "the major artery that supplies the body with blood",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "the aorta (the major artery that supplies the body with blood)",
+        "importance": "supporting",
+        "id": "A8"
+      },
+      {
+        "claim": "Mutations in specific parts of the gene cause Marfan syndrome.",
+        "type": "risk_factor",
+        "predicate": "cause",
+        "subject": "mutations in specific parts of the gene",
+        "object": "Marfan syndrome",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Mutations in specific parts of the gene cause different problems, such as Marfan syndrome, Weill-Marchesani syndrome, familial thoracic aortic aneurysms/dissections, acromicric dysplasia, and geleophysic dysplasia",
+        "importance": "critical",
+        "id": "A9"
+      },
+      {
+        "claim": "Mutations in specific parts of the gene cause Weill-Marchesani syndrome.",
+        "type": "risk_factor",
+        "predicate": "cause",
+        "subject": "mutations in specific parts of the gene",
+        "object": "Weill-Marchesani syndrome",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Mutations in specific parts of the gene cause different problems, such as Marfan syndrome, Weill-Marchesani syndrome, familial thoracic aortic aneurysms/dissections, acromicric dysplasia, and geleophysic dysplasia",
+        "importance": "critical",
+        "id": "A10"
+      },
+      {
+        "claim": "Mutations in specific parts of the gene cause familial thoracic aortic aneurysms/dissections.",
+        "type": "risk_factor",
+        "predicate": "cause",
+        "subject": "mutations in specific parts of the gene",
+        "object": "familial thoracic aortic aneurysms/dissections",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Mutations in specific parts of the gene cause different problems, such as Marfan syndrome, Weill-Marchesani syndrome, familial thoracic aortic aneurysms/dissections, acromicric dysplasia, and geleophysic dysplasia",
+        "importance": "critical",
+        "id": "A11"
+      },
+      {
+        "claim": "Mutations in specific parts of the gene cause acromicric dysplasia.",
+        "type": "risk_factor",
+        "predicate": "cause",
+        "subject": "mutations in specific parts of the gene",
+        "object": "acromicric dysplasia",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Mutations in specific parts of the gene cause different problems, such as Marfan syndrome, Weill-Marchesani syndrome, familial thoracic aortic aneurysms/dissections, acromicric dysplasia, and geleophysic dysplasia",
+        "importance": "critical",
+        "id": "A12"
+      },
+      {
+        "claim": "Mutations in specific parts of the gene cause geleophysic dysplasia.",
+        "type": "risk_factor",
+        "predicate": "cause",
+        "subject": "mutations in specific parts of the gene",
+        "object": "geleophysic dysplasia",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Mutations in specific parts of the gene cause different problems, such as Marfan syndrome, Weill-Marchesani syndrome, familial thoracic aortic aneurysms/dissections, acromicric dysplasia, and geleophysic dysplasia",
+        "importance": "critical",
+        "id": "A13"
+      }
+    ],
+    "evidence_failures": [
+      "A8"
+    ],
+    "hedge_flags": [],
+    "provenance": {
+      "model": "gemini-3.5-flash-lite",
+      "model_version": "gemini-3.5-flash-lite",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "extractor-v2",
+      "timestamp": "2026-10-27T20:20:49.636010+00:00"
+    }
+  },
+  "scores": {
+    "nugget_recall": 0.8,
+    "atom_precision_lower_bound": 0.9230769230769231,
+    "hedge_accuracy": 1.0,
+    "evidence_fail_rate": 0.07692307692307693,
+    "hedge_flag_rate": 0.0,
+    "n_atoms": 13,
+    "n_nuggets": 15,
+    "n_matched": 12,
+    "matcher_version": "lexical-v2"
+  },
+  "matches": [
+    {
+      "atom": "A7",
+      "nugget": "Cause (Missense mutation [C0599155], problems with aorta [C0302467])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A6",
+      "nugget": "Cause (Missense mutation [C0599155], finger deformities [C0265605])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A5",
+      "nugget": "Cause (Missense mutation [C0599155], short stature [C0349588])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A4",
+      "nugget": "[may] Cause (Mutations [C0596611] in specific parts of FBN1 [C1414542], health problems [C0012634])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A3",
+      "nugget": "Protect (connective tissues [C0009780], structure of the human body [C0460148])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A2",
+      "nugget": "Support (connective tissues [C0009780], structure of the human body [C0460148])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A1",
+      "nugget": "Responsible (FBN1 [C1414542], connective tissues [C0009780])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A13",
+      "nugget": "Cause (Mutations [C0596611] in specific parts of FBN1 [C1414542], geleophysic dysplasia [C3489726])",
+      "similarity": 0.875
+    },
+    {
+      "atom": "A12",
+      "nugget": "Cause (Mutations [C0596611] in specific parts of FBN1 [C1414542], acromicric dysplasia [C0265287])",
+      "similarity": 0.875
+    },
+    {
+      "atom": "A11",
+      "nugget": "Cause (Mutations [C0596611] in specific parts of FBN1 [C1414542], familial thoracic aortic aneurysms [C0162872]/dissections [C5779551])",
+      "similarity": 0.875
+    },
+    {
+      "atom": "A10",
+      "nugget": "Cause (Mutations [C0596611] in specific parts of FBN1 [C1414542], Weill-Marchesani syndrome [C0265313])",
+      "similarity": 0.875
+    },
+    {
+      "atom": "A9",
+      "nugget": "Cause (Mutations [C0596611] in specific parts of FBN1 [C1414542], Marfan syndrome [C0024796])",
+      "similarity": 0.875
+    }
+  ],
+  "unmatched_nuggets": [
+    "Cause (Missense mutation [C0599155], tall stature [C0241240])",
+    "Cause (Deletions [C1511760] in FBN1 [C1414542], Marfan syndrome [C0024796])",
+    "Cause (Deletions [C1511760] in FBN1 [C1414542], heart problems [C0018799])"
+  ],
+  "unmatched_atoms": [
+    "A8"
+  ]
+}

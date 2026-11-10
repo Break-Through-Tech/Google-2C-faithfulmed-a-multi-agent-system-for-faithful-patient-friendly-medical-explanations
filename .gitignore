@@ -41,5 +41,4 @@ embeddings/
 *.npz
 
 .env
-.env.example
 UMLS_API_KEY=your_umls_api_key_here

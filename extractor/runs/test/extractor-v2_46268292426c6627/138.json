@@ -1,0 +1,211 @@
+{
+  "lock": {
+    "code_hash": "46268292426c6627",
+    "prompt_version": "extractor-v2",
+    "matcher_version": "lexical-v2",
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "seed": 42,
+    "test_question_ids": [
+      "116",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "134",
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155"
+    ]
+  },
+  "result": {
+    "source_id": "138",
+    "atoms": [
+      {
+        "claim": "Sudafed uses the same process to quickly help with congestion.",
+        "type": "medication",
+        "predicate": "use",
+        "subject": "Sudafed",
+        "object": "the same process to quickly help with congestion",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Both Sudafed (also called pseudoephedrine) and Afrin (also called oxymetazoline) use the same process to quickly help with congestion",
+        "importance": "critical",
+        "id": "A1"
+      },
+      {
+        "claim": "Afrin uses the same process to quickly help with congestion.",
+        "type": "medication",
+        "predicate": "use",
+        "subject": "Afrin",
+        "object": "the same process to quickly help with congestion",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Both Sudafed (also called pseudoephedrine) and Afrin (also called oxymetazoline) use the same process to quickly help with congestion",
+        "importance": "critical",
+        "id": "A2"
+      },
+      {
+        "claim": "This process can affect your heart in adults and children.",
+        "type": "other",
+        "predicate": "affect",
+        "subject": "this process",
+        "object": "your heart in adults and children",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "This process can also affect your heart and breathing, and the other body systems in adults and children",
+        "importance": "critical",
+        "id": "A3"
+      },
+      {
+        "claim": "This process can affect your breathing in adults and children.",
+        "type": "other",
+        "predicate": "affect",
+        "subject": "this process",
+        "object": "your breathing in adults and children",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "This process can also affect your heart and breathing, and the other body systems in adults and children",
+        "importance": "critical",
+        "id": "A4"
+      },
+      {
+        "claim": "This process can affect the other body systems in adults and children.",
+        "type": "other",
+        "predicate": "affect",
+        "subject": "this process",
+        "object": "the other body systems in adults and children",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "This process can also affect your heart and breathing, and the other body systems in adults and children",
+        "importance": "critical",
+        "id": "A5"
+      },
+      {
+        "claim": "Pseudoephedrine can cause stroke when taken in higher than recommended doses.",
+        "type": "medication",
+        "predicate": "cause",
+        "subject": "pseudoephedrine",
+        "object": "stroke",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "pseudoephedrine can cause stroke",
+        "importance": "critical",
+        "id": "A6"
+      },
+      {
+        "claim": "Studies recommend combining local decongestants with systemic.",
+        "type": "treatment",
+        "predicate": "recommend",
+        "subject": "studies",
+        "object": "combining local decongestants with systemic",
+        "hedge": "recommended",
+        "hedge_text": "recommend",
+        "evidence": "others recommend combining local decongestants with systemic (affecting the whole body)",
+        "importance": "critical",
+        "id": "A7"
+      },
+      {
+        "claim": "Local decongestants do not affect blood pressure in healthy people.",
+        "type": "medication",
+        "predicate": "affect",
+        "subject": "local decongestants",
+        "object": "blood pressure in healthy people",
+        "hedge": "negated",
+        "hedge_text": "do not",
+        "evidence": "In healthy people, local decongestants do not affect blood pressure",
+        "importance": "critical",
+        "id": "A8"
+      }
+    ],
+    "evidence_failures": [],
+    "hedge_flags": [],
+    "provenance": {
+      "model": "gemini-3.5-flash-lite",
+      "model_version": "gemini-3.5-flash-lite",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "extractor-v2",
+      "timestamp": "2026-10-27T20:27:04.128326+00:00"
+    }
+  },
+  "scores": {
+    "nugget_recall": 0.75,
+    "atom_precision_lower_bound": 0.75,
+    "hedge_accuracy": 0.6666666666666666,
+    "evidence_fail_rate": 0.0,
+    "hedge_flag_rate": 0.0,
+    "n_atoms": 8,
+    "n_nuggets": 8,
+    "n_matched": 6,
+    "matcher_version": "lexical-v2"
+  },
+  "matches": [
+    {
+      "atom": "A8",
+      "nugget": "NOT Affect (local decongestants [C0042398], blood pressure [C0005823] in healthy people [C0686750])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A6",
+      "nugget": "[may] Cause (pseudoephedrine [C0033798], stroke [C0038454])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A5",
+      "nugget": "[may] Affect (process [C3852980], other body systems in children [C0008059])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A4",
+      "nugget": "[may] Affect (process [C3852980], breathing [C0035203])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A3",
+      "nugget": "[may] Affect (process [C3852980], heart [C0007226])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A7",
+      "nugget": "[may] Combine (local decongestants [C0042398], systemic decongestants [(C0282374])",
+      "similarity": 0.833
+    }
+  ],
+  "unmatched_nuggets": [
+    "Effect (sudafed [C0700727 (pseudoephedrine [C0033798]) ], congestion [C0700148])  EQUAL Effect (afrin  [C0718291] (oxymetazoline [C0030071]),  congestion [C0700148])",
+    "[may] Affect (process [C3852980], other body systems in adults [C4082212])"
+  ],
+  "unmatched_atoms": [
+    "A1",
+    "A2"
+  ]
+}

@@ -1,0 +1,249 @@
+{
+  "lock": {
+    "code_hash": "46268292426c6627",
+    "prompt_version": "extractor-v2",
+    "matcher_version": "lexical-v2",
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "seed": 42,
+    "test_question_ids": [
+      "116",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "134",
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155"
+    ]
+  },
+  "result": {
+    "source_id": "151",
+    "atoms": [
+      {
+        "claim": "Gray skin discoloration may have many different causes.",
+        "type": "other",
+        "predicate": "have",
+        "subject": "gray skin discoloration",
+        "object": "many different causes",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "Gray skin discoloration may have many different causes.",
+        "importance": "supporting",
+        "id": "A1"
+      },
+      {
+        "claim": "Gray skin discoloration may be inherited.",
+        "type": "risk_factor",
+        "predicate": "be",
+        "subject": "gray skin discoloration",
+        "object": "inherited",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "It may be inherited",
+        "importance": "critical",
+        "id": "A2"
+      },
+      {
+        "claim": "Gray skin discoloration may be a sign of problems with other organs.",
+        "type": "condition",
+        "predicate": "be",
+        "subject": "gray skin discoloration",
+        "object": "a sign of problems with other organs",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "it may be a sign of problems with other organs",
+        "importance": "critical",
+        "id": "A3"
+      },
+      {
+        "claim": "Gray skin discoloration may be a sign of infection.",
+        "type": "condition",
+        "predicate": "be",
+        "subject": "gray skin discoloration",
+        "object": "a sign of infection",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "infection",
+        "importance": "critical",
+        "id": "A4"
+      },
+      {
+        "claim": "Gray skin discoloration may be a sign of drugs.",
+        "type": "medication",
+        "predicate": "be",
+        "subject": "gray skin discoloration",
+        "object": "a sign of drugs",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "drugs",
+        "importance": "critical",
+        "id": "A5"
+      },
+      {
+        "claim": "Gray skin discoloration may be a sign of anti-inflammatory drugs.",
+        "type": "medication",
+        "predicate": "be",
+        "subject": "gray skin discoloration",
+        "object": "a sign of anti-inflammatory drugs",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "anti-inflammatory drugs",
+        "importance": "critical",
+        "id": "A6"
+      },
+      {
+        "claim": "Gray skin discoloration may be a sign of psoriasis.",
+        "type": "condition",
+        "predicate": "be",
+        "subject": "gray skin discoloration",
+        "object": "a sign of psoriasis",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "psoriasis",
+        "importance": "critical",
+        "id": "A7"
+      },
+      {
+        "claim": "Gray skin discoloration may be a sign of aging.",
+        "type": "risk_factor",
+        "predicate": "be",
+        "subject": "gray skin discoloration",
+        "object": "a sign of aging",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "aging",
+        "importance": "supporting",
+        "id": "A8"
+      },
+      {
+        "claim": "Your doctor may order some tests to exclude skin cancer.",
+        "type": "instruction",
+        "predicate": "order",
+        "subject": "your doctor",
+        "object": "some tests to exclude skin cancer",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "Your doctor may order some tests to exclude skin cancer",
+        "importance": "critical",
+        "id": "A9"
+      },
+      {
+        "claim": "Your doctor may order some tests to exclude specific infections.",
+        "type": "instruction",
+        "predicate": "order",
+        "subject": "your doctor",
+        "object": "some tests to exclude specific infections",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "Your doctor may order some tests to exclude skin cancer and specific infections",
+        "importance": "critical",
+        "id": "A10"
+      }
+    ],
+    "evidence_failures": [],
+    "hedge_flags": [],
+    "provenance": {
+      "model": "gemini-3.5-flash-lite",
+      "model_version": "gemini-3.5-flash-lite",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "extractor-v2",
+      "timestamp": "2026-10-27T20:29:13.858122+00:00"
+    }
+  },
+  "scores": {
+    "nugget_recall": 1.0,
+    "atom_precision_lower_bound": 1.0,
+    "hedge_accuracy": 1.0,
+    "evidence_fail_rate": 0.0,
+    "hedge_flag_rate": 0.0,
+    "n_atoms": 10,
+    "n_nuggets": 10,
+    "n_matched": 10,
+    "matcher_version": "lexical-v2"
+  },
+  "matches": [
+    {
+      "atom": "A10",
+      "nugget": "[may] Exclude (some tests [C0086143], specific infections [C3714514])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A9",
+      "nugget": "[may] Exclude (some tests [C0086143], skin cancer [C0007114])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A8",
+      "nugget": "[may] Cause (aging [C0001811], gray skin discoloration [C0582068])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A7",
+      "nugget": "[may] Cause (psoriasis [C0033860], gray skin discoloration [C0582068])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A6",
+      "nugget": "[may] Cause (anti-inflammatory drugs [C0003209], gray skin discoloration [C0582068])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A5",
+      "nugget": "[may] Cause (drugs [C0013227], gray skin discoloration [C0582068])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A4",
+      "nugget": "[may] Cause (infection [C3714514], gray skin discoloration [C0582068])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A3",
+      "nugget": "[may] Is (gray skin discoloration [C0582068], a sign of problems with other organs [C3540840])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A2",
+      "nugget": "[may] Is (gray skin discoloration [C0582068], inherited [C0439660])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A1",
+      "nugget": "[may] Have (gray skin discoloration [C0582068], many different causes [C1408355])",
+      "similarity": 1.0
+    }
+  ],
+  "unmatched_nuggets": [],
+  "unmatched_atoms": []
+}

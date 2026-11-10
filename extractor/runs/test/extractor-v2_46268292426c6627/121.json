@@ -1,0 +1,292 @@
+{
+  "lock": {
+    "code_hash": "46268292426c6627",
+    "prompt_version": "extractor-v2",
+    "matcher_version": "lexical-v2",
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "seed": 42,
+    "test_question_ids": [
+      "116",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "134",
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155"
+    ]
+  },
+  "result": {
+    "source_id": "121",
+    "atoms": [
+      {
+        "claim": "Stress management can lower cortisol levels.",
+        "type": "treatment",
+        "predicate": "lower",
+        "subject": "stress management",
+        "object": "cortisol levels",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "Stress management, such as mindfulness, meditation and relaxation, or interacting with dogs for an hour can lower cortisol levels",
+        "importance": "supporting",
+        "id": "A1"
+      },
+      {
+        "claim": "Mindfulness can lower cortisol levels.",
+        "type": "treatment",
+        "predicate": "lower",
+        "subject": "mindfulness",
+        "object": "cortisol levels",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "Stress management, such as mindfulness, meditation and relaxation, or interacting with dogs for an hour can lower cortisol levels",
+        "importance": "supporting",
+        "id": "A2"
+      },
+      {
+        "claim": "Meditation can lower cortisol levels.",
+        "type": "treatment",
+        "predicate": "lower",
+        "subject": "meditation",
+        "object": "cortisol levels",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "Stress management, such as mindfulness, meditation and relaxation, or interacting with dogs for an hour can lower cortisol levels",
+        "importance": "supporting",
+        "id": "A3"
+      },
+      {
+        "claim": "Relaxation can lower cortisol levels.",
+        "type": "treatment",
+        "predicate": "lower",
+        "subject": "relaxation",
+        "object": "cortisol levels",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "Stress management, such as mindfulness, meditation and relaxation, or interacting with dogs for an hour can lower cortisol levels",
+        "importance": "supporting",
+        "id": "A4"
+      },
+      {
+        "claim": "Interacting with dogs for an hour can lower cortisol levels.",
+        "type": "treatment",
+        "predicate": "lower",
+        "subject": "interacting with dogs for an hour",
+        "object": "cortisol levels",
+        "hedge": "possible",
+        "hedge_text": "can",
+        "evidence": "Stress management, such as mindfulness, meditation and relaxation, or interacting with dogs for an hour can lower cortisol levels",
+        "importance": "supporting",
+        "id": "A5"
+      },
+      {
+        "claim": "Balneotherapy may help.",
+        "type": "treatment",
+        "predicate": "help",
+        "subject": "balneotherapy",
+        "object": "cortisol levels",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "Balneotherapy (using water or bathing as treatment) or spa treatments may also help",
+        "importance": "supporting",
+        "id": "A6"
+      },
+      {
+        "claim": "Balneotherapy is using water or bathing as treatment.",
+        "type": "treatment",
+        "predicate": "is",
+        "subject": "balneotherapy",
+        "object": "using water or bathing as treatment",
+        "hedge": "asserted",
+        "hedge_text": null,
+        "evidence": "Balneotherapy (using water or bathing as treatment)",
+        "importance": "supporting",
+        "id": "A7"
+      },
+      {
+        "claim": "Spa treatments may help.",
+        "type": "treatment",
+        "predicate": "help",
+        "subject": "spa treatments",
+        "object": "cortisol levels",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "spa treatments may also help",
+        "importance": "supporting",
+        "id": "A8"
+      },
+      {
+        "claim": "Electrical stimulation may have some effect.",
+        "type": "treatment",
+        "predicate": "have",
+        "subject": "electrical stimulation",
+        "object": "some effect",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "Electrical stimulation and acupuncture may have some effect too",
+        "importance": "supporting",
+        "id": "A9"
+      },
+      {
+        "claim": "Acupuncture may have some effect.",
+        "type": "treatment",
+        "predicate": "have",
+        "subject": "acupuncture",
+        "object": "some effect",
+        "hedge": "possible",
+        "hedge_text": "may",
+        "evidence": "Electrical stimulation and acupuncture may have some effect too",
+        "importance": "supporting",
+        "id": "A10"
+      },
+      {
+        "claim": "Medicinal plant Withania somnifera might help.",
+        "type": "medication",
+        "predicate": "help",
+        "subject": "medicinal plant Withania somnifera",
+        "object": "cortisol levels",
+        "hedge": "possible",
+        "hedge_text": "might",
+        "evidence": "Medicinal plant Withania somnifera, and hormones melatonin and dehydroepiandrosterone (DHEA) might help as well",
+        "importance": "supporting",
+        "id": "A11"
+      },
+      {
+        "claim": "Hormones melatonin might help.",
+        "type": "medication",
+        "predicate": "help",
+        "subject": "hormones melatonin",
+        "object": "cortisol levels",
+        "hedge": "possible",
+        "hedge_text": "might",
+        "evidence": "Medicinal plant Withania somnifera, and hormones melatonin and dehydroepiandrosterone (DHEA) might help as well",
+        "importance": "supporting",
+        "id": "A12"
+      },
+      {
+        "claim": "Hormones dehydroepiandrosterone (DHEA) might help.",
+        "type": "medication",
+        "predicate": "help",
+        "subject": "hormones dehydroepiandrosterone (DHEA)",
+        "object": "cortisol levels",
+        "hedge": "possible",
+        "hedge_text": "might",
+        "evidence": "Medicinal plant Withania somnifera, and hormones melatonin and dehydroepiandrosterone (DHEA) might help as well",
+        "importance": "supporting",
+        "id": "A13"
+      }
+    ],
+    "evidence_failures": [],
+    "hedge_flags": [],
+    "provenance": {
+      "model": "gemini-3.5-flash-lite",
+      "model_version": "gemini-3.5-flash-lite",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "extractor-v2",
+      "timestamp": "2026-10-27T20:24:54.394985+00:00"
+    }
+  },
+  "scores": {
+    "nugget_recall": 0.8333333333333334,
+    "atom_precision_lower_bound": 0.7692307692307693,
+    "hedge_accuracy": 1.0,
+    "evidence_fail_rate": 0.0,
+    "hedge_flag_rate": 0.0,
+    "n_atoms": 13,
+    "n_nuggets": 12,
+    "n_matched": 10,
+    "matcher_version": "lexical-v2"
+  },
+  "matches": [
+    {
+      "atom": "A13",
+      "nugget": "[may] Reduce (dehydroepiandrosterone [C0057277], cortisol levels [C0201968])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A12",
+      "nugget": "[may] Reduce (melatonin [C0025219], cortisol levels [C0201968])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A11",
+      "nugget": "[may] Reduce (withania somnifera [C2930158], cortisol levels [C0201968])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A8",
+      "nugget": "[may] Reduce (spa treatments [C0020311], cortisol levels [C0201968])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A6",
+      "nugget": "[may] Reduce (balneotherapy [C0085867], cortisol levels [C0201968])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A5",
+      "nugget": "[may] Reduce (interacting with dogs [C5392134], cortisol levels [C0201968])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A4",
+      "nugget": "[may] Reduce (relaxation [C0035029], cortisol levels [C0201968])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A3",
+      "nugget": "[may] Reduce (meditation [C0150277], cortisol levels [C0201968])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A2",
+      "nugget": "[may] Reduce (mindfulness [C5891058], cortisol levels [C0201968])",
+      "similarity": 1.0
+    },
+    {
+      "atom": "A1",
+      "nugget": "[may] Reduce (stress management [C0150788], cortisol levels [C0201968])",
+      "similarity": 1.0
+    }
+  ],
+  "unmatched_nuggets": [
+    "[may] Reduce (electrical stimulation [C0013786], cortisol levels [C0201968])",
+    "[may] Reduce (acupuncture [C0394664], cortisol levels [C0201968])"
+  ],
+  "unmatched_atoms": [
+    "A7",
+    "A9",
+    "A10"
+  ]
+}

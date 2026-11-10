@@ -1,0 +1,10 @@
+{
+  "seed": 42,
+  "method": "random.Random(42).sample(sorted(question_ids), 3)",
+  "dev_question_ids": [
+    "117",
+    "123",
+    "133"
+  ],
+  "note": "Used for Extractor prompt development only. Exclude from all reported test metrics."
+}
