@@ -170,6 +170,115 @@ def verifier_agreement(human_labels: list[int], verifier_labels: list[int]) -> d
     }
 
 
+
+
+
+# ==================================================
+# ADDITIONAL AGENT EVALUATION METRICS
+# ==================================================
+
+
+def calculate_extractor_metrics(predicted_atoms, expected_atoms):
+    predicted = {str(x).strip().lower() for x in predicted_atoms}
+    expected = {str(x).strip().lower() for x in expected_atoms}
+
+    tp = len(predicted & expected)
+    fp = len(predicted - expected)
+    fn = len(expected - predicted)
+
+    precision = tp / (tp + fp) if tp + fp else 0
+    recall = tp / (tp + fn) if tp + fn else 0
+    f1 = 2 * precision * recall / (precision + recall) if precision + recall else 0
+
+    return {
+        "precision": precision,
+        "recall": recall,
+        "f1": f1,
+        "true_positives": tp,
+        "false_positives": fp,
+        "false_negatives": fn,
+    }
+
+
+def calculate_simplifier_metrics(original_text, simplified_text):
+    original = readability_scores(original_text)
+    simplified = readability_scores(simplified_text)
+
+    return {
+        "flesch_kincaid_grade": simplified["flesch_kincaid_grade"],
+        "smog_index": simplified["smog_index"],
+        "medical_term_density": simplified["medical_term_density"],
+        "word_count": simplified["word_count"],
+        "grade_improvement": (
+            original["flesch_kincaid_grade"]
+            - simplified["flesch_kincaid_grade"]
+        ),
+        "smog_improvement": (
+            original["smog_index"] - simplified["smog_index"]
+        ),
+        "meets_grade_8_target": meets_readability_target(simplified_text),
+    }
+
+
+def calculate_verifier_metrics(expected_unsupported, detected_unsupported):
+    expected = {str(x).strip().lower() for x in expected_unsupported}
+    detected = {str(x).strip().lower() for x in detected_unsupported}
+
+    tp = len(expected & detected)
+    fp = len(detected - expected)
+    fn = len(expected - detected)
+
+    precision = tp / (tp + fp) if tp + fp else 0
+    recall = tp / (tp + fn) if tp + fn else 0
+    f1 = 2 * precision * recall / (precision + recall) if precision + recall else 0
+
+    return {
+        "precision": precision,
+        "recall": recall,
+        "f1": f1,
+        "true_positives": tp,
+        "false_positives": fp,
+        "false_negatives": fn,
+    }
+
+
+def calculate_refiner_metrics(expected_issues, unresolved_issues):
+    expected = {str(x).strip().lower() for x in expected_issues}
+    unresolved = {str(x).strip().lower() for x in unresolved_issues}
+
+    resolved = expected - unresolved
+
+    return {
+        "total_issues": len(expected),
+        "issues_resolved": len(resolved),
+        "issues_unresolved": len(expected & unresolved),
+        "resolution_rate": (
+            len(resolved) / len(expected) if expected else 1.0
+        ),
+    }
+
+
+def calculate_readability_metrics(original_text, final_text):
+    original = readability_scores(original_text)
+    final = readability_scores(final_text)
+
+    return {
+        "flesch_kincaid_grade": final["flesch_kincaid_grade"],
+        "smog_index": final["smog_index"],
+        "medical_term_density": final["medical_term_density"],
+        "word_count": final["word_count"],
+        "flesch_kincaid_improvement": (
+            original["flesch_kincaid_grade"]
+            - final["flesch_kincaid_grade"]
+        ),
+        "smog_improvement": (
+            original["smog_index"] - final["smog_index"]
+        ),
+        "meets_grade_8_target": meets_readability_target(final_text),
+    }
+
+
+
 if __name__ == "__main__":
     demo = ("Your discharge summary says you were prescribed a beta-blocker to manage "
             "hypertension and should follow up with cardiology in two weeks.")
