@@ -327,6 +327,74 @@ class ProcessSimplificationTest(ReadableTestCase):
         )
 
 
+class AbbreviationTest(ReadableTestCase):
+    def run_simplifier(self, atoms: list[dict], gemini_terms: list[list[str]]) -> tuple[dict, str, FakeRetriever]:
+        client = FakeGeminiClient(simplifier_replies(atoms, gemini_terms, ["x."] * len(atoms)))
+        retriever = FakeRetriever()
+        result = simplifier.process_simplification(atoms, client, retriever=retriever)
+
+        return result, client.calls[1]["contents"], retriever
+
+    def test_listed_abbreviation_is_defined_even_if_gemini_misses_it(self) -> None:
+        """Gemini lists no terms for "Furosemide 20 mg BID"; BID is still found in the text and defined from the MedlinePlus list."""
+
+        result, prompt, retriever = self.run_simplifier(
+            [{"text": "Furosemide 20 mg BID", "type": "medication"}], [[]],
+        )
+
+        self.check_in(
+            "prompt defines BID",
+            '"BID" -> MedlinePlus abbreviation list: stands for "Twice a day".',
+            prompt,
+        )
+        self.check("vector retrieval queries", [], retriever.queries)
+        self.check(
+            "provenance",
+            {"url": simplifier.ABBREVIATION_SOURCE_URL, "stands_for": "Twice a day"},
+            {key: result["simplified_atoms"][0]["definitions"]["BID"][0][key] for key in ("url", "stands_for")},
+        )
+
+    def test_ambiguous_abbreviation_is_kept_not_expanded(self) -> None:
+        """"MS" can mean multiple sclerosis or morphine sulfate, so Gemini is told to keep it as written and no definition is retrieved."""
+
+        result, prompt, retriever = self.run_simplifier(
+            [{"text": "History of MS", "type": "diagnosis"}], [["MS"]],
+        )
+
+        self.check_in("prompt says keep as written", '"MS": abbreviation with more than one meaning', prompt)
+        self.check_in("no expansion in prompt", "Multiple sclerosis", prompt, present=False)
+        self.check("vector retrieval queries", [], retriever.queries)
+        self.check("provenance marks ambiguous", True, result["simplified_atoms"][0]["definitions"]["MS"][0]["ambiguous"])
+
+    def test_dotted_form_listed_by_gemini_is_not_duplicated(self) -> None:
+        """Gemini lists "b.i.d." and the text scan finds "b.i.d"; they're the same abbreviation, so it appears once."""
+
+        result, _, _ = self.run_simplifier(
+            [{"text": "Metformin 500 mg b.i.d.", "type": "medication"}], [["b.i.d."]],
+        )
+
+        self.check("terms for atom", ["b.i.d."], list(result["simplified_atoms"][0]["definitions"]))
+
+    def test_other_terms_still_use_vector_retrieval(self) -> None:
+        """Only abbreviations skip retrieval: "edema" still goes to the MedlinePlus index, "HTN" doesn't."""
+
+        _, _, retriever = self.run_simplifier(
+            [{"text": "Edema and HTN", "type": "diagnosis"}], [["edema", "HTN"]],
+        )
+
+        self.check("vector retrieval queries", ["edema"], retriever.queries)
+
+    def test_ordinary_lowercase_words_are_not_abbreviations(self) -> None:
+        """Lower-case words that look like listed abbreviations ("cat", "pad") are left alone."""
+
+        result, prompt, _ = self.run_simplifier(
+            [{"text": "The patient has a cat and uses a heating pad", "type": "instruction"}], [[]],
+        )
+
+        self.check("terms for atom", [], list(result["simplified_atoms"][0]["definitions"]))
+        self.check_in("prompt mentions abbreviation list", "MedlinePlus abbreviation list", prompt, present=False)
+
+
 class SimplifierAdkCallbackTest(ReadableTestCase):
     def test_callback_returns_draft_and_saves_provenance(self) -> None:
         """Inside ADK, the callback reads state["atoms"], returns the draft, and saves provenance to state."""
